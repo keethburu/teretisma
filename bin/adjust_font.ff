@@ -1,0 +1,52 @@
+#!/usr/local/bin/fontforge
+# $1 => Source-Font
+# $2 => Target-Font
+# $3 => FullName
+# $4 => Weight
+# $5 => Family
+# $6 => UniqueID
+# $7 => Version
+# $8 => Copyright
+# $9 => Scaling
+# $10 => Ascent
+# $11 => Decent
+
+Print("Open " + $1);
+Open($1);
+
+
+SetTTFName(0x409, 0, $8) # Copyright
+SetTTFName(0x409, 1, $5) # Family
+SetTTFName(0x409, 2, $4) # Sub Family-Name
+SetTTFName(0x409, 3, $6) # UniqueID
+SetTTFName(0x409, 4, $5 + " " + $4) # Fullname
+SetTTFName(0x409, 5, "Version " + $7) # Version
+SetTTFName(0x409, 16, $5) # Preferred Family
+SetTTFName(0x409, 17, $4) # Preferred Sub-Family
+SetFontNames($3, $5, $5 + " " + $4, $4, $8, $7)
+
+
+ClearPrivateEntry('BlueValues')
+ClearPrivateEntry('OtherBlues')
+ClearPrivateEntry('BlueScale')
+ClearPrivateEntry('BlueShift')
+ClearPrivateEntry('StdHW')
+ClearPrivateEntry('StdVW')
+
+
+
+# Em-Values
+SelectAll()
+ScaleToEm(Strtol($10), Strtol($11))
+
+SelectAll()
+Transform(Strtol($9), 0, 0, Strtol($9), 0, 0)
+
+# AUTOHINT
+SelectAll()
+AutoHint()
+
+
+Print("Generate " + $2)
+Generate($2);
+Quit(0);

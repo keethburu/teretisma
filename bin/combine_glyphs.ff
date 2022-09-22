@@ -1,0 +1,30 @@
+#!/usr/local/bin/fontforge
+#Take a Latin font and apply some simple transformations to it
+#prior to adding cyrillic letters.
+#can be run in a non-interactive fontforge session.
+# $1 => der Quellfont
+# $2 => der Zielfont-Name
+# $3 => der Zielfont-Family-Name
+# $4 => Der Codepoint an dem die kombinierte Glyphe eingesetzt werden soll
+# $5 => Das Basiszeichen für die kombinierte Glyphe
+# $6.. => Die Diakritika
+
+Print("Open " + $1);
+Open($1);
+Print("Select " + ToString(UCodePoint(Strtol(Strsub($4,3), 16))));
+Select(UCodePoint(Strtol(Strsub($4,3), 16))); 
+CopyReference();
+Print("Select " + $3);
+Select(UCodePoint(Strtol(Strsub($3,3), 16)));
+Paste();
+SetFontNames($2, $3, $2);
+;
+i=6
+while ( i<$argc )
+  AddAccent(UCodePoint(Strtol(Strsub($argv[i],3), 16)));
+  i = i+1
+endloop
+Print("Generate " + $2 + '.otf')
+Generate($2 + '.otf');
+Quit(0);
+
