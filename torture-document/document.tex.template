@@ -1,0 +1,937 @@
+\documentclass[english,ngerman]{book}%,openany 
+
+
+\usepackage[LGR]{fontenc}
+\ifx\directlua\undefined\ifx\XeTeXcharclass\undefined
+    \usepackage[utf8]{inputenc}
+  \else\RequirePackage[no-math]{fontspec}[2017/03/31]\fi %xetex engine
+  \else\RequirePackage[no-math]{fontspec}[2017/03/31]\fi %luatex engine
+%\RequirePackage{color}
+\usepackage{colortbl}
+
+\usepackage[medium]{dgruyter}
+
+%\usepackage[bottom,multiple]{footmisc}
+
+
+
+\setmainfont{___REGULAR_SERIF_FONT___}[
+        Path = ___FONT_PATH___,
+        BoldFont= ___BOLD_SERIF_FONT___,
+        ItalicFont     = ___ITALIC_SERIF_FONT___,
+        BoldItalicFont = ___BOLD_ITALIC_SERIF_FONT___]
+
+\setsansfont{___REGULAR_SANS_FONT___}[
+        Path = ___FONT_PATH___,
+        BoldFont= ___BOLD_SANS_FONT___,
+        ItalicFont     = ___ITALIC_SANS_FONT___,
+        BoldItalicFont = ___BOLD_ITALIC_SANS_FONT___]
+
+
+
+
+
+
+%\usepackage{lingmacros}
+%\usepackage{gb4e}\noautomath
+%\usepackage{linguex}
+%\usepackage{expex}
+\usepackage{dcolumn}
+
+\usepackage{tipa}
+
+\usepackage{qtree}
+
+% %\usepackage{bigfoot}
+
+% %\def\thepart{\Alph{part}}
+
+\theoremstyle{dgdef}
+\newtheorem{definition}{Definition}%[chapter]
+\theoremstyle{dgthm}
+\newtheorem{theorem}{Theorem}%[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+
+% %\setcitestyle{numbers}
+
+\author{Max Mustermann\and Arno Nym}
+\title{Testdokument zum Test von verschiedenen Schriftarten}
+
+% %RequirePackage{natbib}\setcitestyle{numbers}
+
+% %\usepackage{biblatex}
+\usepackage{listings}
+% %\setmonofont[]{Inconsolatazi4-Regular.otf}
+
+% %\usepackage{../../../0allgemein/tex/letexedn/letexedn}
+% %\usepackage{../../0allgemein/satz/DegWarnu}
+
+% \RequirePackage{framed}
+% \def\FrameHeightAdjust{\topskip}
+% \FrameSep2mm
+% \RequirePackage[noadjust]{marginnote}
+% \let\marginnoteleftadjust\FrameSep
+% \let\marginnoterightadjust\FrameSep
+% \makeatletter
+% \RequirePackage{DUMMY-ORDNER/overprint}
+% \newenvironment{blau}
+%  {\marginparsep2mm\relax
+%   \def\FrameCommand{\fboxsep=\FrameSep\colorbox[cmyk]{0.5,0,0,0}}%
+%   \MakeFramed{\advance\hsize-\width\FrameRestore}%
+%   \sffamily\mathversion{ss}\small
+%   \parindent\z@
+%   \parfillskip2em\@plus1.0fil\relax
+%   \leavevmode\marginnote{\leavevmode\smash{\lower7\p@\hbox{\includegraphics[height=13pt,clip]{DG_attention}}}}%
+%   \overprint
+%   \ignorespaces}
+%  {\knockout
+%   \par\ifdim\lastskip=\belowdisplayskip\vskip-\lastskip\fi\nobreak
+%   \endMakeFramed\aftergroup\@afterbox}
+
+% \makeatother
+
+
+\newcommand{\blindtext}{%
+\noindent{}
+  
+  Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch
+  Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick
+  den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. ,,Fix, Schwyz!'' quäkt Jürgen blöd vom
+  Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren
+  Zwerg. Heizölrückstoßabdämpfung.
+
+  aäb cde fgh ijk lmn oöp qrsß tuü vwx yz AÄBC DEF GHI JKL MNO ÖPQ RST UÜV WXYZ !"§ \$\%\& /() =?* ' \# \symbol{"7E} ²³ @`´ ©«» ¼ \{\} €  - -- --- 
+  
+  Ligaturen: ﬀ, ﬁ, ﬂ, ft, ﬃ, ﬄ, fk, fj, fh, fb, fz, ll, st, ch, ck, ct, th, tt, tz, kk, Qu, ſi, ſſ, ﬅ, ſch
+
+  Λορεμ ιπσθμ δολορ σιτ αμετ, νοvθμ φαβελλασ πετεντιθμ vελ νε, ατ νισλ σονετ οπορτερε εθμ. Αλιι δοcτθσ μει ιδ, νο αθτεμ αθδιρε ιντερεσσετ μελ, δοcενδι cομμθνε οπορτεατ τε cθμ. 
+
+  Лорем ипсум долор сит амет, пер цлита поссит ех, ат мунере фабулас петентиум сит. Иус цу цибо саперет сцрипсерит, нец виси муциус лабитур ид. Ет хис нонумес нолуиссе дигниссим.
+  
+  ÀÁÂ ÃÄÅ ÆÇÈ ÉÊË ÌÍÎ ÏÐÑ ÒÓÔ ÕÖ× ØÙÚ ÛÜÝ Þßà áâã äåæ çèé êëì íîï ðñò óôõ ö÷ø ùúû üýþ ÿ ĀāĂ ăĄą ĆćĈ ĉĊċ ČčĎ ďĐđ ĒēĔ ĕĖė ĘęĚ ěĜĝ ĞğĠ ġĢģ ĤĥĦ ħĨĩ ĪīĬ ĭĮį İıĲ ĳĴĵ Ķķĸ ĹĺĻ ļĽľ ĿŀŁ łŃń ŅņŇ ňŉŊ ŋŌō ŎŏŐ őŒœ ŔŕŖ ŗŘř ŚśŜ ŝŞş ŠšŢ ţŤť ŦŧŨ ũŪū ŬŭŮ ůŰű ŲųŴ ŵŶŷ ŸŹź ŻżŽ žſ ḀḁḂ ḃḄḅ ḆḇḈ ḉḊḋ ḌḍḎ ḏḐḑ ḒḓḔ ḕḖḗ ḘḙḚ ḛḜḝ ḞḟḠ ḡḢḣ ḤḥḦ ḧḨḩ ḪḫḬ ḭḮḯ ḰḱḲ ḳḴḵ ḶḷḸ ḹḺḻ ḼḽḾ ḿṀṁ ṂṃṄ ṅṆṇ ṈṉṊ ṋṌṍ ṎṏṐ ṑṒṓ ṔṕṖ ṗṘṙ ṚṛṜ ṝṞṟ ṠṡṢ ṣṤṥ ṦṧṨ ṩṪṫ ṬṭṮ ṯṰṱ ṲṳṴ ṵṶṷ ṸṹṺ ṻṼṽ Ṿṿ
+
+  abcd efgh ijkl mnop qrst uvwx yzāă ąćĉċ čďđē ĕėęě ĝğġģ ĥħĩī ĭįi̇ı ĳĵķĸ ĺļľŀ łńņň ŉŋōŏ őœŕŗ řśŝş šţťŧ ũūŭů űųŵŷ ÿźżž ſƀɓƃ ƅɔƈɖ ɗƌƍǝ əɛƒɠ ɣƕɩɨ ƙƚƛɯ ɲƞɵơ ƣƥʀƨ ʃƪƫƭ ʈưʊʋ ƴƶʒƹ ƺƻƽƾ ƿǀǁǂ ǃǆǉǌ ǎǐǒ ǔǖǘǚ ǜǟǡ ǣǥǧǩ ǫǭǯǰ ǳǵǹǻ ǽǿḁḃ ḅḇḉḋ ḍḏḑḓ ḕḗḙḛ ḝḟḡḣ ḥḧḩḫ ḭḯḱḳ ḵḷḹḻ ḽḿṁṃ ṅṇṉṋ ṍṏṑṓ ṕṗṙṛ ṝṟṡṣ ṥṧṩṫ ṭṯṱṳ ṵṷṹṻ ṽṿ
+
+  ƀƁƂ ƃƄƅ ƆƇƈ ƉƊƋ ƌƍƎ ƏƐƑ ƒƓƔ ƕƖƗ Ƙƙƚ ƛƜƝ ƞƟƠ ơƢƣ ƤƥƦ ƧƨƩ ƪƫƬ ƭƮƯ ưƱƲ ƳƴƵ ƶƷƸ ƹƺƻ Ƽƽƾ ƿǀǁ ǂǃǄ ǅǆǇ ǈǉǊ ǋǌǍ ǎǏǐ ǑǒǓ ǔǕǖ ǗǘǙ ǚǛǜ ǝǞǟ ǠǡǢ ǣǤǥ ǦǧǨ ǩǪǫ ǬǭǮ ǯǰǱ ǲǳǴ ǵǶǷ ǸǹǺ ǻǼǽ Ǿǿ
+
+  ἀἁἂ ἃἄἅ ἆἇἈ ἉἊἋ ἌἍἎ Ἇἐἑ ἒἓἔ ἕ἖἗ ἘἙἚ ἛἜἝ ἞἟ἠ ἡἢἣ ἤἥἦ ἧἨἩ ἪἫἬ ἭἮἯ ἰἱἲ ἳἴἵ ἶἷἸ ἹἺἻ ἼἽἾ Ἷὀὁ ὂὃὄ ὅ὆὇ ὈὉὊ ὋὌὍ ὎὏ὐ ὑὒὓ ὔὕὖ ὗ὘Ὑ ὚Ὓ὜ Ὕ὞Ὗ ὠὡὢ ὣὤὥ ὦὧὨ ὩὪὫ ὬὭὮ Ὧὰά ὲέὴ ήὶί ὸόὺ ύὼώ ὾὿
+
+  ͰͱͲ ͳʹ͵ Ͷͷ͸ ͹ͺͻ ͼͽ; Ϳ΀΁ ΂΃΄ ΅Ά· ΈΉΊ ΋Ό΍ ΎΏΐ ΑΒΓ ΔΕΖ ΗΘΙ ΚΛΜ ΝΞΟ ΠΡ΢ ΣΤΥ ΦΧΨ ΩΪΫ άέή ίΰα βγδ εζη θικ λμν ξοπ ρςσ τυφ χψω ϊϋό ύώϏ ϐϑϒ ϓϔϕ ϖϗϘ ϙϚϛ ϜϝϞ ϟϠϡ ϢϣϤ ϥϦϧ ϨϩϪ ϫϬϭ Ϯϯ
+
+  ⌀⌁⌂ ⌃⌄⌅⌆ ⌇⌈⌉⌊ ⌋⌌ ⌍⌎⌏⌐ ⌑⌒⌓ ⌔⌕⌖ ⌗⌘⌙ ⌚⌛⌜ ⌝⌞⌟ ⌠⌡⌢ ⌣⌤⌥ ⌦⌧⌨ 〈〉⌫ ⌬⌭⌮ ⌯⌰⌱ ⌲⌳⌴ ⌵⌶⌷ ⌸⌹⌺ ⌻⌼⌽ ⌾⌿⍀ ⍁⍂⍃ ⍄⍅⍆ ⍇⍈ ⍉⍊ ⍋⍌⍍ ⍎⍏⍐ ⍑⍒⍓ ⍔⍕⍖ ⍗⍘⍙ ⍚⍛⍜
+  ⍝⍞⍟ ⍠⍡⍢  ⍣⍤⍥ ⍦⍧⍨ ⍩⍪⍫ ⍬⍭⍮ ⍯⍰⍱ ⍲⍳⍴ ⍵⍶⍷ ⍸⍹⍺ ⍻⍼⍽ ⍾⍿⎀ ⎁⎂⎃ ⎄⎅⎆ ⎇⎈⎉ ⎊⎋⎌ ⎍⎎⎏ ⎐⎑⎒ ⎓⎔⎕ ⎖⎗⎘ ⎙⎚⎛ ⎜⎝⎞ ⎟⎠⎡ ⎢⎣⎤ ⎥⎦⎧ ⎨⎩⎪ ⎫⎬⎭ ⎮⎯⎰ ⎱⎲⎳ ⎴⎵⎶ ⎷⎸⎹ ⎺⎻⎼
+  ⎽⎾ ⎿⏀⏁ ⏂⏃⏄ ⏅⏆⏇ ⏈⏉⏊ ⏋⏌⏍ ⏎⏏⏐ ⏑⏒⏓ ⏔⏕⏖ ⏗⏘⏙ ⏚⏛⏜ ⏝⏞⏟ ⏠⏡⏢ ⏣⏤⏥ ⏦⏧⏨ ⏩⏪⏫ ⏬⏭⏮ ⏯⏰⏱ ⏲⏳⏴ ⏵⏶⏷ ⏸⏹⏺ ⏻⏼⏽ ⏾⏿ 
+}
+
+
+\newcommand{\kurzerblindtext}{%
+\noindent{}Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch
+  Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick
+  den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. ,,Fix, Schwyz!'' quäkt Jürgen blöd vom
+  Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren
+  Zwerg. Heizölrückstoßabdämpfung.
+
+  aäb cde fgh ijk lmn oöp qrsß tuü vwx yz AÄBC DEF GHI JKL MNO ÖPQ RST UÜV WXYZ !"§ \$\%\& /() =?* ' \# \symbol{"7E} ²³ @`´ ©«» ¼ \{\} €  - -- --- 
+  
+  123 456 789 0
+
+}
+
+
+%% \usepackage[dvipsnames]{xcolor}
+%% \definecolor{red1}{rgb}{1,0,0}
+
+%% \XeTeXinterchartokenstate=1
+%% \newXeTeXintercharclass\Subst
+
+%% \XeTeXcharclass"F5F1=\Subst
+%% \XeTeXcharclass"232B=\Subst
+
+
+
+%% \XeTeXinterchartoks 0 \Subst = {X}
+%% \XeTeXinterchartoks 255 \Subst = {X}
+%% \XeTeXinterchartoks \Subst 0 = {}
+%% \XeTeXinterchartoks \Subst 255 = {}
+
+
+
+
+
+
+
+\begin{document}
+
+% \ttfamily\noindent
+% Override func viewDidLoad() {\\
+%   super.viewDidLoad()\\
+%    centralManager = CBCentralManager(delegate: self, queue: nil)\\
+%         }
+
+% x\\
+% 111111111\\
+% 888888888\\
+% lllllllll\\
+% WWWWWWWWW
+
+\frontmatter
+\distributionseries{De\,Gruyter Studium}
+\seriestitle{Testdokumente aller Art}
+\transseriestitle{overall}
+
+\seriessubtitle{Verschiedenste Testdokumente}
+\serieseditor[]{Max Mustermann und Moritz Maier}
+\seriesvolume{5/31}
+\subtitle{Unterscheidungshilfen für Fonts}
+\editor{Max Mustermann als Editor}
+\collaborator{Mustermann Stiftung}
+\transtitle{Help for differentiation of fonts}
+\edition{2. Auf\/lage}
+\publisherlogo{dg-mouton}
+\classification[Mathematics Subject Classification 2010]{35-02, 65-02, 65C30, 65C05, 65N35, 65N75, 65N80}
+\authorinfo{    Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.\\\vskip\baselineskip At solmen va esser necessi far uniform grammatica, pronunciation e plu commun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.}
+\copyrighttext{Copyright-Text}
+\openaccess
+\isbn{978-3-11-oooooo-o}
+\eisbnpdf{978-3-11-iiiiii-i}
+\eisbnepub{978-3-11-pppppp-p}
+\issn{0179-0986}
+\PCN{2018934806}
+% \eCIP{Names: Vogel-Heuser, Birgit, editor.\\
+% Title: Softwareagenten in der industrie 4.0 / Birgit Vogel-Heuser, editor.\\
+% Description: First edition. | Berlin/Boston : Walter de Gruyter GmbH, [2018]
+%    | Includes bibliographical references and index.\\
+% Identifiers: LCCN 2018010937 (print) | LCCN 2018013733 (ebook) | ISBN
+%    9783110527056 (pdf) | ISBN 9783110524451 (softcover : alk. paper) | ISBN
+%    9783110524581 (epub)\\
+% Subjects: LCSH: Operations research--Data processing. | Support services
+%    (Management)--Data processing. | Internet of things. | Artificial
+%    intelligence. | Raspberry Pi (Computer)\\
+% Classification: LCC T57.6 (ebook) | LCC T57.6 .S626 2018 (print) | DDC
+%    658.4/034--dc23\\
+% LC record available at \url{https://lccn.loc.gov/2018010937}}
+\copyrightyear{2020}
+\cover{Cover-Firma}
+\typesetter{le-tex publishing services GmbH, Leipzig}
+\printbind{Druckerei XYZ}
+
+\begin{advertisement}[Radon Series on Computational and Applied Mathematics]
+\otherpubl
+[DG_attention]
+[Volume 20]
+{Metrology and Theory of Measurement, 2013}
+{Valery A. Slaev, Anna G. Chunovkina, Leonid A. Mironovsky}
+{ISBN~978-3-11-028473-7, e-ISBN~978-3-11-028482-9, Set-ISBN~978-3-11-028483-6}
+
+\otherpubl
+[DG_attention]
+[Volume 19]
+{Wetting of Real Surfaces, 2013}
+{Edward A. Bormashenko}
+{ISBN~978-3-11-025853-0, e-ISBN~978-3-11-025879-0, Set-ISBN~978-3-11-220375-0}
+
+\otherpubl
+[DG_attention]
+[Volume 18]
+{Statistical Physics, 2012}
+{Michael V. Sadovskii}
+{ISBN~978-3-11-027031-0, e-ISBN~978-3-11-027037-2, Set-ISBN~978-3-11-027038-9}
+
+\otherpubl
+[DG_attention]
+[Volume 17]
+{Quantum Field Theory, 2013}
+{Michael V. Sadovskii}
+{ISBN~978-3-11-027029-7, e-ISBN~978-3-11-027035-8, Set-ISBN~978-3-11-027036-5}
+
+\otherpubl
+[DG_attention]
+[Volume 16]
+{Quantum Systems, Channels, Information, 2012}
+{Alexander S. Holevo}
+{ISBN~978-3-11-027325-0, e-ISBN~978-3-11-027340-3, Set-ISBN~978-3-11-027341-0}
+
+\otherpubl
+[DG_attention]
+[Volume 15]
+{Numerical Continuum Mechanics, 2012}
+{Vladimir N. Kukudzhanov}
+{ISBN~978-3-11-027322-9, e-ISBN~978-3-11-027338-0, Set-ISBN~978-3-11-027339-7}
+
+% \otherpubl
+% []
+% [Volume 14]
+% {Oleg N. Kirillov}
+% {Non-conservative Stability Problems of Modern Physics, 2013}
+% {ISBN~978-3-11-027034-1, e-ISBN~978-3-11-027043-3, Set-ISBN~978-3-11-027044-0}
+\end{advertisement}
+
+
+\maketitle
+
+\dedication{To my grandmother\\ Marie-Louise Vanwelckenhuysen}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Kapiteltitel}\label{gge}
+
+\DOI{DOI}
+
+\kurzerblindtext
+
+\section{Flattersatz}
+
+\begin{flushleft}
+  \kurzerblindtext
+\end{flushleft}
+
+\chapter*{Autoreninformationen}
+
+%\DOI{\bookDOI-fff}
+
+%\begin{multicols}{2}
+  \contributor
+    {Max Mustermann}
+    {Zentrum für Muster (ZfM)\\Christian-Albrechts-Universität zu Kiel\\ Boschstr.~1, 24118 Kiel 7, Deutschland}
+    {mmustermann@gis.uni-kiel.de}
+    {info}
+    {}
+  \contributor
+    {Max Mustermann}
+    {Zentrum für Muster (ZfM)\\Christian-Albrechts-Universität zu Kiel\\ Boschstr.~1, 24118 Kiel 7, Deutschland}
+    {mmustermann@gis.uni-kiel.de}
+    {info}
+    {Max Mustermann ...}
+  \vskip\baselineskip  
+  \contributor
+    {Max Mustermann}
+    {}%Zentrum für Geoinformation (ZfG)\\Christian-Albrechts-Universität zu Kiel\\ Boschstr.~1, 24118 Kiel 7, Deutschland}
+    {}%mmustermann@gis.uni-kiel.de}
+    {}%info}
+    {Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. }
+%\end{multicols}
+
+\mainmatter
+
+\partmotto{Hier der Test eines Partmottos. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. }
+
+\part{Nummerierter Testteil}
+
+\blindtext 
+
+
+\contribution
+
+  \contributionauthor[1]{Max Müller}
+  \contributionauthor[2]{Zwei Due}
+  \contributionauthor[3]{Drei Tre}
+  \contributionauthor[4]{Vier}
+  \contributionauthor[5]{Fünf}
+  %\contributionauthor[6]{Sechs}
+  %\contributionauthor[5]{Sieben}
+  \affil[1]{Institute of Marine Biology, National Taiwan Ocean University, 2 Pei-Ning Road Keelung 20224, Taiwan (R.O.C), e-mail: m.mueller@ntou.edu.tw}
+  \affil[2]{2}
+  \affil[3]{3}
+  \affil[4]{4}
+  \affil[5]{5}
+  %\affil[6]{6}
+  %\affil[7]{7}
+  %\runningauthor{Müller}
+  \contributiontitle{Ein Contributiontitle mit Controbutionnote\contributionnote{Hier die Contribution-Note}
+}\label{beitrag}
+  %\contributionsubtitle{Sub}
+%  \runningtitle{Was ist so anders am Neuroenhancement?}
+  % \contributionsubtitle{Pharmakologische und mentale Selbstveränderung im ethischen Vergleich}
+  \abstract{\kurzerblindtext}
+  \transabstract{dududu}
+  \keywords{Funktion, Überlieferung, Untersuchung, Hauptsache, Zeitraum, Darstellung, Inkrafttreten, Fassung}
+  \transkeywords{nanana}
+  \classification{65C05, 62M20, 93E11, 62F15, 86A22}
+  %\DOI{10.1515/futur-2012-0001}
+  \contributioncopyright[by-nc-nd]{2014}{Max Müller, published by De Gruyter.}{\hbox{This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 4.0 License.}}
+
+\makecontributiontitle
+
+\chapter{Schrifttests}
+
+\section{Unterschiedliche Schriftvarianten}
+
+\subsection{SFFamily}
+
+{\sffamily \blindtext $\log x \text{text}$ , ‘text’, ‚text‛, “text”, „text‟, aʻA, aʼA, aʽA, A̒A̓A̔A̕̕  }
+
+\subsection{Texttt}
+
+{\texttt{\blindtext}}
+
+\subsection{Textsc}
+
+{\textsc{\blindtext}}
+
+\subsection{Emph}
+
+\emph{\blindtext}
+
+\subsection{Textbf}
+
+\textbf{\blindtext}
+
+\section{Verschiedenes}
+
+
+
+\subsection{Test von unterschiedlichen Umgebungen}
+
+Aenean commodo \marginpar{Text in Randspalte} ligula eget dolor.  Aenean
+massa. \footnote{Hier eine Fußnote} Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Hier folgt der Test einer URL \href{http://www.nps.gov/maca/historyculture/physicianhealthyself.htm}{www.nps.gov/maca/historyculture/physicianhealthyself.htm}
+
+x\textendash y
+
+
+\contributioncopyright[by-nc-nd]{2014}{Max Müller, published by De Gruyter.}{This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License.}
+\DOI{10.1515/qua-2012-00X}
+
+\kurzerblindtext
+
+
+\lstinline|1111111111Inline Listing|
+
+\noindent
+\begin{lstlisting}
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+1111111111111Hier der Test eines Listings
+\end{lstlisting}
+
+\noindent
+\begin{lstlisting}[numbers=left]
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+1111111111111Hier der Test eines Listings mit Nummern
+\end{lstlisting}
+
+Zahlen im Text und danach im Mathemodus
+1234567890\\
+$1234567890$
+
+
+
+
+\begin{acknowledgement}
+ \kurzerblindtext
+\end{acknowledgement}
+
+\begin{funding}
+ \kurzerblindtext
+\end{funding}
+
+\begin{conflictofinterest}
+ \kurzerblindtext
+\end{conflictofinterest}
+
+\subsubsection{Legaltext}
+
+\begin{legaltext}
+  \kurzerblindtext
+\end{legaltext}
+
+
+
+\subsubsection{Quote und Quotation}
+
+\begin{quote}
+   \kurzerblindtext
+\end{quote}
+
+\begin{quotation}
+   \kurzerblindtext
+\end{quotation}
+
+
+
+
+\subsubsection{Notes}
+
+\paragraph{Note}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{note}
+  \kurzerblindtext
+\end{note}
+
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\paragraph{Note mit Symbol}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{note}[DG_notice]
+  \kurzerblindtext
+\end{note}
+
+\subsubsection{Mathematische Umgebungen}
+
+
+\begin{definition}[Hallo \textit{B}$B$]By a \textit{Pfaffian chain}, we mean a sequence of real analytic functions 
+\begin{equation*}
+f_1(x), f_2(x), \dots, f_r(x)
+\end{equation*}
+ defined on $\mathbb{R}^n$ which, for every $j=1,\dots,r$, satisfy a system of partial differential equations 
+\begin{equation*}
+ \frac{\partial f_j}{\partial x_k}= g_{kj}(x, f_1(x), \dots, f_j(x)),\ \ j=1,\dots,n, 
+\end{equation*}
+ with polynomials $g_{kj}$. \item For each Pfaffian chain, the integer~$r$ is called its \textit{length}, and the largest of the degrees of polynomials $g_{kj}$ is called its \textit{degree}.
+\item A function $f(x)$ is called \textit{Pfaffian} if it appears in a Pfaffian chain.
+\end{definition}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{theorem}[Theorem of $a$\textit{a}]\label{convergenzedeboliqo}
+  Let $f_n$ be a~sequence of functions and $f$ be a~function in
+  $L^p(\Omega), p>1$. Assume that
+  \begin{enumerate}
+  \item $f_n$ is bounded in $L^p(\Omega)$;
+  \item $f_n\to f$ a.e.\ in~$\Omega$.
+  \end{enumerate}
+  Then $f_n \to f$ in $L^q(\Omega)$, for every $q\in [1,p)$ and weakly
+  in $L^p(\Omega)$.
+\end{theorem}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{theorem}[Test Theorem Überschrift]\label{3T1} 
+Suppose  assumption \ref{convergenzedeboliqo} holds.\break  Then the viability  $P_T$ of system \eqref{2.1.3} can be estimated uniformly in $u(0)$ through  $\mathop{\text{Comp}}_N$, i.e., 
+\begin{equation*}
+ P_T(\Pi_{\mathcal{K}}, u(0))  < g(T, V, K_*, \bar \theta, r), 
+\end{equation*}
+ where a function~$g$ converges to $0$ as $T \to \infty$ for all fixed values $V, K_*, \bar \theta, r$ and $g$ is  monotone increasing in $V$. Moreover,  if $V, K_*, \bar \theta, r$ are fixed, survival probability $P_T \to 0 $ as $T \to \infty$.
+\end{theorem}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{lemma}\label{3L1}
+  Under condition \eqref{convergenzedeboliqo} one has
+  \begin{equation} \label {2.1.3}
+    P_{T, \delta, \eta}= \mathop{\textnormal{Prob}}\{\xi: \ \xi(t) \in V_{\eta,  \delta, 0, T} \ \text{for each} \ t  \in [0,T] \}> 0.
+  \end{equation}
+\end{lemma}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+\begin{proof}
+  Suppose $\eta(t)$ is a smooth function with the values in $\textbf{R}^p$ defined on $[t_1,t_2],\allowbreak
+  t_2 > t_1$. Let $V_{\eta, \delta, t_1, t_2}$ be a tubular neighborhood of the
+  trajectory~$\eta$:
+  \begin{equation}
+    V_{\eta, \delta, t_1, t_2}=\{ v: \  \text{there is} \  t \in [t_1, t_2] \ \text{such that} \ \ |v -\eta(t)| <\delta\}. \label{2.1.2}
+  \end{equation}
+  This lemma is an immediate consequence of Assumption \ref{convergenzedeboliqo}.
+\end{proof}
+
+
+
+\subsubsection{Listen}
+
+\begin{itemize}
+\item Aufzählung 
+\item Aufzählung
+\item Aufzählung Aufzählung Aufzählung Aufzählung
+\end{itemize}
+
+\begin{enumerate}
+\item Nummerierte Aufzählung 
+\item Nummerierte Aufzählung
+\item Nummerierte Aufzählung Nummerierte Aufzählung Nummerierte Aufzählung Nummerierte Aufzählung
+\end{enumerate}
+
+\begin{description}
+\item[Hallo $Hallo$] Beschreibungslisteneintrag
+\item[Hallo $Hallo$ gkaläf] Beschreibungslisteneintrag
+\item[Hallo $Hallo$ gkaläf] Beschreibungslisteneintrag
+\item[Hallo $Hallo$ gkaläf] Beschreibungslisteneintrag
+\end{description}
+
+
+Vortext\\
+Vortext
+\begin{itemize}
+\item geschachtelte Aufzählung:
+  \begin{itemize}
+  \item geschachtelte Aufzählung
+  \item geschachtelte Aufzählung
+  \end{itemize}
+\item geschachtelte Aufzählung
+\end{itemize}
+
+Enumerate geschachtelt
+\begin{enumerate}
+\item Enumerate geschachtelt\cite{Bourbaki1}
+\item Enumerate geschachtelt\cite{Bourbaki2}
+\begin{enumerate}
+\item Enumerate geschachtelt
+\item Enumerate geschachtelt
+\end{enumerate}
+\end{enumerate}
+
+
+\subsubsection{Gleichungen}
+
+\begin{equation}\label{eq:4.6}
+  L_{\text{b}} = \frac{\lambda}{\Delta n}\,. \underbrace{xdftgrr}_{12} \overbrace{dfrteer}^{45}
+  % \label{L_b}
+\end{equation}
+
+x\\
+lim\,sup\\
+%%{\fontfamily{minionmath}\selectfont lim\,sup}\\
+$\limsup x $
+
+
+$\Gamma\Delta$
+
+$\mathcal{A}$
+
+$\mathscr{A}$
+
+$\mathfrak{A} $%\betaup\betait\upbeta
+
+{\mathversion{bold}
+$\mathcal{A}$
+
+$\mathscr{A}$
+
+$\mathfrak{A} $%\betaup\betait\upbeta
+}
+
+\subsubsection{Zahlen in Text und Tabellen}
+
+Text\\
+  1111111\\
+  9999999\\
+Tabelle\\
+\begin{tabular}{ll}
+  1111111\\
+  9999999\\
+\end{tabular}
+
+
+
+\subsubsection{Zeilennummern}
+\linenumbers
+
+\noindent
+
+\kurzerblindtext
+
+\nolinenumbers
+
+\subsubsection{Randnummer}
+
+\noindent\recital{23}%
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+
+\subsubsection{Sub subsection}
+
+Sub subsection Text
+
+\paragraph{Paragraph}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+
+\section{Schachtelungen Abschnitt}
+
+\subsection{Schachtelungen Unterababschnitt}
+
+\subsubsection{Schachtelungen Unterunterababschnitt}
+
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+
+Ihre Funktion als Teil der literarischen Darstellung und Technik\footnote{Karl Auer: Übergreifende
+  Fragestellung zur besseren Darstellungsweise (1768, 295296)} enthält auch einen vollständigen
+textkritischen Apparat. Auch umfasst die Untersuchung in der Hauptsache\footnote{John Stewart Mill: Funktion als Teil der literarischen Darstellung (1768, 295296) um 1900 entwickelt Argumentationen für die anlaufenden und nicht mehr einsetzbaren Fragen.}\footnote{Zwei} den Zeitraum zwischen dem
+Inkrafttreten und der Darstellung in seiner heute geltenden Fassung.\footnote{Vgl. von unschätzbarem Wert war die Hilfsbereitschaft der Mitarbeiter und Ehemaligen.} Auch beim Konzept\footnote{Ernst Mayr: Übergreifende Fragestellung zur besseren Darstellungsweise (1768, 295296)} der
+ästhetischen Bildung von Wissen und dessen möglichst rasche und erfolgsorientierte Anwendung
+verspielen Einsichten und Gewinne ohne den Bezug auf die um 1900 entwickelten Argumentationen.
+
+\footnotetextA[1]{lehnt: borget K.}%
+\footnotetextA[3]{erweisen: versuchen K.}%
+\footnotetextA[6]{redest nicht anders: redest K.}%
+\footnotetextA[7]{bereits in einem un dem andern bey Erfahrung in die Schule gegabgeb wärest: in der Schule der Erfahrung kein Jüngling mehr seyn möchtest K.}%
+\footnotetextA[10]{würde: solte K.}%
+\footnotetextA[11]{beyzutragen wissen: beytragen können K.}%
+\footnotetextA[15]{Treue: Tugend K.}%
+\footnotetextA[20]{unterfangen: wagen K.}%
+\footnotetextA[21]{so weit: so K.}%
+\footnotetextA[23]{gehabt: gedultet K.}%
+\footnotetextA[29]{Ja ich: Ich K.}%
+\footnotetextA[31]{machen dürffen: ausführen will K.}%
+
+Auch umfasst die Untersuchung in der Hauptsache den Zeitraum zwischen dem Inkrafttreten und der
+Darstellung. Ihre Funktion als Teil der literarischen Darstellung und narrativen Technik enthält
+auch einen vollständigen. Auch umfasst die Untersuchung in der Hauptsache den Zeitraum zwischen dem
+Inkrafttreten und der Darstellung in seiner heute geltenden Fassung. Ihre Funktion als Teil der
+literarischen Darstellung und narrativen Technik enthält auch einen vollKommentierung stütze ich
+mich weitgehend.
+
+\newpage
+
+\noindent
+Diese umfasst die Untersuchung in der Hauptsache den Zeitraum zwischen dem Inkrafttreten und der
+Darstellung in seiner heute geltenden Fassung.
+
+\begin{figure}[t]
+\leavevmode\textcolor[gray]{0.9}{\vrule width0.75\hsize height6\baselineskip depth0pt}
+\caption[Von unschätzbarem Wert]{Von unschätzbarem Wert war die Hilfsbereitschaft der Mitarbeiter und ehemaligen Kollegen
+  des Lehrgebiets; abgesehen von dem knapp gehaltenen Exkurs in die Zeit des gemeinen Rechts, steht
+  die Analyse der Texte in ihrer überlieferten Form im Vordergrund. $x+y=2\sqrt{5}\int x^2{d}x$}\label{fig:1}
+\end{figure}
+
+\begin{figure}
+  Objekt\vrule height0.7\baselineskip
+  \caption[lorem. Maecenas nec odio et ante tincidunt tempus.]{lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc}
+\end{figure}
+
+
+\begin{SCfigure} %[h]
+\leavevmode\textcolor[gray]{0.9}{\vrule width0.5\hsize height6\baselineskip depth0pt}
+\caption[Von unschätzbarem Wert]{Von unschätzbarem Wert war die Hilfsbereitschaft der Mitarbeiter und ehemaligen Kollegen.}\label{fig:2}
+\end{SCfigure}
+
+\noindent
+Auch beim Konzept der ästhetischen Bildung von Wissen und dessen möglichst rasche und
+erfolgsorientierte Anwendung verspielen Einsichten und Gewinne ohne den Bezug auf die um 1900
+entwickelten Argumentationen. \ref{fig:1}
+
+\newpage
+
+\begin{SCtable} %[t!]
+  \caption{Narrative Technik, Differenzierung, Textkritischer Apparat und ästhetische Bildung.}
+
+{\baretabulars
+\Tree [.CP [.{\sc Spec}(CP) {which car} ] {\ldots} ]
+}
+
+
+\begin{tabular}{lD{.}{,}{2}}
+  1111111 & x.y\\\midrule
+  \cellcolor{red}{9999999}\\
+  9999999\\\cmidrule{1-1}
+  9999999\\
+  9999999\\
+  $9999999$\\
+  $1111111$\\
+\end{tabular}
+
+\baretabulars
+\begin{tabular}{ll}
+  1111111\\\midrule
+  \cellcolor{red}{9999999}\\
+  9999999\\\cmidrule{1-1}
+  9999999\\
+  9999999\\
+\end{tabular}
+
+\layouttabulars
+\begin{tabular}{ll}
+  1111111\\\midrule
+  9999999\\
+  9999999\\\cmidrule{1-1}
+  9999999\\
+  9999999\\
+\end{tabular}
+\end{SCtable}
+
+
+\bgroup
+\captionsetup[table]{position=below}
+\begin{table}[!ht]
+\begin{tabularx}{\hsize}{Xcc<{\hskip2\tabcolsep}>{\hskip2\tabcolsep}cc<{\hskip2\tabcolsep}>{\hskip2\tabcolsep}ccc}
+&\multicolumn{2}{c}{(rvoc):{[r]}}&\multicolumn{2}{c}{(l):[V]}&\multicolumn{2}{c}{(t):[\textipa{P}]}\\
+    & Read S & Spont S & Read S & Spont S & Read S & Spont S                \\
+\midrule
+MCO & 88.21  & 93.17   & 13.69  & 0.10    &  0.73  & \multirow{2}{*}{56.56} \\
+MCY & 81.41  & 91.21   & 13.94  & 0.00    &  4.65  &  &                     \\
+WCO & 62.91  & 72.23   & 12.05  & 0.42    &  6.91  & \multirow{2}{*}{92.47} \\
+WCY & 17.56  & 13.98   & 47.13  & 8.83    & 76.32  &  &                     \\
+\end{tabularx}
+\caption{Style shifting examples in the 1997 corpus ((rV) RS $n=1103$, SS $n=8170$; (l) RS $n=656$, SS $n=3420$; (t) RS $n=1212$, SS $n=2385$)}
+\label{6t55}
+\end{table}
+\egroup
+
+\begin{table}[!ht]
+\caption{Style shifting examples in the 1997 corpus ((rV) RS $n=1103$, SS $n=8170$; (l) RS $n=656$, SS $n=3420$; (t) RS $n=1212$, SS $n=2385$)}
+\label{6t56}
+\begin{tabularx}{\hsize}{Xcc<{\hskip2\tabcolsep}>{\hskip2\tabcolsep}cc<{\hskip2\tabcolsep}>{\hskip2\tabcolsep}ccc}
+&\multicolumn{2}{c}{(rvoc):{[r]}}&\multicolumn{2}{c}{(l):[V]}&\multicolumn{2}{c}{(t):[\textipa{P}]}\\
+    & Read S & Spont S & Read S & Spont S & Read S & Spont S                \\
+\midrule
+MCO & 88.21  & 93.17   & 13.69  & 0.10    &  0.73  & \multirow{2}{*}{56.56} \\
+MCY & 81.41  & 91.21   & 13.94  & 0.00    &  4.65  &  &                     \\
+WCO & 62.91  & 72.23   & 12.05  & 0.42    &  6.91  & \multirow{2}{*}{92.47} \\
+WCY & 17.56  & 13.98   & 47.13  & 8.83    & 76.32  &  &                     \\
+\end{tabularx}
+\end{table}
+
+\begin{table}[!ht]
+\caption{Style shifting examples in the 1997 corpus ((rV) RS $n=1103$, SS $n=8170$; (l) RS $n=656$, SS $n=3420$; (t) RS $n=1212$, SS $n=2385$)}
+\label{6t56}
+\begin{tabularx}{\hsize}{Xccccccc}
+&\multicolumn{2}{c}{(rvoc):{[r]}}&\multicolumn{2}{c}{(l):[V]}&\multicolumn{2}{c}{(t):[\textipa{P}]}\\
+    & Read S & Spont S & Read S & Spont S & Read S & Spont S                \\
+\midrule
+\begin{enumerate}
+\item 4444
+\end{enumerate}ddd
+ & 88.21  & 93.17   & 13.69  & 0.10    &  0.73  & \multirow{2}{*}{56.56} \\
+MCY & 81.41  & 91.21   & 13.94  & 0.00    &  4.65  &  &                     \\
+WCO & 62.91  & 72.23   & 12.05  & 0.42    &  6.91  & \multirow{2}{*}{92.47} \\
+WCY & 17.56  & 13.98   & 47.13  & 8.83    & 76.32  &  &                     \\
+\begin{itemize}
+\item eins
+\item zwei
+\item drei erfolgsorientierte Anwendung verspielen Einsichten und Gewinne ohne den Bezug auf die um 1900\vskip-\baselineskip
+\end{itemize}
+ & 17.56  & 13.98   & 47.13  & 8.83    & 76.32  &  &                     \\
+WCY & 17.56  & 13.98   & 47.13  & 8.83    & 76.32  &  &                     \\
+\end{tabularx}
+\end{table}
+
+
+
+
+
+
+\kurzerblindtext
+
+\contributionnote{End contrib note Konzept der ästhetischen Bildung von Wissen und dessen möglichst rasche und erfolgsorientierte Anwendung verspielen Einsichten und Gewinne ohne den Bezug auf die um 1900 entwickelten Argumentationen. Auch umfasst die Untersuchung in der Hauptsache den Zeitraum zwischen dem Inkrafttreten und der Da}
+
+
+
+\chapter{Kapitel nummeriert}
+Donec vitae sapien ut libero
+
+\section{Abschnitt}
+Donec vitae sapien ut libero
+
+\subsection{Subsection-Abschnitt}
+Donec vitae sapien ut libero
+
+\subsubsection{SubSubsection-Abschnitt}
+Donec vitae sapien ut libero
+
+\paragraph{Paragraph-Abschnitt}
+Donec vitae sapien ut libero
+
+\subparagraph{Subparagraph-Abschnitt}
+Donec vitae sapien ut libero
+
+Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+
+
+
+\recital{1}In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+
+\recital{2}In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+
+
+
+
+\index{ARegistereintrag} 
+\index{ARegistereintr\"agg} ARegistereintr\"agg
+\index{ARegistereintr\"aggbabel} ARegistereintr"aggbabel
+\index{ARegistereintraggg} 
+\index{ARegistereintragggg} 
+\index{Registereintrag} 
+\index{Registereintrag Registereintrag Registereintrag Registereintrag Registereintrag } 
+\index{Registereintrag!Untereintrag Untereintrag Untereintrag Untereintrag} 
+\index{Registereintrag!Untereintrag Untereintrag Untereintrag Untereintrag!Unteruntereintrag} 
+\index{BRegistereintrag} 
+\index{CRegistereintrag} 
+
+\chapter{Unicode Test}
+
+\section{Serif}
+
+\subsection{Fehlende Zeichen}
+← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ∂ ∅ ∆ ∏ ∑ − ∕ ∙ √ ∞ ∫ ∼ ≈ ≠ ≤ ≥ ⋅ ⌈ ⌉ ⌊ ⌋ 〈 〉 ⏑ ⏒ ⏓ ⏔ ⏕ ⏖ ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏ ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟ ␠ ␡ ␢ ␣ ␤ ␥ ␦ ■ □ ▴ ▸ ▾ ◂ ◊ ○ ● ♾ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ꟣                                                                                                                                                                                                                                                                                  
+
+\subsection{Diakritische Zeichen}
+
+basser uͤben mitt den werck der cluͦgen wortten, ouch vorbet der ritterschaft geuͤbett sind
+
+aͣaͤaͥaͦaͧaͨaͩaͪaͫaͬaͭaͮaͯ
+
+\subsection{Private Use Area}
+
+                                                                                                                                                                                                                                                                                 
+
+\newpage
+
+\section{Sans}
+
+\subsection{Fehlende Zeichen}
+
+{\sffamily ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ∂ ∅ ∆ ∏ ∑ − ∕ ∙ √ ∞ ∫ ∼ ≈ ≠ ≤ ≥ ⋅ ⌈ ⌉ ⌊ ⌋ 〈 〉 ⏑ ⏒ ⏓ ⏔ ⏕ ⏖ ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏ ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟ ␠ ␡ ␢ ␣ ␤ ␥ ␦ ■ □ ▴ ▸ ▾ ◂ ◊ ○ ● ♾ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ꟣                                                                                                                                                                                                                                                                                  }
+
+\subsection{Diakritische Zeichen}
+
+{\sffamily basser uͤben mitt den werck der cluͦgen wortten, ouch vorbet der ritterschaft geuͤbett sind
+
+aͣaͤaͥaͦaͧaͨaͩaͪaͫaͬaͭaͮaͯ ͣ }
+
+\subsection{Private Use Area}
+
+{\sffamily                                                                                                                                                                                                                                                                                  }
+
+
+\backmatter
+
+\begin{thebibliography}{99}%\DOI{ggg}
+\bibitem[K\"othe(1960)]{Kothe} G. K\"othe, \emph{Topologische Lineare R\"aume}, Springer-Verlag, Berlin  (1960).
+\bibitem[Schwartz(1965)]{Schwartz1} L. Schwartz, \emph{M\'ethodes Math\'ematiques pour les Sciences Physiques}, Hermann, Paris (1965).
+\bibitem[Schwartz(1978)]{Schwartz2} L. Schwartz, \emph{Th\'eorie des Distributions}, nouvelle \'edition, Hermann, Paris (1978).
+\bibitem[Stein and Weiss(1971)]{Stein-Weiss}  E.M. Stein and G. Weiss, \emph{Introduction to Fourier Analysis on Euclidean Spaces}, Princeton University Press, Princeton (1971).
+\bibitem[Taylor and Lay(1980)]{Taylor} A.E. Taylor and D.C. Lay, \emph{Introduction to Functional Analysis}, second edition, John Wiley and Sons, New York (1980).
+\bibitem[Thomas(2000)]{Thomas} E.G.F. Thomas, \emph{Path distributions on sequence spaces}, preprint (2000).
+\bibitem[Titchnarsh(1937)]{Titchmarsh}E.C. Titchnarsh, \emph{Theory of Fourier Integrals}, Oxford University Press, Oxford (1937).
+\bibitem[Tr\`eves(1967)]{Treves} F. Tr\`eves, \emph{Topological Vector Spaces, Distributions and Kernels}, Academic Press, New York (1967).
+\bibitem[Whittaker and Watson(1980)]{Whittaker-Watson} E.T. Whittaker and G.N. Watson, \emph{A Course of Modern Analysis}, Cambridge University Press, Cambridge (1980). 
+\bibitem[Widder(1941)]{Widder} D. Widder, \emph{The Laplace Transform}, Princeton University Press, Princeton (1941).
+\end{thebibliography}
+
+\def\indexpreamble{Auch umfasst die Untersuchung in der Hauptsache den Zeitraum zwischen dem
+  Inkrafttreten und der Darstellung in seiner heute geltenden Fassung. Ihre Funktion als Teil der
+  literarischen Darstellung und narrativen Technik enthält auch einen vollständigen textkritischen
+  Apparat und ein Verzeichnis der Stellen.}  
+
+\printindex
+
+\makeadvertisement
+\end{document}
