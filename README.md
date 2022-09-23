@@ -14,15 +14,15 @@ The characters included in our fonts come from the following Unicode blocks:
 - General Punctuation
 - Geometric Shapes / Arrows
 
-![Graphic showing a preview of all De Gruyter fonts listed in this repository]assets/images/font-preview.png
+![Graphic showing a preview of all De Gruyter fonts listed in this repository](/assets/images/font-preview.png)
 
 For scripts beyond the Latin, Greek, and Cyrillic alphabets additional fonts must be used.
-For mathematical or logical operators the additional font [De Gruyter Sans Math](fonts/De-Gruyter-Sans-Math-Regular.otf) can be used (only in Regular style).
+For mathematical or logical operators the additional font [De Gruyter Sans Math](/fonts/De-Gruyter-Sans-Math-Regular.otf) can be used (only in Regular style).
 
 ## This repository
 This GitLab repository provides: 
-1. The De Gruyter Fonts De Gruyter Sans, De Gruyter Serif, De Gruyter Sans Math, De Gruyter Icons. see [Fonts](fonts)
-2. The Source Code to re-create the De Gruyter font from Google's Noto SemiCondensed. see [Scripts](scripts)
+1. The De Gruyter Fonts De Gruyter Sans, De Gruyter Serif, De Gruyter Sans Math, De Gruyter Icons. see [Fonts](/fonts)
+2. The Source Code to re-create the De Gruyter font from Google's Noto SemiCondensed. see [Scripts](/scripts)
 
 ## Support
 For any questions or queries please contact standards [at] degruyter [dot] com.
