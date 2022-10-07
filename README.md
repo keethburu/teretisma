@@ -21,7 +21,7 @@ For scripts beyond the Latin, Greek, and Cyrillic alphabets additional fonts mus
 For mathematical or logical operators the additional font [De Gruyter Sans Math](/fonts/De-Gruyter-Sans-Math-Regular.otf) can be used (only in Regular style).
 
 ## Font Download
-[All Fonts zipped](/fonts/de_gruyter-sans_serif_icons.zip)
+[All Fonts zipped](https://gitlab.com/degruyter-public/font/de-gruyter-sans_serif/-/raw/main/fonts/de_gruyter-sans_serif_icons.zip)
 
 ## This repository
 This GitLab repository provides: 
