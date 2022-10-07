@@ -20,6 +20,9 @@ The characters included in our fonts come from the following Unicode blocks:
 For scripts beyond the Latin, Greek, and Cyrillic alphabets additional fonts must be used.
 For mathematical or logical operators the additional font [De Gruyter Sans Math](/fonts/De-Gruyter-Sans-Math-Regular.otf) can be used (only in Regular style).
 
+## Font Download
+[All Fonts zipped](/fonts/de_gruyter-sans_serif_icons.zip)
+
 ## This repository
 This GitLab repository provides: 
 1. The De Gruyter Fonts De Gruyter Sans, De Gruyter Serif, De Gruyter Sans Math, De Gruyter Icons. see [Fonts](/fonts)
