@@ -1,0 +1,24 @@
+The MinionMath fonts are re-installed according to the requirements for
+DeGruyter. For formulas, DeGruyter wants as many as possible characters
+from the De-Gryuter-Serif and DeGruyter-Sans fonts, comprising Greek
+variable symbols.
+
+For the rest, DeGruyter wants the MinionMath fonts to be used.
+For MinionMath fonts, see www.typoma.de.
+
+For the following, it is presupposed that the De-Gryuter-Serif,
+the De-Gruyter-Sans fonts, and the minionmath package are installed.
+
+The idea is to reconstruct the minionmath's OML- and MC-encoded fonts,
+but with all the required substitutions from De-Gruyter-Serif and
+De-Gruyter-Sans.
+
+MinionMath provides optical sizes, but De-Gruyter(Serif|Sans) does not.
+So, the new fonts lack in this feature partially.
+
+For installation details see mmathdeg.sh and
+mmathdeg-drv.tex.
+
+Access is via mmathdeg.sty.
+
+2022-May-24, giovanni

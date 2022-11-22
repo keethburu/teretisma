@@ -1,0 +1,63 @@
+           The DeGruyterSans package
+Using the DeGruyterSans font under LaTeX's NFSS
+
+
+File:       README
+Author:     giovanni, le-tex publishing services
+
+
+DESCRIPTION
+===========
+
+This package provides an installation of the DeGruyterSans
+opentype font for LaTeX/NFSS.
+
+Note that the source font files are derived from the Noto
+SemiCondensed fonts for the inner book “De Gruyter house style”.
+
+Copyright:  (C) 2022 le-tex publishing services
+
+
+FILES IN DISTRIBUTION
+=====================
+
+   BASE DISTRIBUTION:
+
+      README                  This file.
+      Many font files
+      DeGruyterSans.sty       The file to use the font in a LaTeX document.
+
+   DOCUMENTATION:
+
+      DeGruyterSans.pdf       User manual for the DeGruyterSans package.
+
+
+BASIC INSTALLATION
+====================
+
+   The package ZIP file is structered to be unzipped into
+   the $TEXMFLOCAL directory of a TeXLive installation.
+
+   After unzipping the package add the following line to 
+   $TEXMFLOCAL/web2c/updmap.cfg:
+   Map DeGruyterSans.map
+
+   Run mktexlsr.
+   Run updmap-sys.
+
+   For distributions other than TeXLive similar steps are required.
+
+   For example, to install the packaage under MiKTeX 2.X:
+   -- Copy fonts/ and tex/ and doc/ 
+      to $MIKTEXHOME/ (e.g. C:\Program Files\MikTeX 2.x\) 
+   -- Open cmd.exe 
+      -- Run
+           initexmf --admin -u
+      -- Run
+           initexmf --admin --edit-config-file updmap
+         That will open an editor.
+         Into that file insert the following line:
+          Map DeGruyterSans.map
+         Save and close the file.
+      -- Finally, run
+           initexmf --mkmaps

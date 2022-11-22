@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_j3acxskg2hxyfqnenv5wz3qssf
+% Encoding created by otftotfm on Thu Jun  2 09:05:15 2022
+% Command line follows encoding
+/AutoEnc_j3acxskg2hxyfqnenv5wz3qssf [
+%00
+  /zero.tf /one.tf /two.tf /three.tf /four.tf /five.tf /six.tf /seven.tf
+  /eight.tf /nine.tf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /zero.tf /one.tf /two.tf /three.tf /four.tf /five.tf /six.tf /seven.tf
+  /eight.tf /nine.tf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /zero.tosf /one.tosf /two.tosf /three.tosf /four.tosf /five.tosf /six.tosf /seven.tosf
+  /eight.tosf /nine.tosf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%30
+  /uni2070 /uni00B9 /uni00B2 /uni00B3 /uni2074 /uni2075 /uni2076 /uni2077
+  /uni2078 /uni2079 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%40
+  /uni2080 /uni2081 /uni2082 /uni2083 /uni2084 /uni2085 /uni2086 /uni2087
+  /uni2088 /uni2089 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /zero.numr /one.numr /two.numr /three.numr /four.numr /five.numr /six.numr /seven.numr
+  /eight.numr /nine.numr /.notdef /.notdef /.notdef /.notdef /.notdef /fraction
+%60
+  /zero.dnom /one.dnom /two.dnom /three.dnom /four.dnom /five.dnom /six.dnom /seven.dnom
+  /eight.dnom /nine.dnom /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /zero.tosf /one.tosf /two.tosf /three.tosf /four.tosf /five.tosf /six.tosf /seven.tosf
+  /eight.tosf /nine.tosf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /arrowleft /arrowright /arrowleft /arrowright /arrowleft
+  /arrowright /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /filledbox /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /f_f_l /f_f_i /f_f /fl /l /fi /i /f
+] def
+% Command line: 'otftotfm --automatic --encoding=U --tfm-directory=.
+% --vf-directory=. --type1-directory=. --encoding-directory=.
+% --map-file=./DeGruyterSerif.map --no-updmap --force --feature=kern
+% --feature=liga --feature=lnum --feature=pnum --ligkern=f i =: fi
+% --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
+% l =: ffl De-Gruyter-Serif-Regular.otf De-Gruyter-Serif-Regular-lf-u'

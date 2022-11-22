@@ -1,0 +1,60 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_sz2o4rwgpgsftv2bbruluvkw4a
+% Encoding created by otftotfm on Thu Jun  2 09:04:30 2022
+% Command line follows encoding
+/AutoEnc_sz2o4rwgpgsftv2bbruluvkw4a [
+%00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni02D7 /arrowdown
+  /.notdef /uni0362 /.notdef /space /uni034D /.notdef /.notdef /.notdef
+%10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /uni1D90 /.notdef /uniA735 /uniA72D /uni0297 /.notdef /.notdef /.notdef
+  /.notdef /uni0238 /uni1D92 /uni1D93 /gamma /.notdef /.notdef /.notdef
+%30
+  /uniA727 /uni027F /.notdef /uni0284 /.notdef /.notdef /uni019E /.notdef
+  /.notdef /uni0298 /uni1D97 /.notdef /.notdef /uni0239 /uni01AA /.notdef
+%40
+  /.notdef /.notdef /uni01BA /.notdef /.notdef /.notdef /.notdef /uni01C1
+  /uni01C2 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /thorn /thorn /thorn /thorn /uni0294 /uni0294 /uni0294 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /.notdef /.notdef /delta /uniA730 /uni1D0B /.notdef /.notdef /uni1D0D
+  /uni1D18 /q /uni1D19 /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ts3
+% --tfm-directory=. --vf-directory=. --type1-directory=.
+% --encoding-directory=. --map-file=./DeGruyterSerif.map --no-updmap --force
+% --coding-scheme=TEX IPA SYMBOL ENCODING --feature=onum --feature=tnum
+% De-Gruyter-Serif-Regular.otf De-Gruyter-Serif-Regular-tosf-ts3'
