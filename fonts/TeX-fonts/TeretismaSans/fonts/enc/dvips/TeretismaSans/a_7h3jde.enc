@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_7h3jdess2qdmgb2xwhrp3bgj5d
-% Encoding created by otftotfm on Thu Jun  2 09:14:14 2022
+% Encoding created by otftotfm on Sun Nov  8 17:56:43 2026
 % Command line follows encoding
 /AutoEnc_7h3jdess2qdmgb2xwhrp3bgj5d [
 %00
@@ -57,5 +57,4 @@
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSans.map --no-updmap --force
 % --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1 --feature=onum
-% --feature=tnum Teretisma-Sans-Regular.otf
-% Teretisma-Sans-Regular-tlf-ts1'
+% --feature=tnum Teretisma-Sans-Regular.otf Teretisma-Sans-Regular-tosf-ts1'

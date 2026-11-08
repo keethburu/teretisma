@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_vjrljpxn4agvx77fg7dg5rgofh
-% Encoding created by otftotfm on Thu Jun  2 09:14:06 2022
+% Encoding created by otftotfm on Sun Nov  8 17:56:51 2026
 % Command line follows encoding
 /AutoEnc_vjrljpxn4agvx77fg7dg5rgofh [
 %00
@@ -56,6 +56,6 @@
 % Command line: 'otftotfm --automatic --encoding=T5 --tfm-directory=.
 % --vf-directory=. --type1-directory=. --encoding-directory=.
 % --map-file=./TeretismaSans.map --no-updmap --force --feature=kern
-% --feature=liga --feature=lnum --feature=tnum --ligkern=f i =: fi
+% --feature=liga --feature=lnum --feature=pnum --ligkern=f i =: fi
 % --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
-% l =: ffl Teretisma-Sans-Regular.otf Teretisma-Sans-Regular-tlf-t5'
+% l =: ffl Teretisma-Sans-Regular.otf Teretisma-Sans-Regular-lf-t5'

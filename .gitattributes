@@ -6,3 +6,6 @@
 *.pdf binary
 *.zip binary
 *.png binary
+
+# Keep upstream license files byte-for-byte, including original whitespace.
+licenses/upstream/* whitespace=-blank-at-eol

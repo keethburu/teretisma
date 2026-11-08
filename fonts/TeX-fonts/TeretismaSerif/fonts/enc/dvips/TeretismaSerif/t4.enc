@@ -1,0 +1,295 @@
+% Encoding file for otftotfm
+%
+% Encoding for African language fonts
+% Based on fc.rme (fromnt the fc fonts package), Appendix D: T4-to-UCS correspondence
+%
+/otftotfmT4Encoding [
+% 0
+/grave
+/acute
+/circumflex
+/tilde
+/dieresis
+/hungarumlaut
+/ring
+/caron
+% 8
+/breve
+/macron
+/dotaccent
+/cedilla
+/ogonek
+/quotesinglbase
+/guilsinglleft
+/guilsinglright
+% 16
+/quotedblleft
+/quotedblright
+/quotedblbase
+/guillemotleft
+/guillemotright
+/endash
+/emdash
+/cwm
+% 24
+/perthousandzero
+/dotlessi
+/dotlessj
+/ff
+/fi
+/fl
+/ffi
+/ffl
+% 32
+/visualspace
+/exclam
+/quotedbl
+/numbersign
+/dollar
+/percent
+/ampersand
+/quoteright
+% 40
+/parenleft
+/parenright
+/asterisk
+/plus
+/comma
+/hyphen
+/period
+/slash
+% 48
+/zero
+/one
+/two
+/three
+/four
+/five
+/six
+/seven
+% 56
+/eight
+/nine
+/colon
+/semicolon
+/less
+/equal
+/greater
+/question
+% 64
+/at
+/A
+/B
+/C
+/D
+/E
+/F
+/G
+% 72
+/H
+/I
+/J
+/K
+/L
+/M
+/N
+/O
+% 80
+/P
+/Q
+/R
+/S
+/T
+/U
+/V
+/W
+% 88
+/X
+/Y
+/Z
+/bracketleft
+/backslash
+/bracketright
+/asciicircum
+/underscore
+% 96
+/quoteleft
+/a
+/b
+/c
+/d
+/e
+/f
+/g
+% 104
+/h
+/i
+/j
+/k
+/l
+/m
+/n
+/o
+% 112
+/p
+/q
+/r
+/s
+/t
+/u
+/v
+/w
+% 120
+/x
+/y
+/z
+/braceleft
+/bar
+/braceright
+/asciitilde
+/softhyphen %from /hyphenchar (giovanni)
+% 128, 20x
+/uni0181   %\m B
+/uni018A   %\m D
+/uni0190   %\m E
+/uni018E   %\M E
+/uni0191   %\m F
+/uni011A   %\v E
+/uni0194   %\m G
+/uni0126   %\B H
+% 136, 21x
+/uni0198   %\m K
+/uni019D   %\m J
+/uni0186   %\m O
+/uni0143   %\'N   %from /uni0134 (giovanni)
+/uni01A9   %\m S
+/uni014A   %\NG{}
+/uni01B2   %\m U
+/uni01B3   %\m Y
+% 144, 22x
+/uni0187   %\m C
+/uni01A4   %\m P
+/uni0160   %\v S
+/uni1E44   %\.N
+/uni1E48   %\b N
+/uni1E62   %\d S
+/uni01B7   %\m Z  %from /uni0167 (giovanni)
+/uni0166   %\B T
+% 152, 23x
+/uni0116   %\.E   %from /uni0166 (giovanni)
+/uni1EB8   %\d E
+/uni01AC   %\m T
+/uni01AE   %\M T
+/uni02A7   %\tsh{}
+/f_j       %fj
+/uni0111   %\dj{}
+/uni030F   %\G{}
+% 160, 24x
+/uni0253   %\m b
+/uni0257   %\m d
+/uni025B   %\m e  %from /uni0258 (giovanni)
+/uni01DD   %\M e
+/uni0192   %\m f
+/uni011B   %\v e
+/uni0263   %\m g
+/uni0127   %\B h
+% 168, 25x
+/uni0199   %\m k
+/uni0272   %\m j
+/uni0254   %\m o
+/uni0144   %\'n
+/uni0283   %\m s  %from /uni03A3 (giovanni)
+/uni014B   %\ng{} %from /uni028B (giovanni)
+/uni028B   %\m u  %from /uni014B (giovanni)
+/uni01B4   %\m y
+% 176, 26x
+/uni0188   %\m c
+/uni01A5   %\m p
+/uni0161   %\v s
+/uni1E45   %\.n
+/uni1E49   %\b n
+/uni1E63   %\d s
+/uni0292   %\m z
+/uni0167   %\B t
+% 184, 27x
+/uni0117   %\.e
+/uni1EB9   %\d e
+/uni01AD   %\m t
+/uni0288   %\M t
+/uni030E   %\U{}
+/uni00A1   %\textexclamdown{}
+/uni00BF   %\textquestiondown{}
+/uni030D   %\I{}
+% 192, 30x
+/uni0196   %\m I
+/uni1ECA   %\d I
+/.notdef   %\~{\m E}  %from /uni0190,/uni0303 (giovanni)
+/uni00C3   %\~A
+/uni1E3E   %\'M
+/.notdef   %\~{\m O}  %from /uni0186,/uni0303 (giovanni)
+/uni00C6   %\AE{}
+/uni00C7   %\c C
+% 200, 31x
+/uni00C8   %\^E
+/uni00C9   %\'E
+/uni00CA   %\^E
+/uni00CB   %\"E
+/.notdef   %\b E      %from /uni0045,/uni0331 (giovanni)
+/uni0112   %\=E
+/uni1EBC   %\~E
+/uni0128   %\~I
+% 208, 32x
+/uni0189   %\M D
+/uni00D1   %\~N
+/uni00D2   %\NG{}
+/uni022E   %\.O
+/uni00D4   %\^O
+/uni00D5   %\~O
+/uni00D6   %\"O
+/uni0152   %\OE{}
+% 216, 33x
+/uni00D8   %\O{}
+/uni1ECC   %\d O
+/.notdef   %\b O      %from /uni004F,/uni0331 (giovanni)
+/uni014C   %\=O
+/uni01D1   %\v O
+/uni1EE4   %\d U
+/uni0168   %\~U
+/uni0337   %{\fontencoding[T4]\selectfont \char223 }
+% 224, 34x
+/uni0269   %\m i
+/uni1ECB   %\d i
+/.notdef   %\~{\m e}w  %from /uni0258,/uni0303 (giovanni)
+/uni00E3   %\~a
+/uni1E3F   %\'m
+/.notdef   %\~{\m o}  %from /uni0254,/uni0303 (giovanni)
+/uni00E6   %\ae{}
+/uni00E7   %\c c
+% 232, 35x
+/uni00E8   %\^e
+/uni00E9   %\'e
+/uni00EA   %\^e
+/uni00EB   %\"e
+/.notdef   %\b e       %from /uni0065,/uni0331 (giovanni)
+/uni0113   %\=e
+/uni1EBD   %\~e
+/uni0129   %\~\i
+% 240, 36x
+/uni0256   %\M d
+/uni00F1   %\~n
+/uni00F2   %\ng{}
+/uni022F   %\.o
+/uni00F4   %\^o
+/uni00F5   %\~o
+/uni00F6   %\"o
+/uni0153   %\oe{}
+% 248, 37x
+/uni00F8   %\o{}
+/uni1ECD   %\d o
+/.notdef   %\b o        %from /uni006F,/uni0331 (giovanni)
+/uni014D   %\=o
+/uni01D2   %\v o
+/uni1EE5   %\.u
+/uni0169   %\~u
+/uni00DF   %\ss{}
+] def

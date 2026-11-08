@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_v6vfavqofnbnzg6tjoz46hp62f
-% Encoding created by otftotfm on Thu Jun  2 09:04:40 2022
+% Encoding created by otftotfm on Sun Nov  8 17:57:38 2026
 % Command line follows encoding
 /AutoEnc_v6vfavqofnbnzg6tjoz46hp62f [
 %00
@@ -56,7 +56,7 @@
 % Command line: 'otftotfm --automatic --encoding=fontools_ot1
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSerif.map --no-updmap --force
-% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=lnum
-% --feature=tnum --ligkern=f i =: fi --ligkern=f l =: fl --ligkern=f f =: ff
-% --ligkern=ff i =: ffi --ligkern=ff l =: ffl Teretisma-Serif-Regular.otf
+% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=tnum
+% --ligkern=f i =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i
+% =: ffi --ligkern=ff l =: ffl Teretisma-Serif-Regular.otf
 % Teretisma-Serif-Regular-tlf-ot1'

@@ -1,0 +1,304 @@
+% A version of the T2C encoding, intended for use with otftotfm.
+% CODINGSCHEME TEX CYRILLIC FONT ENCODING - T2C
+/otftotfmT2CEncoding [
+% 0x00
+/grave
+/acute
+/circumflex
+/tilde
+/dieresis
+/hungarumlaut
+/ring
+/caron
+% 0x08
+/breve
+/macron
+/dotaccent
+/cedilla
+/ogonek
+/uni04C0
+/angleleft
+/angleright
+% 0x10
+/quotedblleft
+/quotedblright
+/cyrflex
+/dblgrave
+/cyrbreve
+/endash
+/emdash
+/.notdef
+% 0x10
+/perthousandzero
+/dotlessi
+/dotlessj
+/ff
+/fi
+/fl
+/ffi
+/ffl
+% 0x20
+/visualspace  % = visiblespace = OPEN BOX U+2423 from /space (giovanni, 2018-10-26)
+/exclam
+/quotedbl
+/numbersign
+/dollar
+/percent
+/ampersand
+/quoteright
+% 0x28
+/parenleft
+/parenright
+/asterisk
+/plus
+/comma
+/hyphen
+/period
+/slash
+% 0x30
+/zero
+/one
+/two
+/three
+/four
+/five
+/six
+/seven
+% 0x38
+/eight
+/nine
+/colon
+/semicolon
+/less
+/equal
+/greater
+/question
+% 0x40
+/at
+/A
+/B
+/C
+/D
+/E
+/F
+/G
+% 0x48
+/H
+/I
+/J
+/K
+/L
+/M
+/N
+/O
+% 0x50
+/P
+/Q
+/R
+/S
+/T
+/U
+/V
+/W
+% 0x58
+/X
+/Y
+/Z
+/bracketleft
+/backslash
+/bracketright
+/asciicircum
+/underscore
+% 0x60
+/quoteleft
+/a
+/b
+/c
+/d
+/e
+/f
+/g
+% 0x68
+/h
+/i
+/j
+/k
+/l
+/m
+/n
+/o
+% 0x70
+/p
+/q
+/r
+/s
+/t
+/u
+/v
+/w
+% 0x78
+/x
+/y
+/z
+/braceleft
+/bar
+/braceright
+/asciitilde
+/hyphen
+% 0x80
+/uni04A6 % /Pemiddlehookcyrillic CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK (giovanni)
+/uni04B4 % /Tetsecyrillic CYRILLIC CAPITAL LIGATURE TE TSE (giovanni)
+/uni04AC % /Tedescendercyrillic CYRILLIC CAPITAL LETTER TE WITH DESCENDER (giovanni)
+/uni0494 % /Ghemiddlehookcyrillic CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK (giovanni)
+/uni04BA % /Shhacyrillic CYRILLIC CAPITAL LETTER SHHA (giovanni)
+/CYRRDSC        % CYRILLIC CAPITAL LETTER ER WITH DESCENDER
+/uni048E %      % CYRILLIC CAPITAL LETTER ER WITH STROKE / TICK (giovanni)
+/uni04E0 % /Dzeabkhasiancyrillic CYRILLIC CAPITAL LETTER ABKHASIAN DZE (giovanni)
+% 0x88
+/uni04CD % from /CYRMDSC        CYRILLIC CAPITAL LETTER EM WITH DESCENDER (giovanni)
+/uni049A % /Kadescendercyrillic CYRILLIC CAPITAL LETTER KA WITH DESCENDER (giovanni)
+/uni04C5 % from /CYRLDSC        CYRILLIC CAPITAL LETTER EL WITH DESCENDER (giovanni)
+/uni049E % /Kastrokecyrillic CYRILLIC CAPITAL LETTER KA WITH STROKE (giovanni)
+/uni04C5 % CYRILLIC CAPITAL LETTER EL WITH TAIL , from /CYRLDSC       CYRILLIC CAPITAL LETTER EL WITH DESCENDER (giovanni)
+/uni04A2 % /Endescendercyrillic CYRILLIC CAPITAL LETTER EN WITH DESCENDER (giovanni)
+/uni04CD % CYRILLIC CAPITAL LETTER EM WITH TAIL, from /CYRMHK         CYRILLIC CAPITAL LETTER EM WITH HOOK (giovanni)
+/uni04C7 % /Enhookcyrillic CYRILLIC CAPITAL LETTER EN WITH HOOK (giovanni)
+% 0x90
+/uni04E8 % /Obarredcyrillic CYRILLIC CAPITAL LETTER BARRED O (giovanni)
+/uni04BC % /Cheabkhasiancyrillic CYRILLIC CAPITAL LETTER ABKHASIAN CHE (giovanni)
+/uni04BE % /Chedescenderabkhasiancyrillic CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER (giovanni)
+/uni048C        % U+048C;CYRILLIC CAPITAL LETTER SEMISOFT SIGN (giovanni)
+/uni048A % from /CYRISHRTDSC    CYRILLIC CAPITAL LETTER SHORT I WITH DESCENDER / TAIL (giovanni)
+/uni04B2 % /Hadescendercyrillic CYRILLIC CAPITAL LETTER HA WITH DESCENDER (giovanni)
+/afii10145
+/uni04A8 % /Haabkhasiancyrillic CYRILLIC CAPITAL LETTER ABKHASIAN HA (giovanni)
+% 0x98
+/uni04B6 % /Chedescendercyrillic CYRILLIC CAPITAL LETTER CHE WITH DESCENDER (giovanni)
+/CYRNLHK        % CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK
+/uni04D8 % /Schwacyrillic CYRILLIC CAPITAL LETTER SCHWA (giovanni)
+/CYRRHK         % CYRILLIC CAPITAL LETTER ER WITH HOOK
+/afii10023
+/afii61352
+/currency
+/section
+% 0xA0
+/uni04A7 % /pemiddlehookcyrillic CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK (giovanni)
+/uni04B5 % /tetsecyrillic CYRILLIC SMALL LIGATURE TE TSE (giovanni)
+/uni04AD % /tedescendercyrillic CYRILLIC SMALL LETTER TE WITH DESCENDER (giovanni)
+/uni0495 % /ghemiddlehookcyrillic CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK (giovanni)
+/uni04BB % /shhacyrillic CYRILLIC SMALL LETTER SHHA (giovanni)
+/cyrrdsc        % CYRILLIC SMALL LETTER ER WITH DESCENDER
+/uni048F % CYRILLIC SMALL LETTER ER WITH STROKE
+/uni04E1 % /dzeabkhasiancyrillic CYRILLIC SMALL LETTER ABKHASIAN DZE (giovanni)
+% 0xA8
+/uni04CE % from /cyrmdsc        CYRILLIC SMALL LETTER EM WITH DESCENDER (giovanni)
+/uni049B % /kadescendercyrillic CYRILLIC SMALL LETTER KA WITH DESCENDER (giovanni)
+/uni04C6 % from /cyrldsc        CYRILLIC SMALL LETTER EL WITH DESCENDER  (giovanni)
+/uni049F % /kastrokecyrillic CYRILLIC SMALL LETTER KA WITH STROKE (giovanni)
+/uni04C6 % from /cyrlhk         CYRILLIC SMALL LETTER EL WITH HOOK (giovanni)
+/uni04A3 % /endescendercyrillic CYRILLIC SMALL LETTER EN WITH DESCENDER (giovanni)
+/uni04CE % from /cyrmhk         CYRILLIC SMALL LETTER EM WITH HOOK (giovanni)
+/uni04C8 % /enhookcyrillic CYRILLIC SMALL LETTER EN WITH HOOK (giovanni)
+% 0xB0
+/uni04E9 % /obarredcyrillic CYRILLIC SMALL LETTER BARRED O (giovanni)
+/uni04BD % /cheabkhasiancyrillic CYRILLIC SMALL LETTER ABKHASIAN CHE (giovanni)
+/uni04BF % /chedescenderabkhasiancyrillic CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER (giovanni)
+/uni048D        % CYRILLIC SMALL LETTER SEMISOFT SIGN (giovanni)
+/uni048B % from /cyrishrtdsc    CYRILLIC SMALL LETTER SHORT I WITH DESCENDER (giovanni)
+/uni04B3 % /hadescendercyrillic CYRILLIC SMALL LETTER HA WITH DESCENDER (giovanni)
+/afii10193
+/uni04A9 % /haabkhasiancyrillic CYRILLIC SMALL LETTER ABKHASIAN HA (giovanni)
+% 0xB8
+/uni04B7 % /chedescendercyrillic CYRILLIC SMALL LETTER CHE WITH DESCENDER (giovanni)
+/cyrnlhk        % CYRILLIC SMALL LETTER EN WITH LEFT HOOK
+/afii10846
+/cyrrhk         % CYRILLIC SMALL LETTER ER WITH HOOK
+/afii10071
+/quotedblbase
+/guillemotleft
+/guillemotright
+% 0xC0
+/afii10017
+/afii10018
+/afii10019
+/afii10020
+/afii10021
+/afii10022
+/afii10024
+/afii10025
+% 0xC8
+/afii10026
+/afii10027
+/afii10028
+/afii10029
+/afii10030
+/afii10031
+/afii10032
+/afii10033
+% 0xD0
+/afii10034
+/afii10035
+/afii10036
+/afii10037
+/afii10038
+/afii10039
+/afii10040
+/afii10041
+% 0xD8
+/afii10042
+/afii10043
+/afii10044
+/afii10045
+/afii10046
+/afii10047
+/afii10048
+/afii10049
+% 0xE0
+/afii10065
+/afii10066
+/afii10067
+/afii10068
+/afii10069
+/afii10070
+/afii10072
+/afii10073
+% 0xE8
+/afii10074
+/afii10075
+/afii10076
+/afii10077
+/afii10078
+/afii10079
+/afii10080
+/afii10081
+% 0xF0
+/afii10082
+/afii10083
+/afii10084
+/afii10085
+/afii10086
+/afii10087
+/afii10088
+/afii10089
+% 0xF8
+/afii10090
+/afii10091
+/afii10092
+/afii10093
+/afii10094
+/afii10095
+/afii10096
+/afii10097
+] def
+%
+% LIGKERN hyphen hyphen =: endash;
+% LIGKERN endash hyphen =: emdash;
+% LIGKERN quoteleft quoteleft =: quotedblleft;
+% LIGKERN quoteright quoteright =: quotedblright;
+% LIGKERN comma comma =: quotedblbase;
+% LIGKERN less less =: guillemotleft;
+% LIGKERN greater greater =: guillemotright;
+%
+% LIGKERN || = 32 ;
+%
+% unicoding ff =: ; fi =: ; fl =: ; ffi =: ; ffl =: ; not wanted (giovanni, 2022-01-07)

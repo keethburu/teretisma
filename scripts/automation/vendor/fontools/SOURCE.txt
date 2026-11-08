@@ -1,0 +1,2 @@
+Source: https://mirrors.ctan.org/fonts/utilities/fontools.zip
+Only the missing TS3 encoding is vendored; see LICENSE.

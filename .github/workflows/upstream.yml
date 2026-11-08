@@ -1,0 +1,63 @@
+name: Update Google Fonts
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: upstream-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/automation/requirements.txt
+      - name: Check tracked upstream families
+        id: upstream
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/automation/upstream.py
+          if git diff --quiet -- upstream.lock.json; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.upstream.outputs.changed == 'true'
+        run: sudo apt-get update && sudo apt-get install -y fontforge lcdf-typetools texlive-xetex texlive-font-utils texlive-latex-extra
+      - name: Build the next patch candidate
+        if: steps.upstream.outputs.changed == 'true'
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('VERSION');v=p.read_text().strip().split('.');v[2]=str(int(v[2])+1);p.write_text('.'.join(v)+'\n')
+          PY
+          bash scripts/automation/run.sh
+      - name: Propose validated update
+        if: steps.upstream.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add VERSION upstream.lock.json LICENSE licenses/ fonts/ scripts/source_fonts/ assets/images/font-preview.svg
+          git commit -m 'Update Noto inputs and rebuild Teretisma'
+          git push --force-with-lease origin HEAD:automation/upstream
+          if ! gh pr list --head automation/upstream --json number --jq '.[0].number' | grep -q '[0-9]'; then
+            gh pr create --base main --head automation/upstream --title 'Update Google Fonts sources and rebuilt Teretisma' --body 'Pinned the latest changed Google Fonts family inputs, rebuilt OpenType and TeX distributions, and passed metadata, coverage, shaping, archive, and TeX smoke checks. Review the candidate before merging and tagging a stable release.'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.upstream.outputs.changed == 'true'
+        with:
+          name: upstream-candidate
+          path: build/

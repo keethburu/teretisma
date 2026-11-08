@@ -1,5 +1,5 @@
 # Teretisma
-The new fonts are based on the [Noto Sans](https://github.com/google/fonts/tree/main/ofl/notosans) and [Noto Serif](https://github.com/google/fonts/tree/main/ofl/notoserif) SemiCondensed families, distributed through [Google Fonts](https://github.com/google/fonts) and have been modified in order to meet the requirements a wide variety of disciplines and publication forms.
+The new fonts are based on the [Noto Sans](https://github.com/google/fonts/tree/main/ofl/notosans) and [Noto Serif](https://github.com/google/fonts/tree/main/ofl/notoserif) SemiCondensed families, distributed through [Google Fonts](https://github.com/google/fonts) and have been modified in order to meet the requirements of a wide variety of disciplines and publication forms.
 They cover the Unicode characters for most modern scripts based on the Latin alphabet as well as Greek and Cyrillic alphabets. They further include linguistic characters (IPA and other phonetic extensions) and special characters for a wide range of specific transliteration forms (e.g., for Arabic or hieroglyphs).
 
 ![Graphic showing a preview of all Teretisma fonts listed in this repository](assets/images/font-preview.svg)
@@ -21,7 +21,7 @@ For scripts beyond the Latin, Greek, and Cyrillic alphabets additional fonts mus
 For mathematical or logical operators the additional font [Teretisma Sans Math](/fonts/Teretisma-Sans-Math-Regular.otf) can be used (only in Regular style).
 
 ## Font Download
-[All Fonts zipped](fonts/teretisma-sans_serif_icons.zip)
+[Latest stable release](https://github.com/keethburu/teretisma/releases/latest) · [Installable OpenType fonts](https://github.com/keethburu/teretisma/releases/latest/download/teretisma-fonts.zip) · [TeX packages](https://github.com/keethburu/teretisma/releases/latest/download/teretisma-tex.zip)
 
 ## This repository
 This repository provides:
@@ -35,7 +35,7 @@ Use the issue tracker of the repository hosting this independent project.
 
 Teretisma is an independent continuation of the [De Gruyter font repository](https://gitlab.com/degruyter-public/font/de-gruyter-sans_serif), copied from commit `e633c0d` with its complete Git history. We gratefully acknowledge De Gruyter, le-tex publishing services, and the original contributors for the fonts, glyph customisations, build tools, and TeX integration. Teretisma is not affiliated with or endorsed by De Gruyter.
 
-The first Teretisma commit records the unchanged imported tree; the second renames the project, fonts, build configuration, and TeX packages. Font outlines and character coverage are preserved. The inherited TeX PDF manuals have been reissued as text manuals with the renamed package references.
+The first Teretisma commit records the unchanged imported tree; the second renames the project. Subsequent builds refresh the Noto inputs directly from Google Fonts and regenerate the font distributions under the Teretisma installation names. Historical ownership and license notices remain as attribution. The inherited TeX PDF manuals have been reissued as text manuals with the renamed package references.
 
 De Gruyter is historical provenance, not the ongoing upstream. [google/fonts](https://github.com/google/fonts) is the upstream distribution reference for Noto font updates. Its per-family directories contain the downloadable fonts, metadata, and applicable license:
 
@@ -47,7 +47,7 @@ De Gruyter is historical provenance, not the ongoing upstream. [google/fonts](ht
 
 [New Athena Unicode](https://classicalstudies.org/publications-and-research/nau-download) remains a separate inherited glyph source, licensed under OFL 1.1 according to the bundled fonts' embedded notices.
 
-The inherited source snapshots remain in `scripts/source_fonts/` for reproducibility; they have not been replaced with current Google Fonts releases. In particular, the existing build expects static SemiCondensed inputs, so a future source update must account for the formats and versions supplied by Google Fonts. The local `google-fonts` remote points to `https://github.com/google/fonts.git`; there is no De Gruyter remote or branch-tracking relationship. The Minion Math TeX support files are retained; Minion Math itself is a separate dependency and is not supplied or licensed by this project.
+The current source inputs are in `scripts/source_fonts/`. The Noto inputs are generated from the Google Fonts revision recorded in `upstream.lock.json`; the Teretisma manual masters and New Athena Unicode inputs retain their inherited provenance. The local `google-fonts` remote points to `https://github.com/google/fonts.git`; there is no De Gruyter remote or branch-tracking relationship. The Minion Math TeX support files are retained; Minion Math itself is a separate dependency and is not supplied or licensed by this project.
 
 ## License
 
@@ -59,8 +59,18 @@ The inherited build scripts remain under **GNU GPL version 3 or later (GPL-3.0-o
 
 Modified build scripts and TeX integration were renamed for Teretisma on 2026-11-08.
 
-## Rename validation
+## Continuous upstream updates
 
-The rename was checked by recursively parsing the font distribution archives and their OpenType, Type 1, TFM, and VF files. All 53 working-tree OpenType/TrueType files retain their original glyph order, character coverage, metrics, layout tables, and glyph outlines. XeLaTeX and pdfLaTeX smoke documents loaded Teretisma Serif and Sans in regular, bold, italic, and bold italic styles. The original OFL terms and build-script GPL license are preserved; font license copies now also carry the historical copyright notices.
+GitHub Actions checks the five tracked Noto families in `google/fonts` every day at 05:17 UTC and can also be run manually. A change to unrelated Google Fonts families does not create an update. Each input and license is pinned by commit and SHA-256 in [upstream.lock.json](upstream.lock.json).
 
-A complete rebuild through the inherited Ruby/FontForge pipeline has not been run; those tools are not installed in the initial workspace. The checks above validate the renamed existing fonts and TeX packages.
+Changed inputs produce the next patch-version candidate on `automation/upstream` and a pull request. The build instantiates static SemiCondensed fonts at width 87.5 and weights 400/700, refreshes the symbol weights and math font, rebuilds the ten Teretisma OpenType fonts, and regenerates the Serif/Sans TeX Type 1 outlines and metrics. The manual specialist glyphs and hand-positioned compositions remain in the inherited masters; New Athena Unicode is a separately pinned input and is not fetched from Google Fonts.
+
+Before an update is proposed, validation checks installation names, embedded licensing, character coverage, layout features, shaping, archive consistency, and XeLaTeX/pdfLaTeX rendering. Failures stop the update. Scheduled runs do not merge candidates or replace stable releases. GitHub must allow Actions to create pull requests under Settings → Actions → General; otherwise the validated update branch is still pushed and the run reports the permission error.
+
+## Stable releases
+
+Use [the latest stable release](https://github.com/keethburu/teretisma/releases/latest) for installation and a version tag such as `v0.1.0` for an immutable reference. The stable release assets are `teretisma-fonts.zip`, `teretisma-tex.zip`, `OFL.txt`, and `SHA256SUMS`. The latest font download has a permanent URL: [teretisma-fonts.zip](https://github.com/keethburu/teretisma/releases/latest/download/teretisma-fonts.zip).
+
+A maintainer reviews and merges an upstream candidate, verifies its checks, updates the release notes, and tags the commit with `v` followed by the value in `VERSION`. The release workflow verifies that the tag and font version agree and publishes the committed, validated fonts. Tags are never moved to newer builds.
+
+For local build commands and requirements, see [scripts/README.md](scripts/README.md).

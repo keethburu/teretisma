@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_lb5qgs52ch53auru4gu22om4dg
-% Encoding created by otftotfm on Thu Jun  2 09:14:07 2022
+% Encoding created by otftotfm on Sun Nov  8 17:56:51 2026
 % Command line follows encoding
 /AutoEnc_lb5qgs52ch53auru4gu22om4dg [
 %00
@@ -56,6 +56,6 @@
 % Command line: 'otftotfm --automatic --encoding=OML --tfm-directory=.
 % --vf-directory=. --type1-directory=. --encoding-directory=.
 % --map-file=./TeretismaSans.map --no-updmap --force --coding-scheme=TEX
-% MATH ITALIC --feature=lnum --feature=tnum --letterspacing=55
+% MATH ITALIC --feature=lnum --feature=pnum --letterspacing=55
 % --boundary-char=. Teretisma-Sans-Regular.otf
-% Teretisma-Sans-Regular-tlf-oml'
+% Teretisma-Sans-Regular-lf-oml'

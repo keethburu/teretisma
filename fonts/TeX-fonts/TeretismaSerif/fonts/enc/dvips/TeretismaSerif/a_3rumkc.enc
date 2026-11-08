@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_3rumkc3wjzx5fqkpikd4ychzxf
-% Encoding created by otftotfm on Thu Jun  2 09:04:50 2022
+% Encoding created by otftotfm on Sun Nov  8 17:57:40 2026
 % Command line follows encoding
 /AutoEnc_3rumkc3wjzx5fqkpikd4ychzxf [
 %00
@@ -57,9 +57,9 @@
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSerif.map --no-updmap --force
 % --coding-scheme=TEX CYRILLIC FONT ENCODING - T2B --feature=kern
-% --feature=liga --feature=lnum --feature=smcp --feature=tnum --ligkern=f i
-% =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi
-% --ligkern=ff l =: ffl --unicoding=germandbls =: SSsmall --unicoding=ff =:
-% FFsmall --unicoding=fi =: FIsmall --unicoding=ffi =: FFIsmall
-% --unicoding=fl =: FLsmall --unicoding=ffl =: FFLsmall
-% Teretisma-Serif-Regular.otf Teretisma-Serif-Regular-tlf-sc-t2b'
+% --feature=liga --feature=smcp --feature=tnum --ligkern=f i =: fi
+% --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
+% l =: ffl --unicoding=germandbls =: SSsmall --unicoding=ff =: FFsmall
+% --unicoding=fi =: FIsmall --unicoding=ffi =: FFIsmall --unicoding=fl =:
+% FLsmall --unicoding=ffl =: FFLsmall Teretisma-Serif-Regular.otf
+% Teretisma-Serif-Regular-tlf-sc-t2b'

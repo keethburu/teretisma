@@ -1,0 +1,291 @@
+% This file is generated from `X2uni.map' and `glyphlist.txt'
+%
+% LIGKERN hyphen hyphen =: endash ; endash hyphen =: emdash ;
+% LIGKERN quoteleft quoteleft =: quotedblleft ;
+% LIGKERN quoteright quoteright =: quotedblright ;
+% LIGKERN comma comma =: quotedblbase ; less less =: guillemotleft ;
+% LIGKERN greater greater =: guillemotright ;
+% LIGKERN f f =: ff ; f i =: fi ; f l =: fl ; ff i =: ffi ; ff l =: ffl ;
+%
+% LIGKERN one {} * ; * {} one ; two {} * ; * {} two ;
+% LIGKERN three {} * ; * {} three ; four {} * ; * {} four ;
+% LIGKERN five {} * ; * {} five ; six {} * ; * {} six ;
+% LIGKERN seven {} * ; * {} seven ; eight {} * ; * {} eight ;
+% LIGKERN nine {} * ; * {} nine ;
+%
+/X2AdobeEncoding [
+% 0x00
+/grave			%U+0060;GRAVE ACCENT
+/acute			%U+00B4;ACUTE ACCENT
+/circumflex		%U+02C6;MODIFIER LETTER CIRCUMFLEX ACCENT
+/tilde			%U+02DC;SMALL TILDE
+/dieresis		%U+00A8;DIAERESIS
+/hungarumlaut		%U+02DD;DOUBLE ACUTE ACCENT
+/ring			%U+02DA;RING ABOVE
+/caron			%U+02C7;CARON
+/breve			%U+02D8;BREVE
+/macron			%U+00AF;MACRON
+/dotaccent		%U+02D9;DOT ABOVE
+/cedilla		%U+00B8;CEDILLA
+/ogonek			%U+02DB;OGONEK
+/palochkacyrillic	%U+04C0;CYRILLIC LETTER PALOCHKA from /.notdef (giovanni)
+/angleleft		%U+2329;LEFT-POINTING ANGLE BRACKET
+/angleright		%U+232A;RIGHT-POINTING ANGLE BRACKET
+% 0x10
+/quotedblleft		%U+201C;LEFT DOUBLE QUOTATION MARK
+/quotedblright		%U+201D;RIGHT DOUBLE QUOTATION MARK
+/cyrflex		%U+F6D5;CYRILLIC CIRCUMFLEX
+/dblgravecmb            %U+030F from /dblgrave %U+F6D6;DOUBLE GRAVE ACCENT (giovanni)
+/cyrbreve		%U+F6D4;CYRILLIC BREVE
+/endash			%U+2013;EN DASH
+/emdash			%U+2014;EM DASH
+/.notdef		%U+FEFF;ZERO WIDTH NO-BREAK SPACE
+/.notdef		%18;;PERTHOUSAND ZERO
+/gravelowmod		%U+02CE;MODIFIER LETTER LOW GRAVE ACCENT;?[grave-cross] from /.notdef (giovanni)
+/acutelowmod		%U+02CF;MODIFIER LETTER LOW ACUTE ACCENT;?[acute-cross] from /.notdef (giovanni)
+/strokeshortoverlaycmb	%U+0335;COMBINING SHORT STROKE OVERLAY;?[hcross] from /.notdef (giovanni)
+/.notdef		%1C;;CYRILLIC CAPITAL LETTER DELTA
+/.notdef		%1D;;CYRILLIC SMALL LETTER DELTA
+/.notdef		%1E;;CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK
+/.notdef		%1F;;CYRILLIC SMALL LETTER EN WITH LEFT HOOK
+% 0x20
+/visualspace  % = visiblespace = OPEN BOX U+2423 from /space (giovanni, 2018-10-26)
+/exclam			%U+0021;EXCLAMATION MARK
+/quotedbl		%U+0022;QUOTATION MARK
+/numbersign		%U+0023;NUMBER SIGN
+/dollar			%U+0024;DOLLAR SIGN
+/percent		%U+0025;PERCENT SIGN
+/ampersand		%U+0026;AMPERSAND
+/quoteright		%U+2019;RIGHT SINGLE QUOTATION MARK
+/parenleft		%U+0028;LEFT PARENTHESIS
+/parenright		%U+0029;RIGHT PARENTHESIS
+/asterisk		%U+002A;ASTERISK
+/plus			%U+002B;PLUS SIGN
+/comma			%U+002C;COMMA
+/hyphen			%U+002D;HYPHEN-MINUS
+/period			%U+002E;FULL STOP
+/slash			%U+002F;SOLIDUS
+% 0x30
+/zero			%U+0030;DIGIT ZERO
+/one			%U+0031;DIGIT ONE
+/two			%U+0032;DIGIT TWO
+/three			%U+0033;DIGIT THREE
+/four			%U+0034;DIGIT FOUR
+/five			%U+0035;DIGIT FIVE
+/six			%U+0036;DIGIT SIX
+/seven			%U+0037;DIGIT SEVEN
+/eight			%U+0038;DIGIT EIGHT
+/nine			%U+0039;DIGIT NINE
+/colon			%U+003A;COLON
+/semicolon		%U+003B;SEMICOLON
+/less			%U+003C;LESS-THAN SIGN
+/equal			%U+003D;EQUALS SIGN
+/greater		%U+003E;GREATER-THAN SIGN
+/question		%U+003F;QUESTION MARK
+% 0x40
+/at			%U+0040;COMMERCIAL AT
+/Aiecyrillic		%U+04D4;CYRILLIC CAPITAL LIGATURE A IE from /.notdef (giovanni)
+/afii10051		%U+0402;CYRILLIC CAPITAL LETTER DJE
+/afii10060		%U+040B;CYRILLIC CAPITAL LETTER TSHE
+/Cheabkhasiancyrillic	%U+04BC;CYRILLIC CAPITAL LETTER ABKHASIAN CHE from /.notdef (giovanni)
+/Chedescenderabkhasiancyrillic %U+04BE;CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER from /.notdef (giovanni)
+/Kaverticalstrokecyrillic %U+049C;CYRILLIC CAPITAL LETTER KA WITH VERTICAL STROKE from /.notdef (giovanni)
+/Kastrokecyrillic	%U+049E;CYRILLIC CAPITAL LETTER KA WITH STROKE from /.notdef (giovanni)
+/uni04C5 % CYRILLIC CAPITAL LETTER EL WITH TAIL , from /CYRLDSC       CYRILLIC CAPITAL LETTER EL WITH DESCENDER (giovanni)
+/afii10055		%U+0406;CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+/afii10057		%U+0408;CYRILLIC CAPITAL LETTER JE
+/afii10058		%U+0409;CYRILLIC CAPITAL LETTER LJE
+/uni04CD % from /CYRMDSC        CYRILLIC CAPITAL LETTER EM WITH DESCENDER (giovanni)
+/afii10059		%U+040A;CYRILLIC CAPITAL LETTER NJE
+/Haabkhasiancyrillic	%U+04A8;CYRILLIC CAPITAL LETTER ABKHASIAN HA from /.notdef (giovanni)
+/Pemiddlehookcyrillic	%U+04A6;CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK from /.notdef (giovanni)
+% 0x50
+/.notdef		%50;;CYRILLIC CAPITAL LETTER ER WITH DESCENDER
+/Q % from /.notdef		%51;;CYRILLIC CAPITAL LETTER Q (giovanni)
+/Tedescendercyrillic	%U+04AC;CYRILLIC CAPITAL LETTER TE WITH DESCENDER from /.notdef (giovanni)
+/afii10054		%U+0405;CYRILLIC CAPITAL LETTER DZE
+/Tetsecyrillic		%U+04B4;CYRILLIC CAPITAL LIGATURE TE TSE from /.notdef (giovanni)
+/afii10145		%U+040F;CYRILLIC CAPITAL LETTER DZHE
+/Cheverticalstrokecyrillic %U+04B8;CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE from /.notdef (giovanni)
+/W % from /.notdef		%57;;CYRILLIC CAPITAL LETTER W (giovanni)
+/afii10146		%U+0462;CYRILLIC CAPITAL LETTER YAT
+/Yusbigcyrillic		%U+046A;CYRILLIC CAPITAL LETTER BIG YUS from /.notdef (giovanni)
+/afii10148		%U+0474;CYRILLIC CAPITAL LETTER IZHITSA
+/bracketleft		%U+005B;LEFT SQUARE BRACKET
+/backslash		%U+005C;REVERSE SOLIDUS
+/bracketright		%U+005D;RIGHT SQUARE BRACKET
+/asciicircum		%U+005E;CIRCUMFLEX ACCENT
+/underscore		%U+005F;LOW LINE
+% 0x60
+/quoteleft		%U+2018;LEFT SINGLE QUOTATION MARK
+/aiecyrillic		%U+04D5;CYRILLIC SMALL LIGATURE A IE from /.notdef (giovanni)
+/afii10099		%U+0452;CYRILLIC SMALL LETTER DJE
+/afii10108		%U+045B;CYRILLIC SMALL LETTER TSHE
+/cheabkhasiancyrillic	%U+04BD;CYRILLIC SMALL LETTER ABKHASIAN CHE from /.notdef (giovanni)
+/chedescenderabkhasiancyrillic %U+04BF;CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER from /.notdef (giovanni)
+/kaverticalstrokecyrillic %U+049D;CYRILLIC SMALL LETTER KA WITH VERTICAL STROKE from /.notdef (giovanni)
+/kastrokecyrillic	%U+049F;CYRILLIC SMALL LETTER KA WITH STROKE from /.notdef (giovanni)
+/uni04C6 % CYRILLIC SMALL LETTER EL WITH TAIL , from /cyrldsc CYRILLIC SMALL LETTER EL WITH DESCENDER (giovanni)
+/afii10103		%U+0456;CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+/afii10105		%U+0458;CYRILLIC SMALL LETTER JE
+/afii10106		%U+0459;CYRILLIC SMALL LETTER LJE
+/uni04CE % from /cyrmdsc        CYRILLIC SMALL LETTER EM WITH DESCENDER (giovanni)
+/afii10107		%U+045A;CYRILLIC SMALL LETTER NJE
+/haabkhasiancyrillic	%U+04A9;CYRILLIC SMALL LETTER ABKHASIAN HA from /.notdef (giovanni)
+/pemiddlehookcyrillic	%U+04A7;CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK from /.notdef (giovanni)
+% 0x70
+/.notdef		%70;;CYRILLIC SMALL LETTER ER WITH DESCENDER
+/q %from /.notdef		%71;;CYRILLIC SMALL LETTER Q (giovanni)
+/tedescendercyrillic	%U+04AD;CYRILLIC SMALL LETTER TE WITH DESCENDER from /.notdef (giovanni)
+/afii10102		%U+0455;CYRILLIC SMALL LETTER DZE
+/tetsecyrillic		%U+04B5;CYRILLIC SMALL LIGATURE TE TSE from /.notdef (giovanni)
+/afii10193		%U+045F;CYRILLIC SMALL LETTER DZHE
+/cheverticalstrokecyrillic %U+04B9;CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE from /.notdef (giovanni)
+/w % from /.notdef		%77;;CYRILLIC SMALL LETTER W (giovanni)
+/afii10194		%U+0463;CYRILLIC SMALL LETTER YAT
+/yusbigcyrillic		%U+046B;CYRILLIC SMALL LETTER BIG YUS from /.notdef (giovanni)
+/afii10196		%U+0475;CYRILLIC SMALL LETTER IZHITSA
+/braceleft		%U+007B;LEFT CURLY BRACKET
+/bar			%U+007C;VERTICAL LINE
+/braceright		%U+007D;RIGHT CURLY BRACKET
+/asciitilde		%U+007E;TILDE
+/hyphen			%U+002D;HYPHEN-MINUS
+% 0x80
+/afii10050		%U+0490;CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+/Ghestrokecyrillic	%U+0492;CYRILLIC CAPITAL LETTER GHE WITH STROKE from /.notdef (giovanni)
+/uni04F6 % from /CYRGDSC        % CYRILLIC CAPITAL LETTER GHE WITH DESCENDER (giovanni)
+/Ghemiddlehookcyrillic	%U+0494;CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK from /.notdef (giovanni)
+/Shhacyrillic		%U+04BA;CYRILLIC CAPITAL LETTER SHHA from /.notdef (giovanni)
+/Zhedescendercyrillic	%U+0496;CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER from /.notdef (giovanni)
+/Zedescendercyrillic	%U+0498;CYRILLIC CAPITAL LETTER ZE WITH DESCENDER from /.notdef (giovanni)
+/Dzeabkhasiancyrillic	%U+04E0;CYRILLIC CAPITAL LETTER ABKHASIAN DZE from /.notdef (giovanni)
+/afii10056		%U+0407;CYRILLIC CAPITAL LETTER YI
+/Kadescendercyrillic	%U+049A;CYRILLIC CAPITAL LETTER KA WITH DESCENDER from /.notdef (giovanni)
+/Kabashkircyrillic	%U+04A0;CYRILLIC CAPITAL LETTER BASHKIR KA from /.notdef (giovanni)
+/Kahookcyrillic		%U+04C3;CYRILLIC CAPITAL LETTER KA WITH HOOK from /.notdef (giovanni)
+/uni04C5 % CYRILLIC CAPITAL LETTER EL WITH TAIL /CYRLDSC , from /CYRLHK         CYRILLIC CAPITAL LETTER EL WITH HOOK (giovanni)
+/Endescendercyrillic	%U+04A2;CYRILLIC CAPITAL LETTER EN WITH DESCENDER from /.notdef (giovanni)
+/Enghecyrillic		%U+04A4;CYRILLIC CAPITAL LIGATURE EN GHE from /.notdef (giovanni)
+/Enhookcyrillic		%U+04C7;CYRILLIC CAPITAL LETTER EN WITH HOOK from /.notdef (giovanni)
+% 0x90
+/Obarredcyrillic	%U+04E8;CYRILLIC CAPITAL LETTER BARRED O from /.notdef (giovanni)
+/Esdescendercyrillic	%U+04AA;CYRILLIC CAPITAL LETTER ES WITH DESCENDER;?[direction of descender]
+/afii10062		%U+040E;CYRILLIC CAPITAL LETTER SHORT U
+/Ustraightcyrillic	%U+04AE;CYRILLIC CAPITAL LETTER STRAIGHT U from /.notdef (giovanni)
+/Ustraightstrokecyrillic %U+04B0;CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE from /.notdef (giovanni)
+/Hadescendercyrillic	%U+04B2;CYRILLIC CAPITAL LETTER HA WITH DESCENDER from /.notdef (giovanni)
+/uni04FC % from /CYRHHK         CYRILLIC CAPITAL LETTER HA WITH HOOK (giovanni)
+/Chekhakassiancyrillic	%U+04CB;CYRILLIC CAPITAL LETTER KHAKASSIAN CHE from /.notdef (giovanni)
+/Chedescendercyrillic	%U+04B6;CYRILLIC CAPITAL LETTER CHE WITH DESCENDER from /.notdef (giovanni)
+/afii10053		%U+0404;CYRILLIC CAPITAL LETTER UKRAINIAN IE
+/Schwacyrillic		%U+04D8;CYRILLIC CAPITAL LETTER SCHWA from /.notdef (giovanni)
+/.notdef		%9B;;CYRILLIC CAPITAL LETTER EPSILON
+/afii10023		%U+0401;CYRILLIC CAPITAL LETTER IO
+/afii61352		%U+2116;NUMERO SIGN
+/currency		%U+00A4;CURRENCY SIGN
+/section		%U+00A7;SECTION SIGN
+% 0xA0
+/afii10098		%U+0491;CYRILLIC SMALL LETTER GHE WITH UPTURN
+/ghestrokecyrillic	%U+0493;CYRILLIC SMALL LETTER GHE WITH STROKE from /.notdef (giovanni)
+/uni04F7 %from /cyrgdsc        CYRILLIC SMALL LETTER GHE WITH DESCENDER (giovanni)
+/ghemiddlehookcyrillic	%U+0495;CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK from /.notdef (giovanni)
+/shhacyrillic		%U+04BB;CYRILLIC SMALL LETTER SHHA from /.notdef (giovanni)
+/zhedescendercyrillic	%U+0497;CYRILLIC SMALL LETTER ZHE WITH DESCENDER from /.notdef (giovanni)
+/zedescendercyrillic	%U+0499;CYRILLIC SMALL LETTER ZE WITH DESCENDER from /.notdef (giovanni)
+/dzeabkhasiancyrillic	%U+04E1;CYRILLIC SMALL LETTER ABKHASIAN DZE from /.notdef (giovanni)
+/afii10104		%U+0457;CYRILLIC SMALL LETTER YI
+/kadescendercyrillic	%U+049B;CYRILLIC SMALL LETTER KA WITH DESCENDER from /.notdef (giovanni)
+/kabashkircyrillic	%U+04A1;CYRILLIC SMALL LETTER BASHKIR KA from /.notdef (giovanni)
+/kahookcyrillic		%U+04C4;CYRILLIC SMALL LETTER KA WITH HOOK from /.notdef (giovanni)
+/uni04C6 % CYRILLIC SMALL LETTER EL WITH TAIL , from /cyrlhk CYRILLIC SMALL LETTER EL WITH HOOK (giovanni)
+/endescendercyrillic	%U+04A3;CYRILLIC SMALL LETTER EN WITH DESCENDER from /.notdef (giovanni)
+/enghecyrillic		%U+04A5;CYRILLIC SMALL LIGATURE EN GHE from /.notdef (giovanni)
+/enhookcyrillic		%U+04C8;CYRILLIC SMALL LETTER EN WITH HOOK from /.notdef (giovanni)
+% 0xB0
+/obarredcyrillic	%U+04E9;CYRILLIC SMALL LETTER BARRED O from /.notdef (giovanni)
+/esdescendercyrillic	%U+04AB;CYRILLIC SMALL LETTER ES WITH DESCENDER;?[direction of descender]    from /.notdef (giovanni)
+/afii10110		%U+B2;045E;CYRILLIC SMALL LETTER SHORT U
+/ustraightcyrillic	%U+04AF;CYRILLIC SMALL LETTER STRAIGHT U from /.notdef (giovanni)
+/ustraightstrokecyrillic %U+04B1;CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE from /.notdef (giovanni)
+/hadescendercyrillic	%U+04B3;CYRILLIC SMALL LETTER HA WITH DESCENDER from /.notdef (giovanni)
+/uni04FD %from /cyrhhk         CYRILLIC SMALL LETTER HA WITH HOOK (giovanni)
+/chekhakassiancyrillic	%U+04CC;CYRILLIC SMALL LETTER KHAKASSIAN CHE from /.notdef (giovanni)
+/chedescendercyrillic	%U+04B7;CYRILLIC SMALL LETTER CHE WITH DESCENDER from /.notdef (giovanni)
+/afii10101		%U+0454;CYRILLIC SMALL LETTER UKRAINIAN IE
+/afii10846		%U+04D9;CYRILLIC SMALL LETTER SCHWA
+/.notdef		%BB;;CYRILLIC SMALL LETTER EPSILON
+/afii10071		%U+0451;CYRILLIC SMALL LETTER IO
+/quotedblbase		%U+201E;DOUBLE LOW-9 QUOTATION MARK
+/guillemotleft		%U+00AB;LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+/guillemotright		%U+00BB;RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+% 0xC0
+/afii10017
+/afii10018
+/afii10019
+/afii10020
+/afii10021
+/afii10022
+/afii10024
+/afii10025
+/afii10026
+/afii10027
+/afii10028
+/afii10029
+/afii10030
+/afii10031
+/afii10032
+/afii10033
+% 0xD0
+/afii10034
+/afii10035
+/afii10036
+/afii10037
+/afii10038
+/afii10039
+/afii10040
+/afii10041
+/afii10042
+/afii10043
+/afii10044
+/afii10045
+/afii10046
+/afii10047
+/afii10048
+/afii10049
+% 0xE0
+/afii10065
+/afii10066
+/afii10067
+/afii10068
+/afii10069
+/afii10070
+/afii10072
+/afii10073
+/afii10074
+/afii10075
+/afii10076
+/afii10077
+/afii10078
+/afii10079
+/afii10080
+/afii10081
+% 0xF0
+/afii10082
+/afii10083
+/afii10084
+/afii10085
+/afii10086
+/afii10087
+/afii10088
+/afii10089
+/afii10090
+/afii10091
+/afii10092
+/afii10093
+/afii10094
+/afii10095
+/afii10096
+/afii10097
+] def
+%
+% UNICODING ff =: ; fi =: ; fl =: ; ffi =: ; ffl =:

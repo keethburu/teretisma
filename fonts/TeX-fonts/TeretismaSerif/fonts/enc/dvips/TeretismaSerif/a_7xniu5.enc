@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_7xniu5cza7lhn55ulvawu5jtja
-% Encoding created by otftotfm on Thu Jun  2 09:05:39 2022
+% Encoding created by otftotfm on Sun Nov  8 17:57:30 2026
 % Command line follows encoding
 /AutoEnc_7xniu5cza7lhn55ulvawu5jtja [
 %00
@@ -57,6 +57,6 @@
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSerif.map --no-updmap --force
 % --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=kern
-% --feature=liga --feature=lnum --feature=tnum --ligkern=f i =: fi
-% --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
-% l =: ffl Teretisma-Serif-Italic.otf Teretisma-Serif-Italic-tlf-t1'
+% --feature=liga --feature=pnum --ligkern=f i =: fi --ligkern=f l =: fl
+% --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff l =: ffl
+% Teretisma-Serif-Regular.otf Teretisma-Serif-Regular-lf-t1'

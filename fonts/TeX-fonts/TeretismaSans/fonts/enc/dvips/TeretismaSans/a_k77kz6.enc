@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_k77kz6bhtyemqkykpxfhyk5hab
-% Encoding created by otftotfm on Thu Jun  2 09:14:08 2022
+% Encoding created by otftotfm on Sun Nov  8 17:56:51 2026
 % Command line follows encoding
 /AutoEnc_k77kz6bhtyemqkykpxfhyk5hab [
 %00
@@ -57,9 +57,9 @@
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSans.map --no-updmap --force
 % --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=lnum
-% --feature=smcp --feature=tnum --ligkern=f i =: fi --ligkern=f l =: fl
+% --feature=pnum --feature=smcp --ligkern=f i =: fi --ligkern=f l =: fl
 % --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff l =: ffl
 % --unicoding=germandbls =: SSsmall --unicoding=ff =: FFsmall --unicoding=fi
 % =: FIsmall --unicoding=ffi =: FFIsmall --unicoding=fl =: FLsmall
 % --unicoding=ffl =: FFLsmall Teretisma-Sans-Regular.otf
-% Teretisma-Sans-Regular-tlf-sc-ot1'
+% Teretisma-Sans-Regular-lf-sc-ot1'

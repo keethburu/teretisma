@@ -1,0 +1,540 @@
+% partly from "Encoding file for Computer Modern Unicode fonts version 0.7.0"
+% partly from:
+% LGR Encoding
+% CODINGSCHEME GREEK FONT ENCODING - LGR
+/GrEncoding [          % now 256 chars follow
+% 0x00
+/endash
+/uni2054
+/u10144 % pentedeka
+/u10145 % pentehekaton
+/u10146 % penteqilioi
+/u10147 % pentemuria
+/uni03DB
+/varstigma
+% 0x08
+/uni1FBE
+/uni1FBC
+/uni1FCC
+/uni1FFC
+/Alpharightphantomdiaeresis
+/Upsilondiaeresisshifted
+/alpharightphantomdiaeresis
+/upsilondiaeresisshifted
+% 0x10
+/uni02CF %from /nexusleftside % uni02CF (giovanni)
+/uni02CE %from /nexusrightside % uni02CE (giovanni)
+/uni03DF
+/uni03D9
+/uni203F
+/uni03D8
+/uni03DA
+/uni03E0
+% 0x18
+/Euro
+/perthousand
+/uni01DD
+/uni03E1
+/quoteleft
+/quoteright
+/breve.gr
+/macron.gr
+% 0x20
+/uni1FC1
+/exclam
+/dieresis
+/dieresistonos
+/uni1FED
+/percent
+/periodcentered
+/tonos % uni0384
+% 0x28
+/parenleft
+/parenright
+/asterisk
+/plus
+/comma
+/hyphen
+/period
+/slash
+% 0x30
+/zero
+/one
+/two
+/three
+/four
+/five
+/six
+/seven
+% 0x38
+/eight
+/nine
+/colon
+/anoteleia %/uni0387
+/uni1FFE
+/equal
+/uni1FBF
+/uni037E
+% 0x40
+/uni1FDF
+/Alpha
+/Beta
+/uni1FDD
+/uni0394  % Delta
+/Epsilon
+/Phi
+/Gamma
+% 0x48
+/Eta
+/Iota
+/Theta
+/Kappa
+/Lambda
+/Mu
+/Nu
+/Omicron
+% 0x50
+/Pi
+/Chi
+/Rho
+/Sigma
+/Tau
+/Upsilon
+/uni1FDE
+/uni03A9 % Omega
+% 0x58
+/Xi
+/Psi
+/Zeta
+/bracketleft
+/uni1FCF
+/bracketright
+/uni1FCE
+/uni1FCD
+% 0x60
+/uni1FEF
+/alpha
+/beta
+/sigmafinal %/uni03C2
+/delta
+/epsilon
+/uni03C6 %from /phi (giovanni)
+/gamma
+% 0x68
+/eta
+/iota
+/theta %(= /uni03B8; but ComputerModern uses /uni03D1 = /thetasymbolgreek ! -- giovanni)
+/kappa %(= /uni03BA; but ComputerModern uses /uni03F0 = /kappasymbolgreek ! -- giovanni)
+/lambda
+/uni03BC % /mugreek
+/nu
+/omicron
+% 0x70
+/pi
+/chi
+/rho
+/sigma %/uni03C3 (giovanni)
+/tau
+/upsilon
+/.notdef % /voidchargreek
+/omega
+% 0x78
+/xi
+/psi
+/zeta
+/guillemotleft.gr % /guillemetsleft
+/uni037A
+/guillemotright.gr % /guillemetsright
+/uni1FC0 % uni0342
+/emdash
+% 0x80
+/uni1F70
+/uni1F01
+/uni1F00
+/uni1F03
+/uni1FB2
+/uni1F81
+/uni1F80
+/uni1F83
+% 0x88
+/uni1F71
+/uni1F05
+/uni1F04
+/uni1F02
+/uni1FB4
+/uni1F85
+/uni1F84
+/uni1F82
+% 0x90
+/uni1FB6
+/uni1F07
+/uni1F06
+/uni03DD
+/uni1FB7
+/uni1F87
+/uni1F86
+/widebreve
+% 0x98
+/uni1F74
+/uni1F21
+/uni1F20
+/uni03F0 % (=/kappasymbolgreek) from /.notdef (giovanni, 2022-01-10)
+/uni1FC2
+/uni1F91
+/uni1F90
+/uni03D1 % (=/thetasymbolgreek) from /.notdef (giovanni, 2022-01-10)
+/.notdef
+% 0xA0
+/uni1F75
+/uni1F25
+/uni1F24
+/uni1F23
+/uni1FC4
+/uni1F95
+/uni1F94
+/uni1F93
+% 0xA8
+/uni1FC6
+/uni1F27
+/uni1F26
+/uni1F22
+/uni1FC7
+/uni1F97
+/uni1F96
+/uni1F92
+% 0xB0
+/uni1F7C
+/uni1F61
+/uni1F60
+/uni1F63
+/uni1FF2
+/uni1FA1
+/uni1FA0
+/uni1FA3
+% 0xB8
+/uni1F7D
+/uni1F65
+/uni1F64
+/uni1F62
+/uni1FF4
+/uni1FA5
+/uni1FA4
+/uni1FA2
+% 0xC0
+/uni1FF6
+/uni1F67
+/uni1F66
+/uni03DC
+/uni1FF7
+/uni1FA7
+/uni1FA6
+/.notdef
+% 0xC8
+/uni1F76
+/uni1F31
+/uni1F30
+/uni1F33
+/uni1F7A
+/uni1F51
+/uni1F50
+/uni1F53
+% 0xD0
+/uni1F77
+/uni1F35
+/uni1F34
+/uni1F32
+/uni1F7B
+/uni1F55
+/uni1F54
+/uni1F52
+% 0xD8
+/uni1FD6
+/uni1F37
+/uni1F36
+/Iotadieresis % uni03AA
+/uni1FE6
+/uni1F57
+/uni1F56
+/Upsilondieresis % uni03AB
+% 0xE0
+/uni1F72
+/uni1F11
+/uni1F10
+/uni1F13
+/uni1F78
+/uni1F41
+/uni1F40
+/uni1F43
+% 0xE8
+/uni1F73
+/uni1F15
+/uni1F14
+/uni1F12
+/uni1F79
+/uni1F45
+/uni1F44
+/uni1F42
+% 0xF0
+/iotadieresis % uni03CA
+/uni1FD2
+/uni1FD3
+/uni1FD7
+/upsilondieresis % uni03CB
+/uni1FE2
+/uni1FE3
+/uni1FE7
+% 0xF8
+/uni1FB3
+/uni1FC3
+/uni1FF3
+/uni1FE5
+/uni1FE4
+/.notdef
+/uni0374
+/uni0375
+] def
+%
+% UNICODING widebreve =: widebreve uni035D ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING Alpharightphantomdiaeresis =: Alpharightphantomdiaeresis Alpha ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING Upsilondiaeresisshifted =: Upsilondiaeresisshifted Upsilondiaeresis ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING alpharightphantomdiaeresis =: alpharightphantomdiaeresis alpha ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING upsilondiaeresisshifted =: upsilondiaeresisshifted upsilondiaeresis ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+%
+% UNICODING ff =: ; fi =: ; fl =: ; ffi =: ; ffl =:
+%
+% %UNICODING alphatonos =: uni1F71 ;
+% %UNICODING epsilontonos =: uni1F73 ;
+% %UNICODING etatonos =: uni1F75 ;
+% %UNICODING iotatonos =: uni1F77 ;
+% %UNICODING omicrontonos =: uni1F79 ;
+% %UNICODING upsilontonos =: uni1F7B ;
+% %UNICODING omegatonos =: uni1F7D ;
+% %UNICODING iotadieresistonos =: uni1FD3 ;
+% %UNICODING upsilondieresistonos =: uni1FE3 ;
+% %UNICODING Omega =: uni03A9 ;
+
+% boundary character: endash
+% LIGKERN || = 0 ;
+
+% LIGKERN sigma || =:| sigmafinal ; sigma guillemotright =:| sigmafinal ;
+% LIGKERN sigma parenright =:| sigmafinal ; sigma period =:| sigmafinal ;
+% LIGKERN sigma comma =:| sigmafinal ; sigma exclam =:| sigmafinal ;
+% LIGKERN sigma semicolon =:| sigmafinal ; sigma anoteleia =:| sigmafinal ;
+
+% LIGKERN hyphen hyphen =: endash ; endash hyphen =: emdash ;
+% LIGKERN parenleft parenleft =: guillemotleft ;
+% LIGKERN parenright parenright =: guillemotright ;
+
+% >
+% LIGKERN uni1FBF tonos =: uni1FCE ;
+% LIGKERN uni1FBF uni1FEF =: uni1FCD ;
+% LIGKERN uni1FBF uni1FC0 =: uni1FCF ;
+% LIGKERN uni1FBF alpha =: uni1F00 ;
+% LIGKERN uni1FBF epsilon =: uni1F10 ;
+% LIGKERN uni1FBF eta =: uni1F20 ;
+% LIGKERN uni1FBF iota =: uni1F30 ;
+% LIGKERN uni1FBF omicron =: uni1F40 ;
+% LIGKERN uni1FBF upsilon =: uni1F50 ;
+% LIGKERN uni1FBF omega =: uni1F60 ;
+% LIGKERN uni1FBF rho =: uni1FE4 ;
+
+% <
+% LIGKERN uni1FFE tonos =: uni1FDE ;
+% LIGKERN uni1FFE uni1FEF =: uni1FDD ;
+% LIGKERN uni1FFE uni1FC0 =: uni1FDF ;
+% LIGKERN uni1FFE alpha =: uni1F01 ;
+% LIGKERN uni1FFE epsilon =: uni1F11 ;
+% LIGKERN uni1FFE eta =: uni1F21 ;
+% LIGKERN uni1FFE iota =: uni1F31 ;
+% LIGKERN uni1FFE omicron =: uni1F41 ;
+% LIGKERN uni1FFE upsilon =: uni1F51 ;
+% LIGKERN uni1FFE omega =: uni1F61 ;
+% LIGKERN uni1FFE rho =: uni1FE5 ;
+
+% >\
+% LIGKERN uni1FCD alpha =: uni1F02 ;
+% LIGKERN uni1FCD epsilon =: uni1F12 ;
+% LIGKERN uni1FCD eta =: uni1F22 ;
+% LIGKERN uni1FCD iota =: uni1F32 ;
+% LIGKERN uni1FCD omicron =: uni1F42 ;
+% LIGKERN uni1FCD upsilon =: uni1F52 ;
+% LIGKERN uni1FCD omega =: uni1F62 ;
+
+% <\
+% LIGKERN uni1FDD alpha =: uni1F03 ;
+% LIGKERN uni1FDD epsilon =: uni1F13 ;
+% LIGKERN uni1FDD eta =: uni1F23 ;
+% LIGKERN uni1FDD iota =: uni1F33 ;
+% LIGKERN uni1FDD omicron =: uni1F43 ;
+% LIGKERN uni1FDD upsilon =: uni1F53 ;
+% LIGKERN uni1FDD omega =: uni1F63 ;
+
+% >/
+% LIGKERN uni1FCE alpha =: uni1F04 ;
+% LIGKERN uni1FCE epsilon =: uni1F14 ;
+% LIGKERN uni1FCE eta =: uni1F24 ;
+% LIGKERN uni1FCE iota =: uni1F34 ;
+% LIGKERN uni1FCE omicron =: uni1F44 ;
+% LIGKERN uni1FCE upsilon =: uni1F54 ;
+% LIGKERN uni1FCE omega =: uni1F64 ;
+
+% </
+% LIGKERN uni1FDE alpha =: uni1F05 ;
+% LIGKERN uni1FDE epsilon =: uni1F15 ;
+% LIGKERN uni1FDE eta =: uni1F25 ;
+% LIGKERN uni1FDE iota =: uni1F35 ;
+% LIGKERN uni1FDE omicron =: uni1F45 ;
+% LIGKERN uni1FDE upsilon =: uni1F55 ;
+% LIGKERN uni1FDE omega =: uni1F65 ;
+
+% ~>
+% LIGKERN uni1FCF alpha =: uni1F06 ;
+% LIGKERN uni1FCF eta =: uni1F26 ;
+% LIGKERN uni1FCF iota =: uni1F36 ;
+% LIGKERN uni1FCF upsilon =: uni1F56 ;
+% LIGKERN uni1FCF omega =: uni1F66 ;
+
+% <~
+% LIGKERN uni1FDF alpha =: uni1F07 ;
+% LIGKERN uni1FDF eta =: uni1F27 ;
+% LIGKERN uni1FDF iota =: uni1F37 ;
+% LIGKERN uni1FDF upsilon =: uni1F57 ;
+% LIGKERN uni1FDF omega =: uni1F67 ;
+
+% ~
+% LIGKERN uni1FC0 uni1FBF =: uni1FCF ;
+% LIGKERN uni1FC0 uni1FFE =: uni1FDF ;
+% LIGKERN dieresis uni1FC0 =: uni1FC1 ;
+% LIGKERN uni1FC0 dieresis =: uni1FC1 ;
+% LIGKERN uni1FC0 alpha =: uni1FB6 ;
+% LIGKERN uni1FC0 eta =: uni1FC6 ;
+% LIGKERN uni1FC0 iota =: uni1FD6 ;
+% LIGKERN uni1FC0 upsilon =: uni1FE6 ;
+% LIGKERN uni1FC0 omega =: uni1FF6 ;
+
+% \
+% LIGKERN uni1FEF dieresis =: uni1FED ;
+% LIGKERN uni1FEF alpha =: uni1F70 ;
+% LIGKERN uni1FEF epsilon =: uni1F72 ;
+% LIGKERN uni1FEF eta =: uni1F74 ;
+% LIGKERN uni1FEF iota =: uni1F76 ;
+% LIGKERN uni1FEF omicron =: uni1F78 ;
+% LIGKERN uni1FEF upsilon =: uni1F7A ;
+% LIGKERN uni1FEF omega =: uni1F7C ;
+
+% /
+% LIGKERN tonos dieresis =: dieresistonos
+% LIGKERN tonos tonos =: quoteright ; uni1FEF uni1FEF =: quoteleft ;
+% LIGKERN tonos alpha =: uni1F71 ;
+% LIGKERN tonos epsilon =: uni1F73 ;
+% LIGKERN tonos eta =: uni1F75 ;
+% LIGKERN tonos iota =: uni1F77 ;
+% LIGKERN tonos omicron =: uni1F79 ;
+% LIGKERN tonos upsilon =: uni1F7B ;
+% LIGKERN tonos omega =: uni1F7D ;
+
+% dieresis
+% LIGKERN dieresis uni1FEF =: uni1FED ;
+% LIGKERN dieresis iota =: iotadieresis ; dieresis Iota =: Iotadieresis ;
+% LIGKERN dieresis upsilon =: upsilondieresis ;
+% LIGKERN dieresis Upsilon =: Upsilondieresis ;
+% LIGKERN dieresistonos iota =: uni1FD3 ;
+% LIGKERN dieresistonos upsilon =: uni1FE3 ;
+% LIGKERN dieresis tonos =: dieresistonos
+
+% iota (prosgegrammeni)
+% LIGKERN Alpha uni1FBE |=: iota ;
+% LIGKERN Eta uni1FBE |=: iota ;
+% LIGKERN uni03A9 uni1FBE |=: iota ;
+
+% LIGKERN alpha uni1FBE =: uni1FB3 ; %orthographically incorrect
+% LIGKERN uni1F71 uni1FBE =: uni1FB4 ; %orthographically incorrect
+% LIGKERN uni1F00 uni1FBE =: uni1F80 ; %orthographically incorrect
+% LIGKERN uni1F01 uni1FBE =: uni1F81 ; %orthographically incorrect
+% LIGKERN uni1F02 uni1FBE =: uni1F82 ; %orthographically incorrect
+% LIGKERN uni1F03 uni1FBE =: uni1F83 ; %orthographically incorrect
+% LIGKERN uni1F04 uni1FBE =: uni1F84 ; %orthographically incorrect
+% LIGKERN uni1F05 uni1FBE =: uni1F85 ; %orthographically incorrect
+% LIGKERN uni1F06 uni1FBE =: uni1F86 ; %orthographically incorrect
+% LIGKERN uni1F07 uni1FBE =: uni1F87 ; %orthographically incorrect
+% LIGKERN uni1F70 uni1FBE =: uni1FB2 ; %orthographically incorrect
+% LIGKERN uni1FB6 uni1FBE =: uni1FB7 ; %orthographically incorrect
+% LIGKERN eta uni1FBE =: uni1FC3 ; %orthographically incorrect
+% LIGKERN uni1F75 uni1FBE =: uni1FC4 ; %orthographically incorrect
+% LIGKERN uni1F20 uni1FBE =: uni1F90 ; %orthographically incorrect
+% LIGKERN uni1F21 uni1FBE =: uni1F91 ; %orthographically incorrect
+% LIGKERN uni1F22 uni1FBE =: uni1F92 ; %orthographically incorrect
+% LIGKERN uni1F23 uni1FBE =: uni1F93 ; %orthographically incorrect
+% LIGKERN uni1F24 uni1FBE =: uni1F94 ; %orthographically incorrect
+% LIGKERN uni1F25 uni1FBE =: uni1F95 ; %orthographically incorrect
+% LIGKERN uni1F26 uni1FBE =: uni1F96 ; %orthographically incorrect
+% LIGKERN uni1F27 uni1FBE =: uni1F97 ; %orthographically incorrect
+% LIGKERN uni1F74 uni1FBE =: uni1FC2 ; %orthographically incorrect
+% LIGKERN uni1FC6 uni1FBE =: uni1FC7 ; %orthographically incorrect
+% LIGKERN omega uni1FBE =: uni1FF3 ; %orthographically incorrect
+% LIGKERN uni1F7D uni1FBE =: uni1FF4 ; %orthographically incorrect
+% LIGKERN uni1F60 uni1FBE =: uni1FA0 ; %orthographically incorrect
+% LIGKERN uni1F61 uni1FBE =: uni1FA1 ; %orthographically incorrect
+% LIGKERN uni1F62 uni1FBE =: uni1FA2 ; %orthographically incorrect
+% LIGKERN uni1F63 uni1FBE =: uni1FA3 ; %orthographically incorrect
+% LIGKERN uni1F64 uni1FBE =: uni1FA4 ; %orthographically incorrect
+% LIGKERN uni1F65 uni1FBE =: uni1FA5 ; %orthographically incorrect
+% LIGKERN uni1F66 uni1FBE =: uni1FA6 ; %orthographically incorrect
+% LIGKERN uni1F67 uni1FBE =: uni1FA7 ; %orthographically incorrect
+% LIGKERN uni1F7C uni1FBE =: uni1FF2 ; %orthographically incorrect
+% LIGKERN uni1FF6 uni1FBE =: uni1FF7 ; %orthographically incorrect
+
+% iota (ypogegrammeni)
+% LIGKERN Alpha uni037A |=: iota ; %orthographically incorrect
+% LIGKERN Eta uni037A |=: iota ; %orthographically incorrect
+% LIGKERN uni03A9 uni037A |=: iota ; %orthographically incorrect
+
+% LIGKERN alpha uni037A =: uni1FB3 ;
+% LIGKERN uni1F71 uni037A =: uni1FB4 ;
+% LIGKERN uni1F00 uni037A =: uni1F80 ;
+% LIGKERN uni1F01 uni037A =: uni1F81 ;
+% LIGKERN uni1F02 uni037A =: uni1F82 ;
+% LIGKERN uni1F03 uni037A =: uni1F83 ;
+% LIGKERN uni1F04 uni037A =: uni1F84 ;
+% LIGKERN uni1F05 uni037A =: uni1F85 ;
+% LIGKERN uni1F06 uni037A =: uni1F86 ;
+% LIGKERN uni1F07 uni037A =: uni1F87 ;
+% LIGKERN uni1F70 uni037A =: uni1FB2 ;
+% LIGKERN uni1FB6 uni037A =: uni1FB7 ;
+% LIGKERN eta uni037A =: uni1FC3 ;
+% LIGKERN uni1F75 uni037A =: uni1FC4 ;
+% LIGKERN uni1F20 uni037A =: uni1F90 ;
+% LIGKERN uni1F21 uni037A =: uni1F91 ;
+% LIGKERN uni1F22 uni037A =: uni1F92 ;
+% LIGKERN uni1F23 uni037A =: uni1F93 ;
+% LIGKERN uni1F24 uni037A =: uni1F94 ;
+% LIGKERN uni1F25 uni037A =: uni1F95 ;
+% LIGKERN uni1F26 uni037A =: uni1F96 ;
+% LIGKERN uni1F27 uni037A =: uni1F97 ;
+% LIGKERN uni1F74 uni037A =: uni1FC2 ;
+% LIGKERN uni1FC6 uni037A =: uni1FC7 ;
+% LIGKERN omega uni037A =: uni1FF3 ;
+% LIGKERN uni1F7D uni037A =: uni1FF4 ;
+% LIGKERN uni1F60 uni037A =: uni1FA0 ;
+% LIGKERN uni1F61 uni037A =: uni1FA1 ;
+% LIGKERN uni1F62 uni037A =: uni1FA2 ;
+% LIGKERN uni1F63 uni037A =: uni1FA3 ;
+% LIGKERN uni1F64 uni037A =: uni1FA4 ;
+% LIGKERN uni1F65 uni037A =: uni1FA5 ;
+% LIGKERN uni1F66 uni037A =: uni1FA6 ;
+% LIGKERN uni1F67 uni037A =: uni1FA7 ;
+% LIGKERN uni1F7C uni037A =: uni1FF2 ;
+% LIGKERN uni1FF6 uni037A =: uni1FF7 ;
+
+% .\.
+% LIGKERN uni1FED iota =: uni1FD2 ;
+% LIGKERN uni1FED upsilon =: uni1FE2 ;
+
+% ~..
+% LIGKERN uni1FC1 iota =: uni1FD7 ;
+% LIGKERN uni1FC1 upsilon =: uni1FE7 ;

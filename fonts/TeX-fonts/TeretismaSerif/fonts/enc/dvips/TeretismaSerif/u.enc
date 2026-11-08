@@ -1,0 +1,56 @@
+% TeX extra characters encoding.
+% CODINGSCHEME FONTSPECIFIC
+%
+%
+/MinionPro-ExtraEncoding [          % now 256 chars follow
+% 0x00 %tabular lining figures
+/uniF130 /uniF131 /uniF132 /uniF133 /uniF134 /uniF135 /uniF136 /uniF137
+/uniF138 /uniF139 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x10 %proportional lining figures
+/uni0030 /uni0031 /uni0032 /uni0033 /uni0034 /uni0035 /uni0036 /uni0037
+/uni0038 /uni0039 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20 %tabular oldstyle figures
+/uniF330 /uniF331 /uniF332 /uniF333 /uniF334 /uniF335 /uniF336 /uniF337
+/uniF338 /uniF339 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x30
+/zerosuperior /onesuperior /twosuperior /threesuperior /foursuperior /fivesuperior /sixsuperior /sevensuperior
+/eightsuperior /ninesuperior /colonsuperior /semicolonsuperior /.notdef /.notdef /.notdef /.notdef
+% 0x40
+/zeroinferior /oneinferior /twoinferior /threeinferior /fourinferior /fiveinferior /sixinferior /seveninferior
+/eightinferior /nineinferior /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x50
+/zero.numr /one.numr /two.numr /three.numr /four.numr /five.numr /six.numr /seven.numr
+/eight.numr /nine.numr /.notdef /.notdef /.notdef /.notdef /.notdef /fraction
+% 0x60
+/zero.dnom /one.dnom /two.dnom /three.dnom /four.dnom /five.dnom /six.dnom /seven.dnom
+/eight.dnom /nine.dnom /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x70 %proportional oldstyle figures
+/uniF230 /uniF231 /uniF232 /uniF233 /uniF234 /uniF235 /uniF236 /uniF237
+/uniF238 /uniF239 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%/orn.013 /orn.014 /orn.015 /orn.016 /orn.017 /orn.018 /orn.019 /orn.020
+%/orn.021 /orn.022 /orn.023 /orn.032 /orn.033 /orn.024 /orn.025 /orn.028
+% 0x80
+/orn.029 /orn.030 /orn.031 /uni2190.alt2 /uni2192.alt2 /uni2190.alt1 /uni2192.alt1 /uni2190
+/uni2192 /uni25C0 /uni25B6 /uni25C1 /uni25B7 /orn.035 /orn.036 /orn.037
+% 0x90
+/uni25C9 /orn.034 /uni25A0 /uni25C6 /orn.038 /uni2610 /uni2611 /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xA0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xB0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xC0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

@@ -1,0 +1,374 @@
+% A version of the TS1 encoding, intended for use with otftotfm.
+% CODINGSCHEME TEX TEXT COMPANION SYMBOLS 1---TS1
+/otftotfmTS1Encoding [
+% 0x00
+/capitalgrave
+/capitalacute
+/capitalcircumflex
+/capitaltilde
+/capitaldieresis
+/capitalhungarumlaut
+/capitalring
+/capitalcaron
+% 0x08
+/capitalbreve
+/capitalmacron
+/capitaldotaccent
+/cedilla
+/ogonek
+/quotesinglbase
+/.notdef
+/.notdef
+% 0x10 16
+/.notdef
+/.notdef
+/quotedblbase
+/.notdef
+/.notdef
+/twelveudash
+/threequartersemdash
+/capitalcompwordmark
+% 24
+/arrowleft
+/arrowright
+/tieaccentlowercase
+/tieaccentcapital
+/newtieaccentlowercase
+/newtieaccentcapital
+/.notdef
+/ascendercompwordmark
+% 0x20 32
+/blank
+/.notdef
+/.notdef
+/.notdef
+/dollar
+/.notdef
+/.notdef
+/quotesingle
+% 40
+/.notdef
+/.notdef
+/asteriskcentered
+/.notdef
+/comma
+/hyphendbl
+/period
+/fraction
+% 0x30 48
+/zerooldstyle
+/oneoldstyle
+/twooldstyle
+/threeoldstyle
+/fouroldstyle
+/fiveoldstyle
+/sixoldstyle
+/sevenoldstyle
+% 0x38 56
+/eightoldstyle
+/nineoldstyle
+/.notdef
+/.notdef
+/angbracketleft
+/minus
+/angbracketright
+/.notdef
+% 0x40 64
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+% 0x48 72
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/Omegainv
+/.notdef
+/bigcircle
+% 0x50 80
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/Omega
+% 88
+/.notdef
+/.notdef
+/.notdef
+/openbracketleft
+/.notdef
+/openbracketright
+/arrowup
+/arrowdown
+% 0x60 96
+/asciigrave
+/.notdef
+/born
+/divorced
+/died
+/.notdef
+/.notdef
+/.notdef
+% 0x68 104
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/leaf
+/married
+/musicalnote
+/.notdef
+% 0x70 112
+/.notdef
+/.notdef
+/.notdef
+/longs % from /.notdef (cf. lm-ts1.enc) (giovanni, 2022-01-10)
+/longs_t % from /.notdef (giovanni, 2022-01-10)
+/.notdef
+/.notdef
+/.notdef
+% 0x78 120
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/.notdef
+/tildelow
+/hyphendblchar
+% 0x80 128
+/asciibreve
+/asciicaron
+/asciiacutedbl
+/asciigravedbl
+/dagger
+/daggerdbl
+/bardbl
+/perthousand
+% 0x88 136
+/bullet
+/centigrade
+/dollaroldstyle
+/centoldstyle
+/florin
+/colonmonetary
+/won
+/naira
+% 0x90 144
+/guarani
+/peso
+/lira
+/recipe
+/interrobang
+/interrobangdown
+/dong
+/trademark
+% 0x98 152
+/pertenthousand
+/pilcrow
+/baht
+/numero
+/discount
+/estimated
+/openbullet
+/servicemark
+% 0xA0 160
+/quillbracketleft
+/quillbracketright
+/cent
+/sterling
+/currency
+/yen
+/brokenbar
+/section
+% 0xA8 168
+/asciidieresis
+/copyright
+/ordfeminine
+/copyleft
+/logicalnot
+/circledP
+/registered
+/asciimacron
+% 0xB0 176
+/degree
+/plusminus
+/twosuperior
+/threesuperior
+/asciiacute
+/mu
+/paragraph
+/periodcentered
+% 0xB8 184
+/referencemark
+/onesuperior
+/ordmasculine
+/radical
+/onequarter
+/onehalf
+/threequarters
+/euro
+% 0xC0 192
+/filledbox %added (giovanni)
+/H22073 %added (giovanni)y
+/uni25B4 %added (giovanni)
+/uni25B8 %added (giovanni)
+/uni25BE %added (giovanni)
+/uni25C2 %added (giovanni)
+/lozenge %added (giovanni)
+/circle %added (giovanni)
+% 0xC8 200
+/H18533 %added (giovanni)
+/uni267E %added (giovanni)
+/uniF5F0 %added (giovanni)
+/uniF5F1 %added (giovanni)
+/uni2150 %added (giovanni)
+/uni2151 %added (giovanni)
+/uni2152 %added (giovanni)
+/uni2153 %added (giovanni)
+% 0xD0 208
+/uni2154 %added (giovanni)
+/uni2155 %added (giovanni)
+/uni2156 %added (giovanni)
+/uni2157 %added (giovanni)
+/uni2158 %added (giovanni)
+/uni2159 %added (giovanni)
+/multiply
+/ellipsis %added (giovanni)
+% 0xD8 216
+/uni215A %added (giovanni)
+/uni215B %added (giovanni)
+/uni215C %added (giovanni)
+/uni215D %added (giovanni)
+/uni215E %added (giovanni)
+/uni215F %added (giovanni)
+/uni2184 %added (giovanni)
+/uni2189 %added (giovanni)
+% 0xE0 224
+/arrowleft %added (giovanni)
+/arrowup %added (giovanni)
+/arrowright %added (giovanni)
+/arrowdown %added (giovanni)
+/arrowboth %added (giovanni)
+/arrowupdn %added (giovanni)
+/uni2196 %added (giovanni)
+/uni2197 %added (giovanni)
+% 0xE8 232
+/uni2198 %added (giovanni)
+/uni2199 %added (giovanni)
+/uni2308 %added (giovanni)
+/uni2309 %added (giovanni)
+/uni230A %added (giovanni)
+/uni230B %added (giovanni)
+/uni2E20 %added (giovanni)
+/uni2E21 %added (giovanni)
+% 0xF0 240
+/uni2202 %added (giovanni)
+/uni2205 %added (giovanni)
+/uni2206 %added (giovanni)
+/uni220F %added (giovanni)
+/uni2211 %added (giovanni)
+/uni2212 %added (giovanni)
+/divide
+/uni25CC %added (giovanni)
+% 0xF8 248
+/uni2215 %added (giovanni)
+/uni2219 %added (giovanni)
+/uni221A %added (giovanni)
+/uni221E %added (giovanni)
+/uni222B %added (giovanni)
+/uni223C %added (giovanni)
+/uni2248 %added (giovanni)
+/uni2260 %added (giovanni)
+] def
+%
+% additions to $TEXMFDIST/fonts/map/glyphlist/ (giovanni, 2021-01-07)
+% UNICODING naira =: naira uni20A6 ;
+% UNICODING peso =: peso uni20B1 ;
+% UNICODING guarani =: guarani uni20B2 ;
+% UNICODING recipe =: recipe uni211E ;
+% UNICODING pilcrow =: pilcrow uni00B6 ;
+% UNICODING baht =: baht uni0E3F ;
+  %only bahtthai;0E3F exists in $TEXMFDIST/fonts/map/glyphlist/ , but U+0E3F is not in Teretisma Fonts
+% UNICODING servicemark =: servicemark uni2120 ;
+%
+% UNICODING bardbl =: bardbl dblverticalbar ;
+  %this allows for bardbl (U*2225) the fallback dblverticalbar (U+2016) (giovanni, 2021-01-07)
+% UNICODING tildelow =: tildelow uni223C asciitilde ;
+  %this allows to use fallbacks (giovanni, 2021-01-07)
+% UNICODING blank =: uni2422 blank ;
+  %if uni2422 exists, this prevents otftotfm from using U+2423 (OPEN BOX) (giovanni, 2021-01-07)
+% UNICODING tieaccentlowercase =: tieaccentlowercase uni0361 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING tieaccentcapital =: tieaccentcapital uni0361 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING newtieaccentlowercase =: newtieaccentlowercase uni2040 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING newtieaccentcapital =: newtieaccentcapital uni2040 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING hyphendbl =: hyphendbl uni2E17 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING hyphendblchar =: hyphendblchar uni2E17 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING bigcircle =: bigcircle circle ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING openbracketleft =: openbracketleft uni27E6 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING openbracketright =: openbracketright uni27E7 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING centoldstyle =: centoldstyle cent ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING dollaroldstyle =: dollaroldstyle dollar ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING openbullet =: openbullet uni2E30 ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING born =: born asterisk ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+% UNICODING died =: died dagger ;
+  %this allows to use a fallback (giovanni, 2021-01-07)
+
+% UNICODING zerooldstyle =: zerooldstyle uniF230 ;
+% UNICODING oneoldstyle =: oneoldstyle uniF231 ;
+% UNICODING twooldstyle =: twooldstyle uniF232 ;
+% UNICODING threeoldstyle =: threeoldstyle uniF233 ;
+% UNICODING fouroldstyle =: fouroldstyle uniF234 ;
+% UNICODING fiveoldstyle =: fiveoldstyle uniF235 ;
+% UNICODING sixoldstyle =: sixoldstyle uniF236 ;
+% UNICODING sevenoldstyle =: sevenoldstyle uniF237 ;
+% UNICODING eightoldstyle =: eightoldstyle uniF238 ;
+% UNICODING nineoldstyle =: nineoldstyle uniF239 ;
+% UNICODING capitalgrave =: gravecomb.case ;
+% UNICODING capitalacute =: acutecomb.case ;
+% UNICODING capitalcircumflex =: uni0302.case ;
+% UNICODING capitaltilde =: tildecomb.case ;
+% UNICODING capitaldieresis =: uni0308.case ;
+% UNICODING capitalhungarumlaut =: uni030B.case ;
+% UNICODING capitalring =: uni030A.case ;
+% UNICODING capitalcaron =: uni030C.case ;
+% UNICODING capitalbreve =: uni0306.case ;
+% UNICODING capitalmacron =: uni0304.case ;
+% UNICODING capitaldotaccent =: uni0307.case ;
+% UNICODING ascendercompwordmark =: uni200C ;
+% UNICODING asciigrave =: grave ;
+% UNICODING asciibreve =: uni02D8 ;
+% UNICODING asciicaron =: uni02C7 ;
+% UNICODING asciiacutedbl =: uni02DD ;
+% UNICODING asciigravedbl =: uni030F ;
+% UNICODING discount =: uni2052 ;
+% UNICODING openbullet =: uni25E6 uni2218;
+% UNICODING quillbracketleft =: uni2045 ;
+% UNICODING quillbracketright =: uni2046 ;
+% UNICODING asciidieresis =: dieresis ;
+% UNICODING circledP =: uni2117 ;
+% UNICODING asciimacron =: macron ;
+% UNICODING asciiacute =: acute
+%

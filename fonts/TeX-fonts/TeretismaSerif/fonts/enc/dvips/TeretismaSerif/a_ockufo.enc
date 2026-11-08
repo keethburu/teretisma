@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_ockufolf5cvuvnsvdfm4siwmph
-% Encoding created by otftotfm on Thu Jun  2 09:04:47 2022
+% Encoding created by otftotfm on Sun Nov  8 17:57:39 2026
 % Command line follows encoding
 /AutoEnc_ockufolf5cvuvnsvdfm4siwmph [
 %00
@@ -56,6 +56,5 @@
 % Command line: 'otftotfm --automatic --encoding=OML --tfm-directory=.
 % --vf-directory=. --type1-directory=. --encoding-directory=.
 % --map-file=./TeretismaSerif.map --no-updmap --force --coding-scheme=TEX
-% MATH ITALIC --feature=lnum --feature=tnum --letterspacing=55
-% --boundary-char=. Teretisma-Serif-Regular.otf
-% Teretisma-Serif-Regular-tlf-oml'
+% MATH ITALIC --feature=tnum --letterspacing=55 --boundary-char=.
+% Teretisma-Serif-Regular.otf Teretisma-Serif-Regular-tlf-oml'
