@@ -12,7 +12,7 @@
 Print("Open " + $1);
 Open($1);
 Print("Select " + ToString(UCodePoint(Strtol(Strsub($4,3), 16))));
-Select(UCodePoint(Strtol(Strsub($4,3), 16))); 
+Select(UCodePoint(Strtol(Strsub($4,3), 16)));
 CopyReference();
 Print("Select " + $3);
 Select(UCodePoint(Strtol(Strsub($3,3), 16)));

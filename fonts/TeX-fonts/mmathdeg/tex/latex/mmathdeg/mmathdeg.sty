@@ -3,15 +3,15 @@
 %% -----------------------------------------------------------------
 %% Author:     le-tex publishing services
 %% Maintainer: le-tex publishing services
-%% 
-%% This file is part of the mmathdeg package providing minionmath 
-%% with some chars from the De-Gruyter-Serif and De-Gruyter-Sans fonts.
-%% 
+%%
+%% This file is part of the mmathdeg package providing minionmath
+%% with some chars from the Teretisma-Serif and Teretisma-Sans fonts.
+%%
 %%       Copyright (C) 2022 Walter de Gruyter GmbH
 %% -----------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}[2011/06/27]
 \ProvidesPackage{mmathdeg}
-    [2022/05/24 v0.6 Minionmath with De-Gruyter-(Serif/Sans)]
+    [2022/05/24 v0.6 Minionmath with Teretisma-(Serif/Sans)]
 \DeclareOption*{\PassOptionsToPackage\CurrentOption{minionmath}}
 \ProcessOptions\relax
 \RequirePackage{minionmath}
@@ -19,23 +19,23 @@
 \DeclareMathVersion{ssbold}
 \def\@tempa{minion-oldmath}
 \ifx\M@layout\@tempa
-  \DeclareSymbolFont{operators}       {OT1} {DeGruyterSerif-TLF}{m}{n}
-  \SetSymbolFont{operators}   {bold}  {OT1} {DeGruyterSerif-TLF}{b}{n}
-  \SetSymbolFont{operators}   {ss}    {OT1} {DeGruyterSans-TLF} {m}{n}
-  \SetSymbolFont{operators}   {ssbold}{OT1} {DeGruyterSans-TLF} {b}{n}
-  \SetMathAlphabet{\mathrm}   {bold}  {OT1} {DeGruyterSerif-TLF}{b}{n} %mind! (gives more flexibility)
-  \SetMathAlphabet{\mathrm}   {ss}    {OT1} {DeGruyterSans-TLF} {m}{n} %mind! (gives more flexibility)
-  \SetMathAlphabet{\mathrm}   {ssbold}{OT1} {DeGruyterSans-TLF} {b}{n} %mind! (gives more flexibility)
-  \DeclareMathAlphabet{\mathit}       {OT1} {DeGruyterSerif-TLF}{m}{it}
-  \SetMathAlphabet{\mathit}   {bold}  {OT1} {DeGruyterSerif-TLF}{b}{it}
-  \SetMathAlphabet{\mathit}   {ss}    {OT1} {DeGruyterSans-TLF} {m}{it}
-  \SetMathAlphabet{\mathit}   {ssbold}{OT1} {DeGruyterSans-TLF} {b}{it}
-  \DeclareMathAlphabet{\mathbf}       {OT1} {DeGruyterSerif-TLF}{b}{n}
-  \SetMathAlphabet{\mathbf}   {ss}    {OT1} {DeGruyterSans-TLF} {b}{n} 
-  \SetMathAlphabet{\mathbf}   {ssbold}{OT1} {DeGruyterSans-TLF} {b}{n} 
-  \DeclareMathAlphabet{\mathsf}       {OT1} {DeGruyterSans-TLF} {m}{n}
-  \SetMathAlphabet{\mathsf}   {bold}  {OT1} {DeGruyterSans-TLF} {b}{n}
-  \SetMathAlphabet{\mathsf}   {ssbold}{OT1} {DeGruyterSans-TLF} {b}{n}
+  \DeclareSymbolFont{operators}       {OT1} {TeretismaSerif-TLF}{m}{n}
+  \SetSymbolFont{operators}   {bold}  {OT1} {TeretismaSerif-TLF}{b}{n}
+  \SetSymbolFont{operators}   {ss}    {OT1} {TeretismaSans-TLF} {m}{n}
+  \SetSymbolFont{operators}   {ssbold}{OT1} {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathrm}   {bold}  {OT1} {TeretismaSerif-TLF}{b}{n} %mind! (gives more flexibility)
+  \SetMathAlphabet{\mathrm}   {ss}    {OT1} {TeretismaSans-TLF} {m}{n} %mind! (gives more flexibility)
+  \SetMathAlphabet{\mathrm}   {ssbold}{OT1} {TeretismaSans-TLF} {b}{n} %mind! (gives more flexibility)
+  \DeclareMathAlphabet{\mathit}       {OT1} {TeretismaSerif-TLF}{m}{it}
+  \SetMathAlphabet{\mathit}   {bold}  {OT1} {TeretismaSerif-TLF}{b}{it}
+  \SetMathAlphabet{\mathit}   {ss}    {OT1} {TeretismaSans-TLF} {m}{it}
+  \SetMathAlphabet{\mathit}   {ssbold}{OT1} {TeretismaSans-TLF} {b}{it}
+  \DeclareMathAlphabet{\mathbf}       {OT1} {TeretismaSerif-TLF}{b}{n}
+  \SetMathAlphabet{\mathbf}   {ss}    {OT1} {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathbf}   {ssbold}{OT1} {TeretismaSans-TLF} {b}{n}
+  \DeclareMathAlphabet{\mathsf}       {OT1} {TeretismaSans-TLF} {m}{n}
+  \SetMathAlphabet{\mathsf}   {bold}  {OT1} {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathsf}   {ssbold}{OT1} {TeretismaSans-TLF} {b}{n}
   \DeclareMathAlphabet{\mathtt}       {OT1} {\ttdefault}        {m}{n}
   \SetMathAlphabet{\mathtt}   {bold}  {OT1} {\ttdefault}        {b}{n}
   \SetMathAlphabet{\mathtt}   {ssbold}{OT1} {\ttdefault}        {b}{n}
@@ -52,23 +52,23 @@
   \SetSymbolFont{AMSb}        {ssbold}{OMSB}{minionmath}        {b}{n}
 \else
   \DeclareFontEncoding{MC}{}{\noaccents@}
-  \DeclareSymbolFont{operators}       {T1}  {DeGruyterSerif-TLF}{m}{n}
-  \SetSymbolFont{operators}   {bold}  {T1}  {DeGruyterSerif-TLF}{b}{n}
-  \SetSymbolFont{operators}   {ss}    {T1}  {DeGruyterSans-TLF} {m}{n}
-  \SetSymbolFont{operators}   {ssbold}{T1}  {DeGruyterSans-TLF} {b}{n}
-  \SetMathAlphabet{\mathrm}   {bold}  {T1}  {DeGruyterSerif-TLF}{b}{n} %mind! (gives more flexibility)
-  \SetMathAlphabet{\mathrm}   {ss}    {T1}  {DeGruyterSans-TLF} {m}{n} %mind! (gives more flexibility)
-  \SetMathAlphabet{\mathrm}   {ssbold}{T1}  {DeGruyterSans-TLF} {b}{n} %mind! (gives more flexibility)
-  \DeclareMathAlphabet{\mathit}       {T1}  {DeGruyterSerif-TLF}{m}{it}
-  \SetMathAlphabet{\mathit}   {bold}  {T1}  {DeGruyterSerif-TLF}{b}{it}
-  \SetMathAlphabet{\mathit}   {ss}    {T1}  {DeGruyterSans-TLF} {m}{it}
-  \SetMathAlphabet{\mathit}   {ssbold}{T1}  {DeGruyterSans-TLF} {b}{it}
-  \DeclareMathAlphabet{\mathbf}       {T1}  {DeGruyterSerif-TLF}{b}{n}
-  \SetMathAlphabet{\mathbf}   {ss}    {T1}  {DeGruyterSans-TLF} {b}{n} 
-  \SetMathAlphabet{\mathbf}   {ssbold}{T1}  {DeGruyterSans-TLF} {b}{n} 
-  \DeclareMathAlphabet{\mathsf}       {T1}  {DeGruyterSans-TLF} {m}{n}
-  \SetMathAlphabet{\mathsf}   {bold}  {T1}  {DeGruyterSans-TLF} {b}{n}
-  \SetMathAlphabet{\mathsf}   {ssbold}{T1}  {DeGruyterSans-TLF} {b}{n}
+  \DeclareSymbolFont{operators}       {T1}  {TeretismaSerif-TLF}{m}{n}
+  \SetSymbolFont{operators}   {bold}  {T1}  {TeretismaSerif-TLF}{b}{n}
+  \SetSymbolFont{operators}   {ss}    {T1}  {TeretismaSans-TLF} {m}{n}
+  \SetSymbolFont{operators}   {ssbold}{T1}  {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathrm}   {bold}  {T1}  {TeretismaSerif-TLF}{b}{n} %mind! (gives more flexibility)
+  \SetMathAlphabet{\mathrm}   {ss}    {T1}  {TeretismaSans-TLF} {m}{n} %mind! (gives more flexibility)
+  \SetMathAlphabet{\mathrm}   {ssbold}{T1}  {TeretismaSans-TLF} {b}{n} %mind! (gives more flexibility)
+  \DeclareMathAlphabet{\mathit}       {T1}  {TeretismaSerif-TLF}{m}{it}
+  \SetMathAlphabet{\mathit}   {bold}  {T1}  {TeretismaSerif-TLF}{b}{it}
+  \SetMathAlphabet{\mathit}   {ss}    {T1}  {TeretismaSans-TLF} {m}{it}
+  \SetMathAlphabet{\mathit}   {ssbold}{T1}  {TeretismaSans-TLF} {b}{it}
+  \DeclareMathAlphabet{\mathbf}       {T1}  {TeretismaSerif-TLF}{b}{n}
+  \SetMathAlphabet{\mathbf}   {ss}    {T1}  {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathbf}   {ssbold}{T1}  {TeretismaSans-TLF} {b}{n}
+  \DeclareMathAlphabet{\mathsf}       {T1}  {TeretismaSans-TLF} {m}{n}
+  \SetMathAlphabet{\mathsf}   {bold}  {T1}  {TeretismaSans-TLF} {b}{n}
+  \SetMathAlphabet{\mathsf}   {ssbold}{T1}  {TeretismaSans-TLF} {b}{n}
   \DeclareMathAlphabet{\mathtt}       {T1}  {\ttdefault}        {m}{n}
   \SetMathAlphabet{\mathtt}   {bold}  {T1}  {\ttdefault}        {b}{n}
   \SetMathAlphabet{\mathtt}   {ssbold}{T1}  {\ttdefault}        {b}{n}

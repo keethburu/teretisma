@@ -1,4 +1,4 @@
-# De Gruyter Font
+# Teretisma Font
 
 
 ## Installation
@@ -25,10 +25,10 @@ gem install active_record
 
 ### Creation of new fonts
 
-1. place source font for glyphs in source_fonts 
+1. place source font for glyphs in source_fonts
 2. in config/chars.csv define the fonts used for the glyph for serif and sans serif versions (regular, bold, italic, bold italic)
 3. make new-font-set
-4. the new fonts are placed in output/ 
+4. the new fonts are placed in output/
 
 ### Creation of test document with the new fonts
 

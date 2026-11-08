@@ -23,10 +23,9 @@ while ( i<SizeOf(lookups) )
       @numr_lu = lookups[i]
    elseif ( Strsub(lookups[i], 1, 5) == 'dnom')
       @dnom_lu = lookups[i]
-   endif                   
+   endif
    ++i
 endloop
- 
 
 
 
@@ -35,118 +34,119 @@ endloop
 
 
 
-### Die eigentlichen Zahlen sollen proportional sein  
-### Codepoints F130-F139 enthalten die tabular-Varianten   
+
+### Die eigentlichen Zahlen sollen proportional sein
+### Codepoints F130-F139 enthalten die tabular-Varianten
 
 
 
-Select(UCodePoint(Strtol("F130", 16))); 
+Select(UCodePoint(Strtol("F130", 16)));
 SetGlyphName('zero.tf', 0)
-Select(UCodePoint(Strtol("F131", 16))); 
+Select(UCodePoint(Strtol("F131", 16)));
 SetGlyphName('one.tf', 0)
-Select(UCodePoint(Strtol("F132", 16))); 
+Select(UCodePoint(Strtol("F132", 16)));
 SetGlyphName('two.tf', 0)
-Select(UCodePoint(Strtol("F133", 16))); 
+Select(UCodePoint(Strtol("F133", 16)));
 SetGlyphName('three.tf', 0)
-Select(UCodePoint(Strtol("F134", 16))); 
+Select(UCodePoint(Strtol("F134", 16)));
 SetGlyphName('four.tf', 0)
-Select(UCodePoint(Strtol("F135", 16))); 
+Select(UCodePoint(Strtol("F135", 16)));
 SetGlyphName('five.tf', 0)
-Select(UCodePoint(Strtol("F136", 16))); 
+Select(UCodePoint(Strtol("F136", 16)));
 SetGlyphName('six.tf', 0)
-Select(UCodePoint(Strtol("F137", 16))); 
+Select(UCodePoint(Strtol("F137", 16)));
 SetGlyphName('seven.tf', 0)
-Select(UCodePoint(Strtol("F138", 16))); 
+Select(UCodePoint(Strtol("F138", 16)));
 SetGlyphName('eight.tf', 0)
-Select(UCodePoint(Strtol("F139", 16))); 
+Select(UCodePoint(Strtol("F139", 16)));
 SetGlyphName('nine.tf', 0)
 
-### Codepoints F230-F239 enthalten die old style-Varianten   
-Select(UCodePoint(Strtol("F230", 16))); 
+### Codepoints F230-F239 enthalten die old style-Varianten
+Select(UCodePoint(Strtol("F230", 16)));
 SetGlyphName('zero.osf', 0)
-Select(UCodePoint(Strtol("F231", 16))); 
+Select(UCodePoint(Strtol("F231", 16)));
 SetGlyphName('one.osf', 0)
-Select(UCodePoint(Strtol("F232", 16))); 
+Select(UCodePoint(Strtol("F232", 16)));
 SetGlyphName('two.osf', 0)
-Select(UCodePoint(Strtol("F233", 16))); 
+Select(UCodePoint(Strtol("F233", 16)));
 SetGlyphName('three.osf', 0)
-Select(UCodePoint(Strtol("F234", 16))); 
+Select(UCodePoint(Strtol("F234", 16)));
 SetGlyphName('four.osf', 0)
-Select(UCodePoint(Strtol("F235", 16))); 
+Select(UCodePoint(Strtol("F235", 16)));
 SetGlyphName('five.osf', 0)
-Select(UCodePoint(Strtol("F236", 16))); 
+Select(UCodePoint(Strtol("F236", 16)));
 SetGlyphName('six.osf', 0)
-Select(UCodePoint(Strtol("F237", 16))); 
+Select(UCodePoint(Strtol("F237", 16)));
 SetGlyphName('seven.osf', 0)
-Select(UCodePoint(Strtol("F238", 16))); 
+Select(UCodePoint(Strtol("F238", 16)));
 SetGlyphName('eight.osf', 0)
-Select(UCodePoint(Strtol("F239", 16))); 
+Select(UCodePoint(Strtol("F239", 16)));
 SetGlyphName('nine.osf', 0)
 
-### Codepoints F330-F339 enthalten die tabular old style-Varianten   
-Select(UCodePoint(Strtol("F330", 16))); 
+### Codepoints F330-F339 enthalten die tabular old style-Varianten
+Select(UCodePoint(Strtol("F330", 16)));
 SetGlyphName('zero.tosf', 0)
-Select(UCodePoint(Strtol("F331", 16))); 
+Select(UCodePoint(Strtol("F331", 16)));
 SetGlyphName('one.tosf', 0)
-Select(UCodePoint(Strtol("F332", 16))); 
+Select(UCodePoint(Strtol("F332", 16)));
 SetGlyphName('two.tosf', 0)
-Select(UCodePoint(Strtol("F333", 16))); 
+Select(UCodePoint(Strtol("F333", 16)));
 SetGlyphName('three.tosf', 0)
-Select(UCodePoint(Strtol("F334", 16))); 
+Select(UCodePoint(Strtol("F334", 16)));
 SetGlyphName('four.tosf', 0)
-Select(UCodePoint(Strtol("F335", 16))); 
+Select(UCodePoint(Strtol("F335", 16)));
 SetGlyphName('five.tosf', 0)
-Select(UCodePoint(Strtol("F336", 16))); 
+Select(UCodePoint(Strtol("F336", 16)));
 SetGlyphName('six.tosf', 0)
-Select(UCodePoint(Strtol("F337", 16))); 
+Select(UCodePoint(Strtol("F337", 16)));
 SetGlyphName('seven.tosf', 0)
-Select(UCodePoint(Strtol("F338", 16))); 
+Select(UCodePoint(Strtol("F338", 16)));
 SetGlyphName('eight.tosf', 0)
-Select(UCodePoint(Strtol("F339", 16))); 
+Select(UCodePoint(Strtol("F339", 16)));
 SetGlyphName('nine.tosf', 0)
 
-### Codepoints F430-F439 enthalten die numr-Varianten   
-Select(UCodePoint(Strtol("F430", 16))); 
+### Codepoints F430-F439 enthalten die numr-Varianten
+Select(UCodePoint(Strtol("F430", 16)));
 SetGlyphName('zero.numr', 0)
-Select(UCodePoint(Strtol("F431", 16))); 
+Select(UCodePoint(Strtol("F431", 16)));
 SetGlyphName('one.numr', 0)
-Select(UCodePoint(Strtol("F432", 16))); 
+Select(UCodePoint(Strtol("F432", 16)));
 SetGlyphName('two.numr', 0)
-Select(UCodePoint(Strtol("F433", 16))); 
+Select(UCodePoint(Strtol("F433", 16)));
 SetGlyphName('three.numr', 0)
-Select(UCodePoint(Strtol("F434", 16))); 
+Select(UCodePoint(Strtol("F434", 16)));
 SetGlyphName('four.numr', 0)
-Select(UCodePoint(Strtol("F435", 16))); 
+Select(UCodePoint(Strtol("F435", 16)));
 SetGlyphName('five.numr', 0)
-Select(UCodePoint(Strtol("F436", 16))); 
+Select(UCodePoint(Strtol("F436", 16)));
 SetGlyphName('six.numr', 0)
-Select(UCodePoint(Strtol("F437", 16))); 
+Select(UCodePoint(Strtol("F437", 16)));
 SetGlyphName('seven.numr', 0)
-Select(UCodePoint(Strtol("F438", 16))); 
+Select(UCodePoint(Strtol("F438", 16)));
 SetGlyphName('eight.numr', 0)
-Select(UCodePoint(Strtol("F439", 16))); 
+Select(UCodePoint(Strtol("F439", 16)));
 SetGlyphName('nine.numr', 0)
 
-### Codepoints F530-F539 enthalten die dnom-Varianten   
-Select(UCodePoint(Strtol("F530", 16))); 
+### Codepoints F530-F539 enthalten die dnom-Varianten
+Select(UCodePoint(Strtol("F530", 16)));
 SetGlyphName('zero.dnom', 0)
-Select(UCodePoint(Strtol("F531", 16))); 
+Select(UCodePoint(Strtol("F531", 16)));
 SetGlyphName('one.dnom', 0)
-Select(UCodePoint(Strtol("F532", 16))); 
+Select(UCodePoint(Strtol("F532", 16)));
 SetGlyphName('two.dnom', 0)
-Select(UCodePoint(Strtol("F533", 16))); 
+Select(UCodePoint(Strtol("F533", 16)));
 SetGlyphName('three.dnom', 0)
-Select(UCodePoint(Strtol("F534", 16))); 
+Select(UCodePoint(Strtol("F534", 16)));
 SetGlyphName('four.dnom', 0)
-Select(UCodePoint(Strtol("F535", 16))); 
+Select(UCodePoint(Strtol("F535", 16)));
 SetGlyphName('five.dnom', 0)
-Select(UCodePoint(Strtol("F536", 16))); 
+Select(UCodePoint(Strtol("F536", 16)));
 SetGlyphName('six.dnom', 0)
-Select(UCodePoint(Strtol("F537", 16))); 
+Select(UCodePoint(Strtol("F537", 16)));
 SetGlyphName('seven.dnom', 0)
-Select(UCodePoint(Strtol("F538", 16))); 
+Select(UCodePoint(Strtol("F538", 16)));
 SetGlyphName('eight.dnom', 0)
-Select(UCodePoint(Strtol("F539", 16))); 
+Select(UCodePoint(Strtol("F539", 16)));
 SetGlyphName('nine.dnom', 0)
 
 
@@ -158,46 +158,46 @@ Print(GetLookupSubtables(@lnum_lu))
 RemoveLookupSubtable(@lnum_lu + " subtable")
 AddLookupSubtable(@lnum_lu, @lnum_lu + " subtable")
 
-Select(UCodePoint(Strtol("F130", 16))); 
+Select(UCodePoint(Strtol("F130", 16)));
 AddPosSub(@lnum_lu + " subtable", 'zero')
-Select(UCodePoint(Strtol("F131", 16))); 
+Select(UCodePoint(Strtol("F131", 16)));
 AddPosSub(@lnum_lu + " subtable", 'one')
-Select(UCodePoint(Strtol("F132", 16))); 
+Select(UCodePoint(Strtol("F132", 16)));
 AddPosSub(@lnum_lu + " subtable", 'two')
-Select(UCodePoint(Strtol("F133", 16))); 
+Select(UCodePoint(Strtol("F133", 16)));
 AddPosSub(@lnum_lu + " subtable", 'three')
-Select(UCodePoint(Strtol("F134", 16))); 
+Select(UCodePoint(Strtol("F134", 16)));
 AddPosSub(@lnum_lu + " subtable", 'four')
-Select(UCodePoint(Strtol("F135", 16))); 
+Select(UCodePoint(Strtol("F135", 16)));
 AddPosSub(@lnum_lu + " subtable", 'five')
-Select(UCodePoint(Strtol("F136", 16))); 
+Select(UCodePoint(Strtol("F136", 16)));
 AddPosSub(@lnum_lu + " subtable", 'six')
-Select(UCodePoint(Strtol("F137", 16))); 
+Select(UCodePoint(Strtol("F137", 16)));
 AddPosSub(@lnum_lu + " subtable", 'seven')
-Select(UCodePoint(Strtol("F138", 16))); 
+Select(UCodePoint(Strtol("F138", 16)));
 AddPosSub(@lnum_lu + " subtable", 'eight')
-Select(UCodePoint(Strtol("F139", 16))); 
+Select(UCodePoint(Strtol("F139", 16)));
 AddPosSub(@lnum_lu + " subtable", 'nine')
 
-Select(UCodePoint(Strtol("F330", 16))); 
+Select(UCodePoint(Strtol("F330", 16)));
 AddPosSub(@lnum_lu + " subtable", 'zero.osf')
-Select(UCodePoint(Strtol("F331", 16))); 
+Select(UCodePoint(Strtol("F331", 16)));
 AddPosSub(@lnum_lu + " subtable", 'one.osf')
-Select(UCodePoint(Strtol("F332", 16))); 
+Select(UCodePoint(Strtol("F332", 16)));
 AddPosSub(@lnum_lu + " subtable", 'two.osf')
-Select(UCodePoint(Strtol("F333", 16))); 
+Select(UCodePoint(Strtol("F333", 16)));
 AddPosSub(@lnum_lu + " subtable", 'three.osf')
-Select(UCodePoint(Strtol("F334", 16))); 
+Select(UCodePoint(Strtol("F334", 16)));
 AddPosSub(@lnum_lu + " subtable", 'four.osf')
-Select(UCodePoint(Strtol("F335", 16))); 
+Select(UCodePoint(Strtol("F335", 16)));
 AddPosSub(@lnum_lu + " subtable", 'five.osf')
-Select(UCodePoint(Strtol("F336", 16))); 
+Select(UCodePoint(Strtol("F336", 16)));
 AddPosSub(@lnum_lu + " subtable", 'six.osf')
-Select(UCodePoint(Strtol("F337", 16))); 
+Select(UCodePoint(Strtol("F337", 16)));
 AddPosSub(@lnum_lu + " subtable", 'seven.osf')
-Select(UCodePoint(Strtol("F338", 16))); 
+Select(UCodePoint(Strtol("F338", 16)));
 AddPosSub(@lnum_lu + " subtable", 'eight.osf')
-Select(UCodePoint(Strtol("F339", 16))); 
+Select(UCodePoint(Strtol("F339", 16)));
 AddPosSub(@lnum_lu + " subtable", 'nine.osf')
 
 
@@ -209,46 +209,46 @@ Print(GetLookupSubtables(@pnum_lu))
 RemoveLookupSubtable(@pnum_lu + " subtable")
 AddLookupSubtable(@pnum_lu, @pnum_lu + " subtable")
 
-Select(UCodePoint(Strtol("F130", 16))); 
+Select(UCodePoint(Strtol("F130", 16)));
 AddPosSub(@pnum_lu + " subtable", 'zero')
-Select(UCodePoint(Strtol("F131", 16))); 
+Select(UCodePoint(Strtol("F131", 16)));
 AddPosSub(@pnum_lu + " subtable", 'one')
-Select(UCodePoint(Strtol("F132", 16))); 
+Select(UCodePoint(Strtol("F132", 16)));
 AddPosSub(@pnum_lu + " subtable", 'two')
-Select(UCodePoint(Strtol("F133", 16))); 
+Select(UCodePoint(Strtol("F133", 16)));
 AddPosSub(@pnum_lu + " subtable", 'three')
-Select(UCodePoint(Strtol("F134", 16))); 
+Select(UCodePoint(Strtol("F134", 16)));
 AddPosSub(@pnum_lu + " subtable", 'four')
-Select(UCodePoint(Strtol("F135", 16))); 
+Select(UCodePoint(Strtol("F135", 16)));
 AddPosSub(@pnum_lu + " subtable", 'five')
-Select(UCodePoint(Strtol("F136", 16))); 
+Select(UCodePoint(Strtol("F136", 16)));
 AddPosSub(@pnum_lu + " subtable", 'six')
-Select(UCodePoint(Strtol("F137", 16))); 
+Select(UCodePoint(Strtol("F137", 16)));
 AddPosSub(@pnum_lu + " subtable", 'seven')
-Select(UCodePoint(Strtol("F138", 16))); 
+Select(UCodePoint(Strtol("F138", 16)));
 AddPosSub(@pnum_lu + " subtable", 'eight')
-Select(UCodePoint(Strtol("F139", 16))); 
+Select(UCodePoint(Strtol("F139", 16)));
 AddPosSub(@pnum_lu + " subtable", 'nine')
 
-Select(UCodePoint(Strtol("F330", 16))); 
+Select(UCodePoint(Strtol("F330", 16)));
 AddPosSub(@pnum_lu + " subtable", 'zero.osf')
-Select(UCodePoint(Strtol("F331", 16))); 
+Select(UCodePoint(Strtol("F331", 16)));
 AddPosSub(@pnum_lu + " subtable", 'one.osf')
-Select(UCodePoint(Strtol("F332", 16))); 
+Select(UCodePoint(Strtol("F332", 16)));
 AddPosSub(@pnum_lu + " subtable", 'two.osf')
-Select(UCodePoint(Strtol("F333", 16))); 
+Select(UCodePoint(Strtol("F333", 16)));
 AddPosSub(@pnum_lu + " subtable", 'three.osf')
-Select(UCodePoint(Strtol("F334", 16))); 
+Select(UCodePoint(Strtol("F334", 16)));
 AddPosSub(@pnum_lu + " subtable", 'four.osf')
-Select(UCodePoint(Strtol("F335", 16))); 
+Select(UCodePoint(Strtol("F335", 16)));
 AddPosSub(@pnum_lu + " subtable", 'five.osf')
-Select(UCodePoint(Strtol("F336", 16))); 
+Select(UCodePoint(Strtol("F336", 16)));
 AddPosSub(@pnum_lu + " subtable", 'six.osf')
-Select(UCodePoint(Strtol("F337", 16))); 
+Select(UCodePoint(Strtol("F337", 16)));
 AddPosSub(@pnum_lu + " subtable", 'seven.osf')
-Select(UCodePoint(Strtol("F338", 16))); 
+Select(UCodePoint(Strtol("F338", 16)));
 AddPosSub(@pnum_lu + " subtable", 'eight.osf')
-Select(UCodePoint(Strtol("F339", 16))); 
+Select(UCodePoint(Strtol("F339", 16)));
 AddPosSub(@pnum_lu + " subtable", 'nine.osf')
 
 
@@ -261,46 +261,46 @@ Print(GetLookupSubtables(@tnum_lu))
 RemoveLookupSubtable(@tnum_lu + " subtable")
 AddLookupSubtable(@tnum_lu, @tnum_lu + " subtable")
 
-Select(UCodePoint(Strtol("0030", 16))); 
+Select(UCodePoint(Strtol("0030", 16)));
 AddPosSub(@tnum_lu + " subtable", 'zero.tf')
-Select(UCodePoint(Strtol("0031", 16))); 
+Select(UCodePoint(Strtol("0031", 16)));
 AddPosSub(@tnum_lu + " subtable", 'one.tf')
-Select(UCodePoint(Strtol("0032", 16))); 
+Select(UCodePoint(Strtol("0032", 16)));
 AddPosSub(@tnum_lu + " subtable", 'two.tf')
-Select(UCodePoint(Strtol("0033", 16))); 
+Select(UCodePoint(Strtol("0033", 16)));
 AddPosSub(@tnum_lu + " subtable", 'three.tf')
-Select(UCodePoint(Strtol("0034", 16))); 
+Select(UCodePoint(Strtol("0034", 16)));
 AddPosSub(@tnum_lu + " subtable", 'four.tf')
-Select(UCodePoint(Strtol("0035", 16))); 
+Select(UCodePoint(Strtol("0035", 16)));
 AddPosSub(@tnum_lu + " subtable", 'five.tf')
-Select(UCodePoint(Strtol("0036", 16))); 
+Select(UCodePoint(Strtol("0036", 16)));
 AddPosSub(@tnum_lu + " subtable", 'six.tf')
-Select(UCodePoint(Strtol("0037", 16))); 
+Select(UCodePoint(Strtol("0037", 16)));
 AddPosSub(@tnum_lu + " subtable", 'seven.tf')
-Select(UCodePoint(Strtol("0038", 16))); 
+Select(UCodePoint(Strtol("0038", 16)));
 AddPosSub(@tnum_lu + " subtable", 'eight.tf')
-Select(UCodePoint(Strtol("0039", 16))); 
+Select(UCodePoint(Strtol("0039", 16)));
 AddPosSub(@tnum_lu + " subtable", 'nine.tf')
 
-Select(UCodePoint(Strtol("F230", 16))); 
+Select(UCodePoint(Strtol("F230", 16)));
 AddPosSub(@tnum_lu + " subtable", 'zero.tosf')
-Select(UCodePoint(Strtol("F231", 16))); 
+Select(UCodePoint(Strtol("F231", 16)));
 AddPosSub(@tnum_lu + " subtable", 'one.tosf')
-Select(UCodePoint(Strtol("F232", 16))); 
+Select(UCodePoint(Strtol("F232", 16)));
 AddPosSub(@tnum_lu + " subtable", 'two.tosf')
-Select(UCodePoint(Strtol("F233", 16))); 
+Select(UCodePoint(Strtol("F233", 16)));
 AddPosSub(@tnum_lu + " subtable", 'three.tosf')
-Select(UCodePoint(Strtol("F234", 16))); 
+Select(UCodePoint(Strtol("F234", 16)));
 AddPosSub(@tnum_lu + " subtable", 'four.tosf')
-Select(UCodePoint(Strtol("F235", 16))); 
+Select(UCodePoint(Strtol("F235", 16)));
 AddPosSub(@tnum_lu + " subtable", 'five.tosf')
-Select(UCodePoint(Strtol("F236", 16))); 
+Select(UCodePoint(Strtol("F236", 16)));
 AddPosSub(@tnum_lu + " subtable", 'six.tosf')
-Select(UCodePoint(Strtol("F237", 16))); 
+Select(UCodePoint(Strtol("F237", 16)));
 AddPosSub(@tnum_lu + " subtable", 'seven.tosf')
-Select(UCodePoint(Strtol("F238", 16))); 
+Select(UCodePoint(Strtol("F238", 16)));
 AddPosSub(@tnum_lu + " subtable", 'eight.tosf')
-Select(UCodePoint(Strtol("F239", 16))); 
+Select(UCodePoint(Strtol("F239", 16)));
 AddPosSub(@tnum_lu + " subtable", 'nine.tosf')
 
 
@@ -313,46 +313,46 @@ Print(GetLookupSubtables(@onum_lu))
 RemoveLookupSubtable(@onum_lu + " subtable")
 AddLookupSubtable(@onum_lu, @onum_lu + " subtable")
 
-Select(UCodePoint(Strtol("0030", 16))); 
+Select(UCodePoint(Strtol("0030", 16)));
 AddPosSub(@onum_lu + " subtable", 'zero.osf')
-Select(UCodePoint(Strtol("0031", 16))); 
+Select(UCodePoint(Strtol("0031", 16)));
 AddPosSub(@onum_lu + " subtable", 'one.osf')
-Select(UCodePoint(Strtol("0032", 16))); 
+Select(UCodePoint(Strtol("0032", 16)));
 AddPosSub(@onum_lu + " subtable", 'two.osf')
-Select(UCodePoint(Strtol("0033", 16))); 
+Select(UCodePoint(Strtol("0033", 16)));
 AddPosSub(@onum_lu + " subtable", 'three.osf')
-Select(UCodePoint(Strtol("0034", 16))); 
+Select(UCodePoint(Strtol("0034", 16)));
 AddPosSub(@onum_lu + " subtable", 'four.osf')
-Select(UCodePoint(Strtol("0035", 16))); 
+Select(UCodePoint(Strtol("0035", 16)));
 AddPosSub(@onum_lu + " subtable", 'five.osf')
-Select(UCodePoint(Strtol("0036", 16))); 
+Select(UCodePoint(Strtol("0036", 16)));
 AddPosSub(@onum_lu + " subtable", 'six.osf')
-Select(UCodePoint(Strtol("0037", 16))); 
+Select(UCodePoint(Strtol("0037", 16)));
 AddPosSub(@onum_lu + " subtable", 'seven.osf')
-Select(UCodePoint(Strtol("0038", 16))); 
+Select(UCodePoint(Strtol("0038", 16)));
 AddPosSub(@onum_lu + " subtable", 'eight.osf')
-Select(UCodePoint(Strtol("0039", 16))); 
+Select(UCodePoint(Strtol("0039", 16)));
 AddPosSub(@onum_lu + " subtable", 'nine.osf')
 
-Select(UCodePoint(Strtol("F130", 16))); 
+Select(UCodePoint(Strtol("F130", 16)));
 AddPosSub(@onum_lu + " subtable", 'zero.tosf')
-Select(UCodePoint(Strtol("F131", 16))); 
+Select(UCodePoint(Strtol("F131", 16)));
 AddPosSub(@onum_lu + " subtable", 'one.tosf')
-Select(UCodePoint(Strtol("F132", 16))); 
+Select(UCodePoint(Strtol("F132", 16)));
 AddPosSub(@onum_lu + " subtable", 'two.tosf')
-Select(UCodePoint(Strtol("F133", 16))); 
+Select(UCodePoint(Strtol("F133", 16)));
 AddPosSub(@onum_lu + " subtable", 'three.tosf')
-Select(UCodePoint(Strtol("F134", 16))); 
+Select(UCodePoint(Strtol("F134", 16)));
 AddPosSub(@onum_lu + " subtable", 'four.tosf')
-Select(UCodePoint(Strtol("F135", 16))); 
+Select(UCodePoint(Strtol("F135", 16)));
 AddPosSub(@onum_lu + " subtable", 'five.tosf')
-Select(UCodePoint(Strtol("F136", 16))); 
+Select(UCodePoint(Strtol("F136", 16)));
 AddPosSub(@onum_lu + " subtable", 'six.tosf')
-Select(UCodePoint(Strtol("F137", 16))); 
+Select(UCodePoint(Strtol("F137", 16)));
 AddPosSub(@onum_lu + " subtable", 'seven.tosf')
-Select(UCodePoint(Strtol("F138", 16))); 
+Select(UCodePoint(Strtol("F138", 16)));
 AddPosSub(@onum_lu + " subtable", 'eight.tosf')
-Select(UCodePoint(Strtol("F139", 16))); 
+Select(UCodePoint(Strtol("F139", 16)));
 AddPosSub(@onum_lu + " subtable", 'nine.tosf')
 
 
@@ -365,25 +365,25 @@ Print(GetLookupSubtables(@numr_lu))
 RemoveLookupSubtable(@numr_lu + " subtable")
 AddLookupSubtable(@numr_lu, @numr_lu + " subtable")
 
-Select(UCodePoint(Strtol("0030", 16))); 
+Select(UCodePoint(Strtol("0030", 16)));
 AddPosSub(@numr_lu + " subtable", 'zero.numr')
-Select(UCodePoint(Strtol("0031", 16))); 
+Select(UCodePoint(Strtol("0031", 16)));
 AddPosSub(@numr_lu + " subtable", 'one.numr')
-Select(UCodePoint(Strtol("0032", 16))); 
+Select(UCodePoint(Strtol("0032", 16)));
 AddPosSub(@numr_lu + " subtable", 'two.numr')
-Select(UCodePoint(Strtol("0033", 16))); 
+Select(UCodePoint(Strtol("0033", 16)));
 AddPosSub(@numr_lu + " subtable", 'three.numr')
-Select(UCodePoint(Strtol("0034", 16))); 
+Select(UCodePoint(Strtol("0034", 16)));
 AddPosSub(@numr_lu + " subtable", 'four.numr')
-Select(UCodePoint(Strtol("0035", 16))); 
+Select(UCodePoint(Strtol("0035", 16)));
 AddPosSub(@numr_lu + " subtable", 'five.numr')
-Select(UCodePoint(Strtol("0036", 16))); 
+Select(UCodePoint(Strtol("0036", 16)));
 AddPosSub(@numr_lu + " subtable", 'six.numr')
-Select(UCodePoint(Strtol("0037", 16))); 
+Select(UCodePoint(Strtol("0037", 16)));
 AddPosSub(@numr_lu + " subtable", 'seven.numr')
-Select(UCodePoint(Strtol("0038", 16))); 
+Select(UCodePoint(Strtol("0038", 16)));
 AddPosSub(@numr_lu + " subtable", 'eight.numr')
-Select(UCodePoint(Strtol("0039", 16))); 
+Select(UCodePoint(Strtol("0039", 16)));
 AddPosSub(@numr_lu + " subtable", 'nine.numr')
 
 
@@ -396,25 +396,25 @@ Print(GetLookupSubtables(@dnom_lu))
 RemoveLookupSubtable(@dnom_lu + " subtable")
 AddLookupSubtable(@dnom_lu, @dnom_lu + " subtable")
 
-Select(UCodePoint(Strtol("0030", 16))); 
+Select(UCodePoint(Strtol("0030", 16)));
 AddPosSub(@dnom_lu + " subtable", 'zero.dnom')
-Select(UCodePoint(Strtol("0031", 16))); 
+Select(UCodePoint(Strtol("0031", 16)));
 AddPosSub(@dnom_lu + " subtable", 'one.dnom')
-Select(UCodePoint(Strtol("0032", 16))); 
+Select(UCodePoint(Strtol("0032", 16)));
 AddPosSub(@dnom_lu + " subtable", 'two.dnom')
-Select(UCodePoint(Strtol("0033", 16))); 
+Select(UCodePoint(Strtol("0033", 16)));
 AddPosSub(@dnom_lu + " subtable", 'three.dnom')
-Select(UCodePoint(Strtol("0034", 16))); 
+Select(UCodePoint(Strtol("0034", 16)));
 AddPosSub(@dnom_lu + " subtable", 'four.dnom')
-Select(UCodePoint(Strtol("0035", 16))); 
+Select(UCodePoint(Strtol("0035", 16)));
 AddPosSub(@dnom_lu + " subtable", 'five.dnom')
-Select(UCodePoint(Strtol("0036", 16))); 
+Select(UCodePoint(Strtol("0036", 16)));
 AddPosSub(@dnom_lu + " subtable", 'six.dnom')
-Select(UCodePoint(Strtol("0037", 16))); 
+Select(UCodePoint(Strtol("0037", 16)));
 AddPosSub(@dnom_lu + " subtable", 'seven.dnom')
-Select(UCodePoint(Strtol("0038", 16))); 
+Select(UCodePoint(Strtol("0038", 16)));
 AddPosSub(@dnom_lu + " subtable", 'eight.dnom')
-Select(UCodePoint(Strtol("0039", 16))); 
+Select(UCodePoint(Strtol("0039", 16)));
 AddPosSub(@dnom_lu + " subtable", 'nine.dnom')
 
 

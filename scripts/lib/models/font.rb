@@ -31,7 +31,7 @@ class Font  < FontDbConnection
     _hash.delete("Copyright")
     _hash.delete(:features)
     _hash.delete(:glyphs)
-    self.misc_informations = _hash 
+    self.misc_informations = _hash
   end
 
   def add_file_location(location)
@@ -120,7 +120,7 @@ class Font  < FontDbConnection
       :percentage_features => ((source_features_count - missing_features_count) / source_features_count.to_f)
     }
   end
-  
+
 
   def compare(source_family)
     source_font = comparison_font(source_family)
@@ -136,7 +136,7 @@ class Font  < FontDbConnection
   def comparison_font(source_family)
     Font.where(:family => source_family, :sub_family => self.sub_family).first
   end
-  
+
 
   def replace_missing_glyphs(text)
     _text = text.dup
@@ -152,7 +152,7 @@ class Font  < FontDbConnection
         BoldFont= #{File.basename(bold_font&.file_locations&.first.to_s).gsub(/[\[\]]/,'_')},
         ItalicFont     = #{File.basename(italic_font&.file_locations&.first.to_s).gsub(/[\[\]]/,'_')},
         BoldItalicFont = #{File.basename(bold_italic_font&.file_locations&.first.to_s).gsub(/[\[\]]/,'_')}]"
-    
+
   end
 
 
@@ -174,8 +174,8 @@ class Font  < FontDbConnection
 
 
 
-  
-  
+
+
 end
 
 

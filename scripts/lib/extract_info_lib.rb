@@ -6,7 +6,7 @@ def extract_infos_for_font(font_file)
     infos = {}
     key = nil
     infos_string.each_line{|line|
-      if not(line =~ /^This license is/) and line =~ /(?=\n|^)([A-Za-z ]+):[[:space:]]/ 
+      if not(line =~ /^This license is/) and line =~ /(?=\n|^)([A-Za-z ]+):[[:space:]]/
         if key and infos[key]
           infos[key] = infos[key].strip
         end
@@ -24,15 +24,15 @@ def extract_infos_for_font(font_file)
     if key and infos[key]
       infos[key] = infos[key].strip
     end
-    
+
   end
-  
-  
+
+
   features = `otfinfo -f '#{font_file}'`.lines.to_a.collect{|line| line.split(/[[:space:]]+/,2).collect(&:strip)}
   features = [] unless $?.to_i == 0
 
   glyphs = `otfinfo -u '#{font_file}'`.lines.to_a.collect{|line| line.strip.split(/[[:space:]]+/)}
   glyphs = [] unless $?.to_i == 0
   return infos.merge(:features => features, :glyphs => glyphs)
-  
+
 end

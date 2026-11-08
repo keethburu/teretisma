@@ -1,0 +1,64 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_5pwharvjknfg3vcw2qbzak72mh
+% Encoding created by otftotfm on Thu Jun  2 09:14:25 2022
+% Command line follows encoding
+/AutoEnc_5pwharvjknfg3vcw2qbzak72mh [
+%00
+  /uniF130 /uniF131 /uniF132 /uniF133 /uniF134 /uniF135 /uniF136 /uniF137
+  /uniF138 /uniF139 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /zero.osf /one.osf /two.osf /three.osf /four.osf /five.osf /six.osf /seven.osf
+  /eight.osf /nine.osf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /uniF330 /uniF331 /uniF332 /uniF333 /uniF334 /uniF335 /uniF336 /uniF337
+  /uniF338 /uniF339 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%30
+  /uni2070 /uni00B9 /uni00B2 /uni00B3 /uni2074 /uni2075 /uni2076 /uni2077
+  /uni2078 /uni2079 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%40
+  /uni2080 /uni2081 /uni2082 /uni2083 /uni2084 /uni2085 /uni2086 /uni2087
+  /uni2088 /uni2089 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /zero.numr /one.numr /two.numr /three.numr /four.numr /five.numr /six.numr /seven.numr
+  /eight.numr /nine.numr /.notdef /.notdef /.notdef /.notdef /.notdef /fraction
+%60
+  /zero.dnom /one.dnom /two.dnom /three.dnom /four.dnom /five.dnom /six.dnom /seven.dnom
+  /eight.dnom /nine.dnom /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /uniF230 /uniF231 /uniF232 /uniF233 /uniF234 /uniF235 /uniF236 /uniF237
+  /uniF238 /uniF239 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /arrowleft /arrowright /arrowleft /arrowright /arrowleft
+  /arrowright /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /filledbox /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /l.sc /.notdef /i.sc /f.sc
+] def
+% Command line: 'otftotfm --automatic --encoding=U --tfm-directory=.
+% --vf-directory=. --type1-directory=. --encoding-directory=.
+% --map-file=./TeretismaSans.map --no-updmap --force --feature=kern
+% --feature=liga --feature=onum --feature=pnum --feature=smcp --ligkern=f i
+% =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi
+% --ligkern=ff l =: ffl --unicoding=germandbls =: SSsmall --unicoding=ff =:
+% FFsmall --unicoding=fi =: FIsmall --unicoding=ffi =: FFIsmall
+% --unicoding=fl =: FLsmall --unicoding=ffl =: FFLsmall
+% Teretisma-Sans-Regular.otf Teretisma-Sans-Regular-osf-sc-u'

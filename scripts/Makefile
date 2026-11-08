@@ -1,9 +1,9 @@
-NEW_FONT_NAME = De Gruyter
-NEW_FONT_NAME_FILES = De-Gruyter
+NEW_FONT_NAME = Teretisma
+NEW_FONT_NAME_FILES = Teretisma
 
 
 new-font-set: config/chars.csv
-	@echo "Erzeuge neue Fonts aus Char-Config" 
+	@echo "Erzeuge neue Fonts aus Char-Config"
 	ruby -e 'require "./lib/font_manager.rb"; FontManager.create_new_fonts(new_font_name: "$(NEW_FONT_NAME)", base_font_regex: /$(NEW_FONT_NAME_FILES)-.*-Manual/)'
 	ruby -e 'require "./lib/font_manager.rb"; FontManager.create_math_font(new_font_name: "$(NEW_FONT_NAME)")'
 

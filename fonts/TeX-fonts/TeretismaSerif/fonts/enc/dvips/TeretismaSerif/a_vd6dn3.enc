@@ -1,0 +1,64 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_vd6dn3zkcxu2f6oc5mzq4v4lka
+% Encoding created by otftotfm on Thu Jun  2 09:06:16 2022
+% Command line follows encoding
+/AutoEnc_vd6dn3zkcxu2f6oc5mzq4v4lka [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /overscore.sc /dotaccent /cedilla /ogonek /quotesinglbase /guilsinglleft /guilsinglright
+%10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft /guillemotright /endash /emdash /.notdef
+  /.notdef /dotlessi /uni0237 /f_f /fi /fl /f_f_i /f_f_l
+%20
+  /space /exclam.sc /quotedbl /numbersign /dollar /percent /ampersand.sc /quoteright
+  /parenleft.sc /parenright.sc /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.lf /one.lf /two.lf /three.lf /four.lf /five.lf /six.lf /seven.lf
+  /eight.lf /nine.lf /colon /semicolon /less /equal /greater /question.sc
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft.sc /backslash /bracketright.sc /asciicircum /underscore
+%60
+  /quoteleft /a.sc /b.sc /c.sc /d.sc /e.sc /f.sc /g.sc
+  /h.sc /i.sc /j.sc /k.sc /l.sc /m.sc /n.sc /o.sc
+%70
+  /p.sc /q.sc /r.sc /s.sc /t.sc /u.sc /v.sc /w.sc
+  /x.sc /y.sc /z.sc /braceleft.sc /bar /braceright.sc /asciitilde /.notdef
+%80
+  /Euro /.notdef /.notdef /florin /.notdef /ellipsis /dagger /daggerdbl
+  /.notdef /perthousand /.notdef /.notdef /OE /.notdef /.notdef /.notdef
+%90
+  /ebreve.sc /ibreve.sc /ubreve.sc /uni0219.sc /.notdef /bullet /.notdef /.notdef
+  /.notdef /trademark /.notdef /.notdef /oe.sc /.notdef /.notdef /.notdef
+%A0
+  /uni00A0 /.notdef /cent /sterling /currency /.notdef /brokenbar /section
+  /Oslash /copyright /uni0156 /l.sc /logicalnot /.notdef /registered /AE
+%B0
+  /degree /plusminus /uni00B2 /uni00B3 /.notdef /uni00B5 /paragraph /periodcentered
+  /oslash.sc /uni00B9 /uni0157.sc /i.sc /onequarter /onehalf /threequarters /ae.sc
+%C0
+  /Aogonek /Iogonek /Amacron /Cacute /Adieresis /Aring /Eogonek /Emacron
+  /Ccaron /Eacute /Zacute /Edotaccent /uni0122 /uni0136 /Imacron /uni013B
+%D0
+  /Scaron /Nacute /uni0145 /Oacute /Omacron /Otilde /Odieresis /multiply
+  /Uogonek /Lslash /Sacute /Umacron /Udieresis /Zdotaccent /Zcaron /germandbls.sc
+%E0
+  /aogonek.sc /iogonek.sc /amacron.sc /cacute.sc /adieresis.sc /aring.sc /eogonek.sc /emacron.sc
+  /ccaron.sc /eacute.sc /zacute.sc /edotaccent.sc /uni0123.sc /uni0137.sc /imacron.sc /uni013C.sc
+%F0
+  /scaron.sc /nacute.sc /uni0146.sc /oacute.sc /omacron.sc /otilde.sc /odieresis.sc /divide
+  /uogonek.sc /lslash.sc /sacute.sc /umacron.sc /udieresis.sc /zdotaccent.sc /zcaron.sc /f.sc
+] def
+% Command line: 'otftotfm --automatic --encoding=L7x --tfm-directory=.
+% --vf-directory=. --type1-directory=. --encoding-directory=.
+% --map-file=./TeretismaSerif.map --no-updmap --force --feature=kern
+% --feature=liga --feature=lnum --feature=pnum --feature=smcp --ligkern=f i
+% =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi
+% --ligkern=ff l =: ffl --unicoding=germandbls =: SSsmall --unicoding=ff =:
+% FFsmall --unicoding=fi =: FIsmall --unicoding=ffi =: FFIsmall
+% --unicoding=fl =: FLsmall --unicoding=ffl =: FFLsmall
+% Teretisma-Serif-Italic.otf Teretisma-Serif-Italic-lf-sc-l7x'

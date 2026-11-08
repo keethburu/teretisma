@@ -32,7 +32,7 @@ class FontDbConnection < ActiveRecord::Base
    #       table.column :glyph_description, :string
    #     end
 
-  
+
    #     create_table :font_features do |table|
    #       table.column :font_id, :integer, :index => true
    #       table.column :feature_id, :integer, :index => true
@@ -42,6 +42,6 @@ class FontDbConnection < ActiveRecord::Base
    #       table.column :font_id, :integer, :index => true
    #       table.column :glyph_id, :integer, :index => true
    #     end
-  
+
    # end
 end
