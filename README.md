@@ -1,5 +1,5 @@
 # Teretisma
-The new fonts are based on the [Noto](https://www.google.com/get/noto/) SemiCondensed family and have been modified in order to meet the requirements a wide variety of disciplines and publication forms.
+The new fonts are based on the [Noto Sans](https://github.com/google/fonts/tree/main/ofl/notosans) and [Noto Serif](https://github.com/google/fonts/tree/main/ofl/notoserif) SemiCondensed families, distributed through [Google Fonts](https://github.com/google/fonts) and have been modified in order to meet the requirements a wide variety of disciplines and publication forms.
 They cover the Unicode characters for most modern scripts based on the Latin alphabet as well as Greek and Cyrillic alphabets. They further include linguistic characters (IPA and other phonetic extensions) and special characters for a wide range of specific transliteration forms (e.g., for Arabic or hieroglyphs).
 
 ![Graphic showing a preview of all Teretisma fonts listed in this repository](assets/images/font-preview.svg)
@@ -37,23 +37,30 @@ Teretisma is an independent continuation of the [De Gruyter font repository](htt
 
 The first Teretisma commit records the unchanged imported tree; the second renames the project, fonts, build configuration, and TeX packages. Font outlines and character coverage are preserved. The inherited TeX PDF manuals have been reissued as text manuals with the renamed package references.
 
-De Gruyter is historical provenance, not the ongoing upstream. Future dependency updates should come directly from their respective projects:
+De Gruyter is historical provenance, not the ongoing upstream. [google/fonts](https://github.com/google/fonts) is the upstream distribution reference for Noto font updates. Its per-family directories contain the downloadable fonts, metadata, and applicable license:
 
-- [Noto Sans](https://github.com/notofonts/latin-greek-cyrillic), [Noto Serif](https://github.com/notofonts/latin-greek-cyrillic): SemiCondensed source families.
-- [Noto Symbols](https://github.com/notofonts/symbols): supplementary symbol fonts.
-- [Noto Math](https://github.com/notofonts/math): mathematical glyphs.
-- [New Athena Unicode](https://apagreekkeys.org/NAUdownload.html): additional inherited glyph sources.
+- [Noto Sans](https://github.com/google/fonts/tree/main/ofl/notosans)
+- [Noto Serif](https://github.com/google/fonts/tree/main/ofl/notoserif)
+- [Noto Sans Symbols](https://github.com/google/fonts/tree/main/ofl/notosanssymbols)
+- [Noto Sans Symbols 2](https://github.com/google/fonts/tree/main/ofl/notosanssymbols2)
+- [Noto Sans Math](https://github.com/google/fonts/tree/main/ofl/notosansmath)
 
-The inherited source snapshots remain in `scripts/source_fonts/` for reproducibility; they have not been updated to newer upstream releases as part of the rename. Repository remotes point directly to the Noto projects; there is no De Gruyter remote or branch-tracking relationship. The Minion Math TeX support files are retained; Minion Math itself is a separate dependency and is not supplied here.
+[New Athena Unicode](https://classicalstudies.org/publications-and-research/nau-download) remains a separate inherited glyph source, licensed under OFL 1.1 according to the bundled fonts' embedded notices.
+
+The inherited source snapshots remain in `scripts/source_fonts/` for reproducibility; they have not been replaced with current Google Fonts releases. In particular, the existing build expects static SemiCondensed inputs, so a future source update must account for the formats and versions supplied by Google Fonts. The local `google-fonts` remote points to `https://github.com/google/fonts.git`; there is no De Gruyter remote or branch-tracking relationship. The Minion Math TeX support files are retained; Minion Math itself is a separate dependency and is not supplied or licensed by this project.
 
 ## License
 
-Fonts retain the [SIL Open Font License 1.1](fonts/LICENSE). Build scripts retain their [GNU GPL license](scripts/LICENSE). Existing copyright, author, trademark, and license notices remain intact; renaming the project does not transfer ownership of the inherited work.
+The font software is licensed under the **SIL Open Font License 1.1 (OFL-1.1)**: see the root [LICENSE](LICENSE), its distribution copy [fonts/LICENSE](fonts/LICENSE), and the source-font copy [scripts/source_fonts/LICENSE](scripts/source_fonts/LICENSE). These include the historical copyright notices found in the bundled font metadata. Release ZIPs include the font license as `OFL.txt`.
+
+Google Fonts supplies each Noto family's license in its own directory; for example, [Noto Sans OFL.txt](https://github.com/google/fonts/blob/main/ofl/notosans/OFL.txt). Current upstream copyright statements describe current upstream releases; they do not replace the historical notices belonging to our older bundled snapshots.
+
+The inherited build scripts remain under **GNU GPL version 3 or later (GPL-3.0-or-later)** as stated in [scripts/LICENSE](scripts/LICENSE). The root font license does not relicense those scripts or any separately licensed third-party components. Existing copyright, author, trademark, and license notices remain intact; renaming the project does not transfer ownership of the inherited work.
 
 Modified build scripts and TeX integration were renamed for Teretisma on 2026-11-08.
 
 ## Rename validation
 
-The rename was checked by recursively parsing the font distribution archives and their OpenType, Type 1, TFM, and VF files. All 53 working-tree OpenType/TrueType files retain their original glyph order, character coverage, metrics, layout tables, and glyph outlines. XeLaTeX and pdfLaTeX smoke documents loaded Teretisma Serif and Sans in regular, bold, italic, and bold italic styles. Both license files are unchanged from the imported baseline.
+The rename was checked by recursively parsing the font distribution archives and their OpenType, Type 1, TFM, and VF files. All 53 working-tree OpenType/TrueType files retain their original glyph order, character coverage, metrics, layout tables, and glyph outlines. XeLaTeX and pdfLaTeX smoke documents loaded Teretisma Serif and Sans in regular, bold, italic, and bold italic styles. The original OFL terms and build-script GPL license are preserved; font license copies now also carry the historical copyright notices.
 
 A complete rebuild through the inherited Ruby/FontForge pipeline has not been run; those tools are not installed in the initial workspace. The checks above validate the renamed existing fonts and TeX packages.
