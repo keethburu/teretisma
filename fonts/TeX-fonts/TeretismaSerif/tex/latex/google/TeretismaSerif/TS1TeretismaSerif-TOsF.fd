@@ -22,20 +22,20 @@
 
 %   ----  b = bold  ----
 
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{b}{n}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-tosf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bold}{n}{
-      <-> alias * TeretismaSerif-TOsF/b/n
-}{}
-
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{b}{it}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-tosf-ts1
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bold}{it}{
       <-> alias * TeretismaSerif-TOsF/b/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{b}{n}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-tosf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bold}{n}{
+      <-> alias * TeretismaSerif-TOsF/b/n
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{b}{sl}{
@@ -49,20 +49,20 @@
 
 %   ----  m = regular  ----
 
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{m}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-tosf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{regular}{it}{
-      <-> alias * TeretismaSerif-TOsF/m/it
-}{}
-
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{m}{n}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-tosf-ts1
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{regular}{n}{
       <-> alias * TeretismaSerif-TOsF/m/n
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{m}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-tosf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{regular}{it}{
+      <-> alias * TeretismaSerif-TOsF/m/it
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{m}{sl}{
@@ -76,16 +76,16 @@
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bx}{n}{
-      <-> ssub * TeretismaSerif-TOsF/b/n
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bx}{it}{
+      <-> ssub * TeretismaSerif-TOsF/b/it
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bx}{sl}{
       <-> ssub * TeretismaSerif-TOsF/b/sl
 }{}
 
-\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bx}{it}{
-      <-> ssub * TeretismaSerif-TOsF/b/it
+\DeclareFontShape{TS1}{TeretismaSerif-TOsF}{bx}{n}{
+      <-> ssub * TeretismaSerif-TOsF/b/n
 }{}
 
 \endinput

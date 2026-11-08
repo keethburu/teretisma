@@ -22,28 +22,12 @@
 
 %   ----  m = regular  ----
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{scit}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tosf-sc-lgr
-}{}
-
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{scit}{
-      <-> alias * TeretismaSans-TOsF/m/scit
-}{}
-
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{it}{
       <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tosf-lgr
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{it}{
       <-> alias * TeretismaSans-TOsF/m/it
-}{}
-
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{n}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-tosf-lgr
-}{}
-
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{n}{
-      <-> alias * TeretismaSans-TOsF/m/n
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{sc}{
@@ -54,12 +38,20 @@
       <-> alias * TeretismaSans-TOsF/m/sc
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{sl}{
-    <-> ssub * TeretismaSans-TOsF/m/it
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{n}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-tosf-lgr
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{sl}{
-    <-> ssub * TeretismaSans-TOsF/regular/it
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{n}{
+      <-> alias * TeretismaSans-TOsF/m/n
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{scit}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tosf-sc-lgr
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{scit}{
+      <-> alias * TeretismaSans-TOsF/m/scit
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{scsl}{
@@ -68,6 +60,14 @@
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{scsl}{
     <-> ssub * TeretismaSans-TOsF/regular/scit
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{m}{sl}{
+    <-> ssub * TeretismaSans-TOsF/m/it
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{regular}{sl}{
+    <-> ssub * TeretismaSans-TOsF/regular/it
 }{}
 
 
@@ -81,12 +81,12 @@
       <-> alias * TeretismaSans-TOsF/b/scit
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{sc}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tosf-sc-lgr
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tosf-lgr
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{sc}{
-      <-> alias * TeretismaSans-TOsF/b/sc
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{it}{
+      <-> alias * TeretismaSans-TOsF/b/it
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{n}{
@@ -97,20 +97,12 @@
       <-> alias * TeretismaSans-TOsF/b/n
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tosf-lgr
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{sc}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tosf-sc-lgr
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{it}{
-      <-> alias * TeretismaSans-TOsF/b/it
-}{}
-
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{sl}{
-    <-> ssub * TeretismaSans-TOsF/b/it
-}{}
-
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{sl}{
-    <-> ssub * TeretismaSans-TOsF/bold/it
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{sc}{
+      <-> alias * TeretismaSans-TOsF/b/sc
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{scsl}{
@@ -121,31 +113,39 @@
     <-> ssub * TeretismaSans-TOsF/bold/scit
 }{}
 
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{b}{sl}{
+    <-> ssub * TeretismaSans-TOsF/b/it
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bold}{sl}{
+    <-> ssub * TeretismaSans-TOsF/bold/it
+}{}
+
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{sc}{
-      <-> ssub * TeretismaSans-TOsF/b/sc
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{scsl}{
+      <-> ssub * TeretismaSans-TOsF/b/scsl
 }{}
 
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{sl}{
       <-> ssub * TeretismaSans-TOsF/b/sl
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{scsl}{
-      <-> ssub * TeretismaSans-TOsF/b/scsl
-}{}
-
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{scit}{
       <-> ssub * TeretismaSans-TOsF/b/scit
 }{}
 
-\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{n}{
-      <-> ssub * TeretismaSans-TOsF/b/n
-}{}
-
 \DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{it}{
       <-> ssub * TeretismaSans-TOsF/b/it
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{sc}{
+      <-> ssub * TeretismaSans-TOsF/b/sc
+}{}
+
+\DeclareFontShape{LGR}{TeretismaSans-TOsF}{bx}{n}{
+      <-> ssub * TeretismaSans-TOsF/b/n
 }{}
 
 \endinput

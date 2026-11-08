@@ -20,65 +20,14 @@
 \DeclareFontFamily{OT2}{TeretismaSerif-LF}{}
 
 
-%   ----  b = bold  ----
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-lf-ot2
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{it}{
-      <-> alias * TeretismaSerif-LF/b/it
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{sc}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-lf-sc-ot2
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{sc}{
-      <-> alias * TeretismaSerif-LF/b/sc
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{n}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-lf-ot2
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{n}{
-      <-> alias * TeretismaSerif-LF/b/n
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{scit}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-lf-sc-ot2
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{scit}{
-      <-> alias * TeretismaSerif-LF/b/scit
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{scsl}{
-    <-> ssub * TeretismaSerif-LF/b/scit
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{scsl}{
-    <-> ssub * TeretismaSerif-LF/bold/scit
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{sl}{
-    <-> ssub * TeretismaSerif-LF/b/it
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{sl}{
-    <-> ssub * TeretismaSerif-LF/bold/it
-}{}
-
-
 %   ----  m = regular  ----
 
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-ot2
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{scit}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-sc-ot2
 }{}
 
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{it}{
-      <-> alias * TeretismaSerif-LF/m/it
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{scit}{
+      <-> alias * TeretismaSerif-LF/m/scit
 }{}
 
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{sc}{
@@ -89,28 +38,20 @@
       <-> alias * TeretismaSerif-LF/m/sc
 }{}
 
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-ot2
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{it}{
+      <-> alias * TeretismaSerif-LF/m/it
+}{}
+
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{n}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-lf-ot2
 }{}
 
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{n}{
       <-> alias * TeretismaSerif-LF/m/n
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{scit}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-sc-ot2
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{scit}{
-      <-> alias * TeretismaSerif-LF/m/scit
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{scsl}{
-    <-> ssub * TeretismaSerif-LF/m/scit
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{scsl}{
-    <-> ssub * TeretismaSerif-LF/regular/scit
 }{}
 
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{sl}{
@@ -121,8 +62,71 @@
     <-> ssub * TeretismaSerif-LF/regular/it
 }{}
 
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{m}{scsl}{
+    <-> ssub * TeretismaSerif-LF/m/scit
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{regular}{scsl}{
+    <-> ssub * TeretismaSerif-LF/regular/scit
+}{}
+
+
+%   ----  b = bold  ----
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{n}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-lf-ot2
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{n}{
+      <-> alias * TeretismaSerif-LF/b/n
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{sc}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-lf-sc-ot2
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{sc}{
+      <-> alias * TeretismaSerif-LF/b/sc
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{scit}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-lf-sc-ot2
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{scit}{
+      <-> alias * TeretismaSerif-LF/b/scit
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-lf-ot2
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{it}{
+      <-> alias * TeretismaSerif-LF/b/it
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{sl}{
+    <-> ssub * TeretismaSerif-LF/b/it
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{sl}{
+    <-> ssub * TeretismaSerif-LF/bold/it
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{b}{scsl}{
+    <-> ssub * TeretismaSerif-LF/b/scit
+}{}
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bold}{scsl}{
+    <-> ssub * TeretismaSerif-LF/bold/scit
+}{}
+
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
+
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{sl}{
+      <-> ssub * TeretismaSerif-LF/b/sl
+}{}
 
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{n}{
       <-> ssub * TeretismaSerif-LF/b/n
@@ -136,16 +140,12 @@
       <-> ssub * TeretismaSerif-LF/b/it
 }{}
 
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{sl}{
-      <-> ssub * TeretismaSerif-LF/b/sl
+\DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{sc}{
+      <-> ssub * TeretismaSerif-LF/b/sc
 }{}
 
 \DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{scsl}{
       <-> ssub * TeretismaSerif-LF/b/scsl
-}{}
-
-\DeclareFontShape{OT2}{TeretismaSerif-LF}{bx}{sc}{
-      <-> ssub * TeretismaSerif-LF/b/sc
 }{}
 
 \endinput

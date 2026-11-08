@@ -20,57 +20,6 @@
 \DeclareFontFamily{QX}{TeretismaSans-TLF}{}
 
 
-%   ----  b = bold  ----
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{scit}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tlf-sc-qx
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{scit}{
-      <-> alias * TeretismaSans-TLF/b/scit
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{n}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tlf-qx
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{n}{
-      <-> alias * TeretismaSans-TLF/b/n
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{sc}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tlf-sc-qx
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{sc}{
-      <-> alias * TeretismaSans-TLF/b/sc
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tlf-qx
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{it}{
-      <-> alias * TeretismaSans-TLF/b/it
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{sl}{
-    <-> ssub * TeretismaSans-TLF/b/it
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{sl}{
-    <-> ssub * TeretismaSans-TLF/bold/it
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{scsl}{
-    <-> ssub * TeretismaSans-TLF/b/scit
-}{}
-
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{scsl}{
-    <-> ssub * TeretismaSans-TLF/bold/scit
-}{}
-
-
 %   ----  m = regular  ----
 
 \DeclareFontShape{QX}{TeretismaSans-TLF}{m}{scit}{
@@ -105,6 +54,14 @@
       <-> alias * TeretismaSans-TLF/m/it
 }{}
 
+\DeclareFontShape{QX}{TeretismaSans-TLF}{m}{scsl}{
+    <-> ssub * TeretismaSans-TLF/m/scit
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{regular}{scsl}{
+    <-> ssub * TeretismaSans-TLF/regular/scit
+}{}
+
 \DeclareFontShape{QX}{TeretismaSans-TLF}{m}{sl}{
     <-> ssub * TeretismaSans-TLF/m/it
 }{}
@@ -113,12 +70,55 @@
     <-> ssub * TeretismaSans-TLF/regular/it
 }{}
 
-\DeclareFontShape{QX}{TeretismaSans-TLF}{m}{scsl}{
-    <-> ssub * TeretismaSans-TLF/m/scit
+
+%   ----  b = bold  ----
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{sc}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tlf-sc-qx
 }{}
 
-\DeclareFontShape{QX}{TeretismaSans-TLF}{regular}{scsl}{
-    <-> ssub * TeretismaSans-TLF/regular/scit
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{sc}{
+      <-> alias * TeretismaSans-TLF/b/sc
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{n}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-tlf-qx
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{n}{
+      <-> alias * TeretismaSans-TLF/b/n
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tlf-qx
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{it}{
+      <-> alias * TeretismaSans-TLF/b/it
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{scit}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tlf-sc-qx
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{scit}{
+      <-> alias * TeretismaSans-TLF/b/scit
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{scsl}{
+    <-> ssub * TeretismaSans-TLF/b/scit
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{scsl}{
+    <-> ssub * TeretismaSans-TLF/bold/scit
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{b}{sl}{
+    <-> ssub * TeretismaSans-TLF/b/it
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bold}{sl}{
+    <-> ssub * TeretismaSans-TLF/bold/it
 }{}
 
 
@@ -128,24 +128,24 @@
       <-> ssub * TeretismaSans-TLF/b/scit
 }{}
 
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{it}{
-      <-> ssub * TeretismaSans-TLF/b/it
-}{}
-
 \DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{scsl}{
       <-> ssub * TeretismaSans-TLF/b/scsl
 }{}
 
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{sl}{
-      <-> ssub * TeretismaSans-TLF/b/sl
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{sc}{
+      <-> ssub * TeretismaSans-TLF/b/sc
 }{}
 
 \DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{n}{
       <-> ssub * TeretismaSans-TLF/b/n
 }{}
 
-\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{sc}{
-      <-> ssub * TeretismaSans-TLF/b/sc
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{sl}{
+      <-> ssub * TeretismaSans-TLF/b/sl
+}{}
+
+\DeclareFontShape{QX}{TeretismaSans-TLF}{bx}{it}{
+      <-> ssub * TeretismaSans-TLF/b/it
 }{}
 
 \endinput

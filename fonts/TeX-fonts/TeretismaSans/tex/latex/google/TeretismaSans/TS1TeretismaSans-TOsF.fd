@@ -76,16 +76,16 @@
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{TS1}{TeretismaSans-TOsF}{bx}{n}{
-      <-> ssub * TeretismaSans-TOsF/b/n
-}{}
-
 \DeclareFontShape{TS1}{TeretismaSans-TOsF}{bx}{sl}{
       <-> ssub * TeretismaSans-TOsF/b/sl
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSans-TOsF}{bx}{it}{
       <-> ssub * TeretismaSans-TOsF/b/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSans-TOsF}{bx}{n}{
+      <-> ssub * TeretismaSans-TOsF/b/n
 }{}
 
 \endinput

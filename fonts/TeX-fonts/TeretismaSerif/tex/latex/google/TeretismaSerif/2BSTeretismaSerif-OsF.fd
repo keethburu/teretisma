@@ -30,20 +30,20 @@
       <-> alias * TeretismaSerif-OsF/m/n
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{scit}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-osf-sc-2bs
-}{}
-
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{scit}{
-      <-> alias * TeretismaSerif-OsF/m/scit
-}{}
-
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{it}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-osf-2bs
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{it}{
       <-> alias * TeretismaSerif-OsF/m/it
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{scit}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-osf-sc-2bs
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{scit}{
+      <-> alias * TeretismaSerif-OsF/m/scit
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{sc}{
@@ -54,20 +54,20 @@
       <-> alias * TeretismaSerif-OsF/m/sc
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/m/scit
-}{}
-
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/regular/scit
-}{}
-
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{sl}{
     <-> ssub * TeretismaSerif-OsF/m/it
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{sl}{
     <-> ssub * TeretismaSerif-OsF/regular/it
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{m}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/m/scit
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{regular}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/regular/scit
 }{}
 
 
@@ -79,6 +79,14 @@
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{bold}{n}{
       <-> alias * TeretismaSerif-OsF/b/n
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{sc}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-osf-sc-2bs
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bold}{sc}{
+      <-> alias * TeretismaSerif-OsF/b/sc
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{scit}{
@@ -97,12 +105,12 @@
       <-> alias * TeretismaSerif-OsF/b/it
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{sc}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-osf-sc-2bs
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{sl}{
+    <-> ssub * TeretismaSerif-OsF/b/it
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bold}{sc}{
-      <-> alias * TeretismaSerif-OsF/b/sc
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bold}{sl}{
+    <-> ssub * TeretismaSerif-OsF/bold/it
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{scsl}{
@@ -113,14 +121,6 @@
     <-> ssub * TeretismaSerif-OsF/bold/scit
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{b}{sl}{
-    <-> ssub * TeretismaSerif-OsF/b/it
-}{}
-
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bold}{sl}{
-    <-> ssub * TeretismaSerif-OsF/bold/it
-}{}
-
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
@@ -128,12 +128,12 @@
       <-> ssub * TeretismaSerif-OsF/b/n
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{scit}{
-      <-> ssub * TeretismaSerif-OsF/b/scit
-}{}
-
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{sl}{
       <-> ssub * TeretismaSerif-OsF/b/sl
+}{}
+
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{scsl}{
+      <-> ssub * TeretismaSerif-OsF/b/scsl
 }{}
 
 \DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{it}{
@@ -144,8 +144,8 @@
       <-> ssub * TeretismaSerif-OsF/b/sc
 }{}
 
-\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{scsl}{
-      <-> ssub * TeretismaSerif-OsF/b/scsl
+\DeclareFontShape{2BS}{TeretismaSerif-OsF}{bx}{scit}{
+      <-> ssub * TeretismaSerif-OsF/b/scit
 }{}
 
 \endinput

@@ -20,57 +20,6 @@
 \DeclareFontFamily{PUA}{TeretismaSans-LF}{}
 
 
-%   ----  m = regular  ----
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{scit}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-sc-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{scit}{
-      <-> alias * TeretismaSans-LF/m/scit
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{it}{
-      <-> alias * TeretismaSans-LF/m/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{sc}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-lf-sc-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{sc}{
-      <-> alias * TeretismaSans-LF/m/sc
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{n}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-lf-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{n}{
-      <-> alias * TeretismaSans-LF/m/n
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{sl}{
-    <-> ssub * TeretismaSans-LF/m/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{sl}{
-    <-> ssub * TeretismaSans-LF/regular/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{scsl}{
-    <-> ssub * TeretismaSans-LF/m/scit
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{scsl}{
-    <-> ssub * TeretismaSans-LF/regular/scit
-}{}
-
-
 %   ----  b = bold  ----
 
 \DeclareFontShape{PUA}{TeretismaSans-LF}{b}{scit}{
@@ -81,12 +30,12 @@
       <-> alias * TeretismaSans-LF/b/scit
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{sc}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-sc-pua
+\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-pua
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{sc}{
-      <-> alias * TeretismaSans-LF/b/sc
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{it}{
+      <-> alias * TeretismaSans-LF/b/it
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSans-LF}{b}{n}{
@@ -97,20 +46,12 @@
       <-> alias * TeretismaSans-LF/b/n
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-pua
+\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{sc}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-sc-pua
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{it}{
-      <-> alias * TeretismaSans-LF/b/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{sl}{
-    <-> ssub * TeretismaSans-LF/b/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{sl}{
-    <-> ssub * TeretismaSans-LF/bold/it
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{sc}{
+      <-> alias * TeretismaSans-LF/b/sc
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSans-LF}{b}{scsl}{
@@ -121,31 +62,90 @@
     <-> ssub * TeretismaSans-LF/bold/scit
 }{}
 
+\DeclareFontShape{PUA}{TeretismaSans-LF}{b}{sl}{
+    <-> ssub * TeretismaSans-LF/b/it
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bold}{sl}{
+    <-> ssub * TeretismaSans-LF/bold/it
+}{}
+
+
+%   ----  m = regular  ----
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{n}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-lf-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{n}{
+      <-> alias * TeretismaSans-LF/m/n
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{sc}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Regular-lf-sc-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{sc}{
+      <-> alias * TeretismaSans-LF/m/sc
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{it}{
+      <-> alias * TeretismaSans-LF/m/it
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{scit}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-sc-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{scit}{
+      <-> alias * TeretismaSans-LF/m/scit
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{scsl}{
+    <-> ssub * TeretismaSans-LF/m/scit
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{scsl}{
+    <-> ssub * TeretismaSans-LF/regular/scit
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{m}{sl}{
+    <-> ssub * TeretismaSans-LF/m/it
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{regular}{sl}{
+    <-> ssub * TeretismaSans-LF/regular/it
+}{}
+
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{scsl}{
-      <-> ssub * TeretismaSans-LF/b/scsl
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{sl}{
+      <-> ssub * TeretismaSans-LF/b/sl
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{it}{
       <-> ssub * TeretismaSans-LF/b/it
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{n}{
-      <-> ssub * TeretismaSans-LF/b/n
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{scsl}{
+      <-> ssub * TeretismaSans-LF/b/scsl
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{scit}{
+      <-> ssub * TeretismaSans-LF/b/scit
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{sc}{
       <-> ssub * TeretismaSans-LF/b/sc
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{sl}{
-      <-> ssub * TeretismaSans-LF/b/sl
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{scit}{
-      <-> ssub * TeretismaSans-LF/b/scit
+\DeclareFontShape{PUA}{TeretismaSans-LF}{bx}{n}{
+      <-> ssub * TeretismaSans-LF/b/n
 }{}
 
 \endinput

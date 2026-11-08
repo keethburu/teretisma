@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_t46wr73bmevgcrxnlp7i2732aa
-% Encoding created by otftotfm on Sun Nov  8 17:57:33 2026
+% Encoding created by otftotfm on Sun Nov  8 19:38:13 2026
 % Command line follows encoding
 /AutoEnc_t46wr73bmevgcrxnlp7i2732aa [
 %00
@@ -57,9 +57,9 @@
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSerif.map --no-updmap --force
 % --coding-scheme=TEX IPA ENCODING --feature=kern --feature=liga
-% --feature=pnum --feature=smcp --ligkern=f i =: fi --ligkern=f l =: fl
+% --feature=smcp --feature=tnum --ligkern=f i =: fi --ligkern=f l =: fl
 % --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff l =: ffl
 % --unicoding=germandbls =: SSsmall --unicoding=ff =: FFsmall --unicoding=fi
 % =: FIsmall --unicoding=ffi =: FFIsmall --unicoding=fl =: FLsmall
 % --unicoding=ffl =: FFLsmall Teretisma-Serif-Regular.otf
-% Teretisma-Serif-Regular-lf-sc-t3'
+% Teretisma-Serif-Regular-tlf-sc-t3'

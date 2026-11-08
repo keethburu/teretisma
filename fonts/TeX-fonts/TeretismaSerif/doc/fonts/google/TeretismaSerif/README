@@ -12,8 +12,6 @@ DESCRIPTION
 This package provides an installation of the TeretismaSerif
 opentype font for LaTeX/NFSS.
 
-Note that the source font files are derived from the Noto
-SemiCondensed fonts for the inner book “Teretisma house style”.
 
 Copyright:  (C) 2022 le-tex publishing services
 

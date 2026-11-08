@@ -1,10 +1,10 @@
-# Teretisma 0.1.0
+# Teretisma 0.1.1
 
-First stable release under the Teretisma name.
+Clean replacement for the withdrawn v0.1.0 release.
 
-- Freshly rebuilt Serif, Sans, Sans Math, and Icons OpenType fonts, with Teretisma as their installed family name.
-- Noto inputs refreshed from the Google Fonts revision pinned in `upstream.lock.json`; original manual specialist glyphs and hand-positioned compositions retained.
-- Regenerated Serif/Sans TeX Type 1 fonts and metrics, refreshed distribution archives, and included OFL notices and checksums.
-- Daily upstream checks, validated update candidates, and explicit versioned stable releases.
+- Removed the inherited proprietary-font compatibility bundle, including its copied property lists, derived metrics, virtual fonts, scripts, documentation, and archives.
+- Removed publisher-specific requirements that had incorrectly been relabelled as Teretisma requirements.
+- Restricted TeX packaging to the supported Teretisma Serif and Sans packages and added recursive checks against excluded proprietary-font references.
+- Teretisma's Noto-based math-symbol font remains available under SIL OFL 1.1 and has no dependency on the removed bundle.
 
-Font software: SIL OFL 1.1. Build scripts retain their existing GPL license; independently licensed helper components retain their own notices. De Gruyter heritage is acknowledged in the README and required historical notices.
+The v0.1.0 release and tag were withdrawn because they distributed the excluded compatibility bundle. Git history has not been rewritten.

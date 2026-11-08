@@ -30,14 +30,6 @@
       <-> alias * TeretismaSans-TOsF/m/scit
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tosf-ly1
-}{}
-
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{regular}{it}{
-      <-> alias * TeretismaSans-TOsF/m/it
-}{}
-
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{n}{
       <-> \TeretismaSans@@scale Teretisma-Sans-Regular-tosf-ly1
 }{}
@@ -54,12 +46,12 @@
       <-> alias * TeretismaSans-TOsF/m/sc
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{sl}{
-    <-> ssub * TeretismaSans-TOsF/m/it
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tosf-ly1
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{regular}{sl}{
-    <-> ssub * TeretismaSans-TOsF/regular/it
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{regular}{it}{
+      <-> alias * TeretismaSans-TOsF/m/it
 }{}
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{scsl}{
@@ -68,6 +60,14 @@
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{regular}{scsl}{
     <-> ssub * TeretismaSans-TOsF/regular/scit
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{m}{sl}{
+    <-> ssub * TeretismaSans-TOsF/m/it
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{regular}{sl}{
+    <-> ssub * TeretismaSans-TOsF/regular/it
 }{}
 
 
@@ -79,6 +79,14 @@
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{bold}{scit}{
       <-> alias * TeretismaSans-TOsF/b/scit
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tosf-ly1
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bold}{it}{
+      <-> alias * TeretismaSans-TOsF/b/it
 }{}
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{sc}{
@@ -97,12 +105,12 @@
       <-> alias * TeretismaSans-TOsF/b/n
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-tosf-ly1
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{scsl}{
+    <-> ssub * TeretismaSans-TOsF/b/scit
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bold}{it}{
-      <-> alias * TeretismaSans-TOsF/b/it
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bold}{scsl}{
+    <-> ssub * TeretismaSans-TOsF/bold/scit
 }{}
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{sl}{
@@ -113,16 +121,20 @@
     <-> ssub * TeretismaSans-TOsF/bold/it
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{b}{scsl}{
-    <-> ssub * TeretismaSans-TOsF/b/scit
-}{}
-
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bold}{scsl}{
-    <-> ssub * TeretismaSans-TOsF/bold/scit
-}{}
-
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{scsl}{
+      <-> ssub * TeretismaSans-TOsF/b/scsl
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{scit}{
+      <-> ssub * TeretismaSans-TOsF/b/scit
+}{}
+
+\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{sl}{
+      <-> ssub * TeretismaSans-TOsF/b/sl
+}{}
 
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{sc}{
       <-> ssub * TeretismaSans-TOsF/b/sc
@@ -132,20 +144,8 @@
       <-> ssub * TeretismaSans-TOsF/b/n
 }{}
 
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{sl}{
-      <-> ssub * TeretismaSans-TOsF/b/sl
-}{}
-
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{scsl}{
-      <-> ssub * TeretismaSans-TOsF/b/scsl
-}{}
-
 \DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{it}{
       <-> ssub * TeretismaSans-TOsF/b/it
-}{}
-
-\DeclareFontShape{LY1}{TeretismaSans-TOsF}{bx}{scit}{
-      <-> ssub * TeretismaSans-TOsF/b/scit
 }{}
 
 \endinput

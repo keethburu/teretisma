@@ -4,6 +4,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 """
 import hashlib
 from pathlib import Path
+from distribution_policy import check_tree
 import zipfile
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -32,6 +33,7 @@ def specimen():
     (ROOT/'assets/images/font-preview.svg').write_text('\n'.join(parts)+'\n')
 
 def package():
+    check_tree(ROOT/'fonts')
     specimen()
     for installed in (ROOT/'fonts/TeX-fonts').rglob('*.otf'):
         current=ROOT/'fonts'/installed.name
@@ -43,11 +45,11 @@ def package():
     # Preserve the historic download URL while replacing all font payloads.
     zip_files(ROOT/'fonts/teretisma-sans_serif_icons.zip',modern)
     combined=[]
-    for name in ['TeretismaSans','TeretismaSerif','mmathdeg']:
+    for name in ['TeretismaSans','TeretismaSerif']:
         base=ROOT/'fonts/TeX-fonts'/name
         items=[(str(p.relative_to(base)),p.read_bytes()) for p in base.rglob('*') if p.is_file()]
         zip_files(base.with_suffix('.zip'),items)
-        if name!='mmathdeg':combined+=items
+        combined+=items
     # A merged TDS tree; repeated OFL files must agree.
     unique={}
     for name,data in combined:
@@ -56,8 +58,15 @@ def package():
     zip_files(ROOT/'fonts/TeX-fonts/Teretisma_Sans_Serif_Font_LaTeX.zip',list(unique.items()))
     release=ROOT/'build/release';release.mkdir(parents=True,exist_ok=True)
     zip_files(release/'teretisma-fonts.zip',modern)
-    tex=[(str(p.relative_to(ROOT/'fonts/TeX-fonts')),p.read_bytes())
-         for p in (ROOT/'fonts/TeX-fonts').rglob('*') if p.is_file()]
+    tex=[]
+    for family in ['TeretismaSans','TeretismaSerif']:
+        base=ROOT/'fonts/TeX-fonts'/family
+        tex.extend((str(p.relative_to(ROOT/'fonts/TeX-fonts')),p.read_bytes())
+                   for p in base.rglob('*') if p.is_file())
+        archive=base.with_suffix('.zip')
+        tex.append((archive.name,archive.read_bytes()))
+    archive=ROOT/'fonts/TeX-fonts/Teretisma_Sans_Serif_Font_LaTeX.zip'
+    tex.append((archive.name,archive.read_bytes()))
     zip_files(release/'teretisma-tex.zip',tex+common)
     (release/'OFL.txt').write_bytes((ROOT/'LICENSE').read_bytes())
     sums=[]

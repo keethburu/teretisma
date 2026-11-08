@@ -22,14 +22,6 @@
 
 %   ----  b = bold  ----
 
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{scit}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-osf-sc-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bold}{scit}{
-      <-> alias * TeretismaSerif-OsF/b/scit
-}{}
-
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{n}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-osf-pua
 }{}
@@ -46,20 +38,20 @@
       <-> alias * TeretismaSerif-OsF/b/sc
 }{}
 
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{scit}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-osf-sc-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bold}{scit}{
+      <-> alias * TeretismaSerif-OsF/b/scit
+}{}
+
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{it}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-osf-pua
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{bold}{it}{
       <-> alias * TeretismaSerif-OsF/b/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/b/scit
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bold}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/bold/scit
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{sl}{
@@ -70,16 +62,16 @@
     <-> ssub * TeretismaSerif-OsF/bold/it
 }{}
 
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{b}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/b/scit
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bold}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/bold/scit
+}{}
+
 
 %   ----  m = regular  ----
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-osf-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{it}{
-      <-> alias * TeretismaSerif-OsF/m/it
-}{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{sc}{
       <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-osf-sc-pua
@@ -87,14 +79,6 @@
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{sc}{
       <-> alias * TeretismaSerif-OsF/m/sc
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{n}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-osf-pua
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{n}{
-      <-> alias * TeretismaSerif-OsF/m/n
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{scit}{
@@ -105,12 +89,20 @@
       <-> alias * TeretismaSerif-OsF/m/scit
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/m/scit
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-osf-pua
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{scsl}{
-    <-> ssub * TeretismaSerif-OsF/regular/scit
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{it}{
+      <-> alias * TeretismaSerif-OsF/m/it
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{n}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-osf-pua
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{n}{
+      <-> alias * TeretismaSerif-OsF/m/n
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{sl}{
@@ -121,31 +113,39 @@
     <-> ssub * TeretismaSerif-OsF/regular/it
 }{}
 
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{m}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/m/scit
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{regular}{scsl}{
+    <-> ssub * TeretismaSerif-OsF/regular/scit
+}{}
+
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{scit}{
+      <-> ssub * TeretismaSerif-OsF/b/scit
+}{}
+
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{it}{
       <-> ssub * TeretismaSerif-OsF/b/it
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{sl}{
-      <-> ssub * TeretismaSerif-OsF/b/sl
-}{}
-
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{scsl}{
-      <-> ssub * TeretismaSerif-OsF/b/scsl
 }{}
 
 \DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{sc}{
       <-> ssub * TeretismaSerif-OsF/b/sc
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{n}{
-      <-> ssub * TeretismaSerif-OsF/b/n
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{scsl}{
+      <-> ssub * TeretismaSerif-OsF/b/scsl
 }{}
 
-\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{scit}{
-      <-> ssub * TeretismaSerif-OsF/b/scit
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{sl}{
+      <-> ssub * TeretismaSerif-OsF/b/sl
+}{}
+
+\DeclareFontShape{PUA}{TeretismaSerif-OsF}{bx}{n}{
+      <-> ssub * TeretismaSerif-OsF/b/n
 }{}
 
 \endinput

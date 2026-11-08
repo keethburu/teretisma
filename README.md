@@ -47,7 +47,7 @@ De Gruyter is historical provenance, not the ongoing upstream. [google/fonts](ht
 
 [New Athena Unicode](https://classicalstudies.org/publications-and-research/nau-download) remains a separate inherited glyph source, licensed under OFL 1.1 according to the bundled fonts' embedded notices.
 
-The current source inputs are in `scripts/source_fonts/`. The Noto inputs are generated from the Google Fonts revision recorded in `upstream.lock.json`; the Teretisma manual masters and New Athena Unicode inputs retain their inherited provenance. The local `google-fonts` remote points to `https://github.com/google/fonts.git`; there is no De Gruyter remote or branch-tracking relationship. The Minion Math TeX support files are retained; Minion Math itself is a separate dependency and is not supplied or licensed by this project.
+The current source inputs are in `scripts/source_fonts/`. The Noto inputs are generated from the Google Fonts revision recorded in `upstream.lock.json`; the Teretisma manual masters and New Athena Unicode inputs retain their inherited provenance. The local `google-fonts` remote points to `https://github.com/google/fonts.git`; there is no De Gruyter remote or branch-tracking relationship.
 
 ## License
 
@@ -69,7 +69,7 @@ Before an update is proposed, validation checks installation names, embedded lic
 
 ## Stable releases
 
-Use [the latest stable release](https://github.com/keethburu/teretisma/releases/latest) for installation and a version tag such as `v0.1.0` for an immutable reference. The stable release assets are `teretisma-fonts.zip`, `teretisma-tex.zip`, `OFL.txt`, and `SHA256SUMS`. The latest font download has a permanent URL: [teretisma-fonts.zip](https://github.com/keethburu/teretisma/releases/latest/download/teretisma-fonts.zip).
+Use [the latest stable release](https://github.com/keethburu/teretisma/releases/latest) for installation and a version tag such as `v0.1.1` for an immutable reference. The stable release assets are `teretisma-fonts.zip`, `teretisma-tex.zip`, `OFL.txt`, and `SHA256SUMS`. The latest font download has a permanent URL: [teretisma-fonts.zip](https://github.com/keethburu/teretisma/releases/latest/download/teretisma-fonts.zip).
 
 A maintainer reviews and merges an upstream candidate, verifies its checks, updates the release notes, and tags the commit with `v` followed by the value in `VERSION`. The release workflow verifies that the tag and font version agree and publishes the committed, validated fonts. Tags are never moved to newer builds.
 

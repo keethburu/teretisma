@@ -11,6 +11,7 @@ import re
 import subprocess
 import zipfile
 from fontTools.ttLib import TTFont
+from distribution_policy import check_tree
 import uharfbuzz as hb
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -72,6 +73,7 @@ def validate_fonts():
     return paths
 
 def archives():
+    check_tree(ROOT/'fonts')
     count=0
     def inspect(data,path):
         nonlocal count

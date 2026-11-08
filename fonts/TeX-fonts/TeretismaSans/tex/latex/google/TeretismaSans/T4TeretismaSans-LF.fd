@@ -20,14 +20,65 @@
 \DeclareFontFamily{T4}{TeretismaSans-LF}{}
 
 
-%   ----  m = regular  ----
+%   ----  b = bold  ----
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{m}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-t4
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{scit}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-sc-t4
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{it}{
-      <-> alias * TeretismaSans-LF/m/it
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{scit}{
+      <-> alias * TeretismaSans-LF/b/scit
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{sc}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-sc-t4
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{sc}{
+      <-> alias * TeretismaSans-LF/b/sc
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{n}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-t4
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{n}{
+      <-> alias * TeretismaSans-LF/b/n
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-t4
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{it}{
+      <-> alias * TeretismaSans-LF/b/it
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{scsl}{
+    <-> ssub * TeretismaSans-LF/b/scit
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{scsl}{
+    <-> ssub * TeretismaSans-LF/bold/scit
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{b}{sl}{
+    <-> ssub * TeretismaSans-LF/b/it
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{sl}{
+    <-> ssub * TeretismaSans-LF/bold/it
+}{}
+
+
+%   ----  m = regular  ----
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{m}{scit}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-sc-t4
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{scit}{
+      <-> alias * TeretismaSans-LF/m/scit
 }{}
 
 \DeclareFontShape{T4}{TeretismaSans-LF}{m}{sc}{
@@ -46,20 +97,12 @@
       <-> alias * TeretismaSans-LF/m/n
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{m}{scit}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-sc-t4
+\DeclareFontShape{T4}{TeretismaSans-LF}{m}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-lf-t4
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{scit}{
-      <-> alias * TeretismaSans-LF/m/scit
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{m}{sl}{
-    <-> ssub * TeretismaSans-LF/m/it
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{sl}{
-    <-> ssub * TeretismaSans-LF/regular/it
+\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{it}{
+      <-> alias * TeretismaSans-LF/m/it
 }{}
 
 \DeclareFontShape{T4}{TeretismaSans-LF}{m}{scsl}{
@@ -70,82 +113,39 @@
     <-> ssub * TeretismaSans-LF/regular/scit
 }{}
 
-
-%   ----  b = bold  ----
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{scit}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-sc-t4
+\DeclareFontShape{T4}{TeretismaSans-LF}{m}{sl}{
+    <-> ssub * TeretismaSans-LF/m/it
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{scit}{
-      <-> alias * TeretismaSans-LF/b/scit
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{n}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-t4
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{n}{
-      <-> alias * TeretismaSans-LF/b/n
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{sc}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-lf-sc-t4
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{sc}{
-      <-> alias * TeretismaSans-LF/b/sc
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Bold-Italic-lf-t4
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{it}{
-      <-> alias * TeretismaSans-LF/b/it
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{sl}{
-    <-> ssub * TeretismaSans-LF/b/it
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{sl}{
-    <-> ssub * TeretismaSans-LF/bold/it
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{b}{scsl}{
-    <-> ssub * TeretismaSans-LF/b/scit
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bold}{scsl}{
-    <-> ssub * TeretismaSans-LF/bold/scit
+\DeclareFontShape{T4}{TeretismaSans-LF}{regular}{sl}{
+    <-> ssub * TeretismaSans-LF/regular/it
 }{}
 
 
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{scit}{
-      <-> ssub * TeretismaSans-LF/b/scit
+\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{n}{
+      <-> ssub * TeretismaSans-LF/b/n
 }{}
 
 \DeclareFontShape{T4}{TeretismaSans-LF}{bx}{sc}{
       <-> ssub * TeretismaSans-LF/b/sc
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{n}{
-      <-> ssub * TeretismaSans-LF/b/n
-}{}
-
-\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{sl}{
-      <-> ssub * TeretismaSans-LF/b/sl
+\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{it}{
+      <-> ssub * TeretismaSans-LF/b/it
 }{}
 
 \DeclareFontShape{T4}{TeretismaSans-LF}{bx}{scsl}{
       <-> ssub * TeretismaSans-LF/b/scsl
 }{}
 
-\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{it}{
-      <-> ssub * TeretismaSans-LF/b/it
+\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{sl}{
+      <-> ssub * TeretismaSans-LF/b/sl
+}{}
+
+\DeclareFontShape{T4}{TeretismaSans-LF}{bx}{scit}{
+      <-> ssub * TeretismaSans-LF/b/scit
 }{}
 
 \endinput

@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_zzrftwej7z6cnpnrc2e25jaq2d
-% Encoding created by otftotfm on Sun Nov  8 17:57:31 2026
+% Encoding created by otftotfm on Sun Nov  8 19:38:11 2026
 % Command line follows encoding
 /AutoEnc_zzrftwej7z6cnpnrc2e25jaq2d [
 %00
@@ -56,5 +56,5 @@
 % Command line: 'otftotfm --automatic --encoding=fontools_ts3
 % --tfm-directory=. --vf-directory=. --type1-directory=.
 % --encoding-directory=. --map-file=./TeretismaSerif.map --no-updmap --force
-% --coding-scheme=TEX IPA SYMBOL ENCODING --feature=pnum
-% Teretisma-Serif-Regular.otf Teretisma-Serif-Regular-lf-ts3'
+% --coding-scheme=TEX IPA SYMBOL ENCODING --feature=tnum
+% Teretisma-Serif-Regular.otf Teretisma-Serif-Regular-tlf-ts3'

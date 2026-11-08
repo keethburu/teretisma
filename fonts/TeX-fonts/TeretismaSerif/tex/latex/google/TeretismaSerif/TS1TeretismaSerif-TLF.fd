@@ -20,33 +20,6 @@
 \DeclareFontFamily{TS1}{TeretismaSerif-TLF}{}
 
 
-%   ----  b = bold  ----
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-tlf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{it}{
-      <-> alias * TeretismaSerif-TLF/b/it
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{n}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-tlf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{n}{
-      <-> alias * TeretismaSerif-TLF/b/n
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{sl}{
-    <-> ssub * TeretismaSerif-TLF/b/it
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{sl}{
-    <-> ssub * TeretismaSerif-TLF/bold/it
-}{}
-
-
 %   ----  m = regular  ----
 
 \DeclareFontShape{TS1}{TeretismaSerif-TLF}{m}{it}{
@@ -74,18 +47,45 @@
 }{}
 
 
+%   ----  b = bold  ----
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{n}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-tlf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{n}{
+      <-> alias * TeretismaSerif-TLF/b/n
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Bold-Italic-tlf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{it}{
+      <-> alias * TeretismaSerif-TLF/b/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{b}{sl}{
+    <-> ssub * TeretismaSerif-TLF/b/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bold}{sl}{
+    <-> ssub * TeretismaSerif-TLF/bold/it
+}{}
+
+
 %   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bx}{it}{
-      <-> ssub * TeretismaSerif-TLF/b/it
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bx}{n}{
+      <-> ssub * TeretismaSerif-TLF/b/n
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSerif-TLF}{bx}{sl}{
       <-> ssub * TeretismaSerif-TLF/b/sl
 }{}
 
-\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bx}{n}{
-      <-> ssub * TeretismaSerif-TLF/b/n
+\DeclareFontShape{TS1}{TeretismaSerif-TLF}{bx}{it}{
+      <-> ssub * TeretismaSerif-TLF/b/it
 }{}
 
 \endinput

@@ -20,33 +20,6 @@
 \DeclareFontFamily{TS1}{TeretismaSerif-LF}{}
 
 
-%   ----  m = regular  ----
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{n}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{n}{
-      <-> alias * TeretismaSerif-LF/m/n
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{it}{
-      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{it}{
-      <-> alias * TeretismaSerif-LF/m/it
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{sl}{
-    <-> ssub * TeretismaSerif-LF/m/it
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{sl}{
-    <-> ssub * TeretismaSerif-LF/regular/it
-}{}
-
-
 %   ----  b = bold  ----
 
 \DeclareFontShape{TS1}{TeretismaSerif-LF}{b}{n}{
@@ -74,11 +47,34 @@
 }{}
 
 
-%   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
+%   ----  m = regular  ----
 
-\DeclareFontShape{TS1}{TeretismaSerif-LF}{bx}{n}{
-      <-> ssub * TeretismaSerif-LF/b/n
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{it}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Italic-lf-ts1
 }{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{it}{
+      <-> alias * TeretismaSerif-LF/m/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{n}{
+      <-> \TeretismaSerif@@scale Teretisma-Serif-Regular-lf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{n}{
+      <-> alias * TeretismaSerif-LF/m/n
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{m}{sl}{
+    <-> ssub * TeretismaSerif-LF/m/it
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{regular}{sl}{
+    <-> ssub * TeretismaSerif-LF/regular/it
+}{}
+
+
+%   ----  Extra 'ssub' rules to map 'bx' to 'b'  ----
 
 \DeclareFontShape{TS1}{TeretismaSerif-LF}{bx}{it}{
       <-> ssub * TeretismaSerif-LF/b/it
@@ -86,6 +82,10 @@
 
 \DeclareFontShape{TS1}{TeretismaSerif-LF}{bx}{sl}{
       <-> ssub * TeretismaSerif-LF/b/sl
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSerif-LF}{bx}{n}{
+      <-> ssub * TeretismaSerif-LF/b/n
 }{}
 
 \endinput

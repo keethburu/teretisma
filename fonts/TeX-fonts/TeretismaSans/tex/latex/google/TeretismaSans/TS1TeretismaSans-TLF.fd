@@ -49,20 +49,20 @@
 
 %   ----  m = regular  ----
 
-\DeclareFontShape{TS1}{TeretismaSans-TLF}{m}{it}{
-      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tlf-ts1
-}{}
-
-\DeclareFontShape{TS1}{TeretismaSans-TLF}{regular}{it}{
-      <-> alias * TeretismaSans-TLF/m/it
-}{}
-
 \DeclareFontShape{TS1}{TeretismaSans-TLF}{m}{n}{
       <-> \TeretismaSans@@scale Teretisma-Sans-Regular-tlf-ts1
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSans-TLF}{regular}{n}{
       <-> alias * TeretismaSans-TLF/m/n
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSans-TLF}{m}{it}{
+      <-> \TeretismaSans@@scale Teretisma-Sans-Italic-tlf-ts1
+}{}
+
+\DeclareFontShape{TS1}{TeretismaSans-TLF}{regular}{it}{
+      <-> alias * TeretismaSans-TLF/m/it
 }{}
 
 \DeclareFontShape{TS1}{TeretismaSans-TLF}{m}{sl}{
